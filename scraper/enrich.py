@@ -61,7 +61,7 @@ def _base_record(row: dict) -> dict:
     """Listing-level record (used as-is on degradation)."""
     org_chain = row.get("org_chain", "")
     return {
-        "tender_id": synth_tender_id(row),
+        "tender_id": row.get("tender_id") or synth_tender_id(row),  # canonical from listing
         "title": row.get("title", ""),
         "org_chain": org_chain,                  # from the org listing (col5 / tree name)
         "location": "",

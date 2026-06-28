@@ -195,14 +195,22 @@ def parse_org_listing(html: str, origin: str = "https://defproc.gov.in") -> list
         if not a:
             continue
         title = clean_text(a.get_text(" ", strip=True)).strip("[]").strip()
+        # cell = "[Title] [BuyerRef] [CanonicalTenderID]" — the canonical id is
+        # right here in the listing, so we never need to synthesise one.
         cell = clean_text(tds[4].get_text(" ", strip=True))
-        ref = cell.replace(a.get_text(" ", strip=True), "").strip(" []").strip()
+        cid = _ID_RE.search(cell)
+        tender_id = cid.group(0) if cid else ""
+        rest = cell.replace(a.get_text(" ", strip=True), "")
+        if tender_id:
+            rest = rest.replace(tender_id, "")
+        ref = clean_text(re.sub(r"[\[\]]", " ", rest))
         href = ihtml.unescape(str(a["href"]))
         detail_url = href if href.startswith("http") else origin.rstrip("/") + "/" + href.lstrip("/")
         closing_raw = clean_text(tds[2].get_text(" ", strip=True))
         published_raw = clean_text(tds[1].get_text(" ", strip=True))
         rows.append({
             "title": title,
+            "tender_id": tender_id,          # canonical id from the listing (may be "")
             "ref_no": ref,
             "published_date": published_raw,
             "published_dt": parse_gepnic_datetime(published_raw),

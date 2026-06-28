@@ -79,8 +79,14 @@ def test_org_listing_parse():
         assert r["org_chain"], "empty org_chain"
         seen.add(r["detail_url"])
     assert len(seen) == len(rows), "detail_url not unique"
-    # at least some rows carry a parseable closing date + ref
     assert sum(1 for r in rows if r["closing_dt"] is not None) >= len(rows) // 2
+    # the canonical Tender ID is in the listing — extract it (no synth needed)
+    assert all(re.match(r"\d{4}_[A-Za-z0-9]+_\d+_\d+$", r["tender_id"]) for r in rows), \
+        "every org-listing row should carry a canonical tender_id"
+    # and ref_no must be the clean buyer reference — not the canonical id, no brackets
+    for r in rows:
+        assert "[" not in r["ref_no"] and "]" not in r["ref_no"]
+        assert r["tender_id"] not in r["ref_no"]
 
 
 def test_gated_detail_returns_empty():

@@ -73,7 +73,7 @@ def row_to_record(row: dict) -> dict:
         closing_iso = pdt.strftime("%Y-%m-%d") if pdt else ""
     org_chain = row.get("org_chain", "")
     return {
-        "tender_id": synth_tender_id(row),
+        "tender_id": row.get("tender_id") or synth_tender_id(row),  # canonical from listing
         "title": row.get("title", ""),
         "org_chain": org_chain,
         "location": "",
