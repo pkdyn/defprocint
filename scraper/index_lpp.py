@@ -23,7 +23,7 @@ DEFAULT_OUT = os.path.join(ROOT, "web", "lpp-index.json")
 
 # Fields the dashboard LPP card/search/export read (+ §5.35.1 audit fields).
 LPP_FIELDS = ("id", "title", "unit", "location", "mode", "date", "qty",
-              "value", "l1", "crit", "domains", "named", "detail_url",
+              "value", "l1", "crit", "domains", "named", "ref", "detail_url",
               "category", "no_bidders", "source", "est_value")
 
 
@@ -81,6 +81,7 @@ def to_lpp_record(rec: dict) -> dict:
         "crit": rec.get("criticality", "routine"),
         "domains": rec.get("domains", []),
         "named": rec.get("named_system"),
+        "ref": rec.get("ref_no", ""),                      # buyer reference (search key)
         "detail_url": rec.get("detail_url", ""),
         # §5.35.1 audit extras
         "category": rec.get("category") or rec.get("product_category", ""),

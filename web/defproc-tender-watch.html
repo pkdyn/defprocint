@@ -47,6 +47,8 @@
   .card.dying{opacity:.18;filter:grayscale(.6)}
   .card .row1{display:flex;align-items:center;gap:8px;margin-bottom:5px}
   .tid{font-family:var(--mono);font-size:10.5px;color:var(--dim);letter-spacing:.02em}
+  .findlink{margin-left:8px;font-family:var(--mono);font-size:9px;color:var(--landStroke);text-decoration:none;border:1px solid #1c3a42;border-radius:4px;padding:1px 5px;letter-spacing:.04em}
+  .findlink:hover{color:var(--ink);border-color:var(--landStroke)}
   .badge{margin-left:auto;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.08em;padding:2px 6px;border-radius:4px;text-transform:uppercase}
   .badge.crit{color:#1a1205;background:var(--crit)}
   .badge.rout{color:#0a131b;background:var(--rout)}
@@ -196,7 +198,7 @@
         <div class="faddr"></div>
         <div class="fpin"></div>
         <div class="fclose"></div>
-        <a class="flink" id="flashLink" target="_blank" rel="noopener" hidden>look up on defproc ↗ (paste Tender ID + captcha)</a>
+        <a class="flink" id="flashLink" target="_blank" rel="noopener" hidden>find on defproc ↗ — ID auto-copied, paste &amp; solve captcha</a>
       </div>
 
       <div class="legend">
@@ -351,18 +353,31 @@ function pubOf(t){return t.published?(typeof t.published==='string'?Date.parse(t
 function lifeOf(t){const a=(NOW()-pubOf(t))/H;return Math.max(0,Math.min(1,1-a/CONFIG.RETENTION_HOURS));}
 function remLabel(t){const r=CONFIG.RETENTION_HOURS-(NOW()-pubOf(t))/H;if(r<=0)return'expired';if(r<1)return Math.max(1,Math.round(r*60))+'m left';if(r<24)return r.toFixed(0)+'h left';return (r/24).toFixed(1)+'d left';}
 function ago(ms){const h=(NOW()-ms)/H;if(h<1)return Math.round(h*60)+'m ago';if(h<24)return h.toFixed(0)+'h ago';return (h/24).toFixed(1)+'d ago';}
+/* defproc has no cold-clickable per-tender URL (the $DirectLink sp is stable but
+   needs a live session cookie; a cold click hits "Stale Session"). So we open the
+   Tender-Status search page (which renders cold) and AUTO-COPY the Tender ID +
+   tell the user to paste it and solve the one captcha — guided, not stranded. */
+function defprocCopy(id, ref){
+  // canonical Tender ID (YYYY_ORG_NNN_N) is searchable as-is; otherwise the
+  // buyer's reference number is the key (synth LIST_ ids are not defproc ids).
+  const key = /^\d{4}_[A-Za-z0-9]+_\d+_\d+$/.test(id||'') ? id : (ref || id);
+  try{ navigator.clipboard.writeText(key); }
+  catch(e){ try{const ta=document.createElement('textarea');ta.value=key;document.body.appendChild(ta);ta.select();document.execCommand&&document.execCommand('copy');ta.remove();}catch(e2){} }
+  lppToast('Copied "'+key+'" — paste it into the defproc search box & solve the captcha');
+}
 function updCounts(){document.getElementById('count').textContent=tenders.length;document.getElementById('critcount').textContent=tenders.filter(t=>critOf(t)==='critical').length;}
 
 function buildCard(t){
   const c=critOf(t),col=COL[c];
   const el=document.createElement('div');el.className='card enter'+(c==='critical'?' crit':'');el.dataset.id=t.tender_id;
   const doms=(t.domains&&t.domains.length)?`<div class="doms">${t.domains.map(d=>`<span class="dom">${d}</span>`).join('')}${t.named_system?`<span class="dom">${t.named_system}</span>`:''}</div>`:'';
-  el.innerHTML=`<div class="row1"><span class="tid">${t.tender_id}</span><span class="badge ${c==='critical'?'crit':'rout'}">${c}</span></div>
+  el.innerHTML=`<div class="row1"><span class="tid">${t.tender_id}</span><a class="findlink" href="${t.detail_url||'#'}" target="_blank" rel="noopener" title="find on defproc — Tender ID auto-copied">defproc ↗</a><span class="badge ${c==='critical'?'crit':'rout'}">${c}</span></div>
     <p class="title">${t.title}</p>${doms}
     <div class="meta"><span class="org">${t.org_chain}</span><span class="loc">${t.location}</span><span>closes ${t.closing_date}</span></div>
     <div class="life"><i style="background:${col}"></i></div>
     <div class="lifelabel"><span>published ${ago(pubOf(t))}</span><span class="rem">${remLabel(t)}</span></div>`;
   el.addEventListener('click',()=>select(t.tender_id,true));
+  const fk=el.querySelector('.findlink'); if(fk)fk.addEventListener('click',e=>{e.stopPropagation();defprocCopy(t.tender_id,t.ref_no);});
   el.querySelector('.life>i').style.width=(lifeOf(t)*100)+'%';
   return el;
 }
@@ -399,7 +414,7 @@ function showFlash(id){
   flash.querySelector('.faddr').textContent=b.addr||'—';
   flash.querySelector('.fpin').textContent=b.pin?('PIN '+b.pin):'';
   flash.querySelector('.fclose').textContent=`${t.title} · closes ${t.closing_date}`;
-  const fl=flash.querySelector('#flashLink'); if(t.detail_url){fl.href=t.detail_url;fl.hidden=false;}else fl.hidden=true;
+  const fl=flash.querySelector('#flashLink'); if(t.detail_url){fl.href=t.detail_url;fl.hidden=false;fl.onclick=()=>defprocCopy(t.tender_id,t.ref_no);}else fl.hidden=true;
   positionFlash();
   flash.classList.remove('show');void flash.offsetWidth;flash.classList.add('show');
 }
@@ -572,9 +587,10 @@ function lppSearch(){
         <span class="lk">LPP</span>${price}
       </div>
       <div class="lvint ${vint>3?'':'ok'}">${vtxt}</div>
-      <div class="lacts"><a class="lopen" href="${b.detail_url}" target="_blank" rel="noopener">look up on defproc \u2197 (paste ID + captcha)</a>
+      <div class="lacts"><a class="lopen" href="${b.detail_url}" target="_blank" rel="noopener">find on defproc \u2197 \u2014 ID auto-copied</a>
         <button class="lexp" data-id="${b.id}">Copy LPP / SoC block</button></div>`;
     el.querySelector('.lexp').addEventListener('click',()=>lppExport(b.id));
+    el.querySelector('.lopen').addEventListener('click',()=>defprocCopy(b.id,b.ref));
     lppResults.appendChild(el);
   }
 }

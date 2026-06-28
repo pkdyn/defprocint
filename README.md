@@ -184,8 +184,12 @@ dashboard still makes zero outbound calls.
 - The Live Monitor covers the **whole active by-organisation catalogue** filtered to the
   72 h publish window (comprehensive, not just the Home top-10). Per-tender enrichment is
   bounded per run and continues across cron ticks.
-- **No stable per-tender URL exists** on defproc — `detail_url` is the durable Tender-Status
-  lookup page; the viewer pastes the (displayed) `tender_id` and solves the one captcha.
+- **Per-tender linking (verified):** defproc's `$DirectLink` *is* a stable per-tender reference
+  (its encrypted `sp` blob resolves the same tender in any session), **but** it needs a live
+  JSESSIONID cookie — a cold click hits a "Stale Session" page. The `service=page` Tender-Status
+  **search** page, by contrast, renders cold. So every card in **both** views links there and
+  **auto-copies** the canonical Tender ID (or the buyer reference for un-enriched rows) and toasts
+  "paste it + solve the captcha" — guided, not stranded. `detail_url` = that search page.
 - Awarded LPP prices and the historical archive are CAPTCHA-gated and therefore out of reach
   for an automated free crawl — by design we stop at the wall.
 - Portal HTML changes will break parsers periodically — all parsing is isolated in
