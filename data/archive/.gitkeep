@@ -1,0 +1,3 @@
+# Reserved for the growing raw LPP archive corpus (jsonl) as the cron crawls
+# Tenders-in-Archive + Results/AoC over time. The served, searchable artifact is
+# web/lpp-index.json (built by scraper/index_lpp.py).

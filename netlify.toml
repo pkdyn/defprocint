@@ -1,0 +1,11 @@
+# Static deploy: publish the dashboard dir; data files (tenders.json,
+# lpp-index.json) sit beside the HTML and are served as-is. No build, no backend.
+[build]
+  publish = "web"
+  command = ""
+
+# Open "/" -> the dashboard (index.html also meta-refreshes as a fallback).
+[[redirects]]
+  from = "/"
+  to = "/defproc-tender-watch.html"
+  status = 200

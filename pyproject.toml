@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+# Run tests from the repo root and let `import scraper.*` resolve.
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.pyright]
+extraPaths = ["."]
