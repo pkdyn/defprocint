@@ -67,7 +67,7 @@ def test_est_value_never_becomes_lpp():
     assert rec["est_value"] == 5000000
     # the DPM export likewise refuses to print a price for it
     block = soc_export_block(rec, NOW)
-    assert "to be obtained from the buying unit" in block
+    assert "obtain from the buying unit" in block
     assert "50.00 lakh" not in block  # the estimate is never rendered as the LPP
 
     # whole-index invariant: no record exposes its estimate as the LPP value
@@ -87,16 +87,13 @@ def test_vintage_and_fy():
 def test_export_block_is_valid_dpm():
     rec = to_lpp_record(CORPUS[1])
     txt = soc_export_block(rec, NOW)
-    assert "DPMF 5 — Statement of Case, Ser 7" in txt
-    assert "DPMF 5 Ser 6(a) / DPMF 7" in txt
-    assert "§5.33.4" in txt
+    assert "DPMF 5 Ser 7 / Ser 6(a) / DPMF 7" in txt
     assert "§5.32.2" in txt                       # escalation/ERV left to indenter
-    assert "Escalation factor: __________" in txt
-    assert "EXCEEDS 3 yrs" in txt                 # vintage 5 FY flagged
-    assert "₹96.00 lakh" in txt                   # awarded value rendered
+    assert "§5.33.4" in txt and "> 3 yrs" in txt  # vintage 5 FY flagged
+    assert "₹96.00 lakh" in txt and "L1 BEL" in txt  # awarded value + L1
     # Not-published case shows the obtain-from-unit text, no fabricated price.
     txt0 = soc_export_block(to_lpp_record(CORPUS[0]), NOW)
-    assert "to be obtained from the buying unit" in txt0
+    assert "obtain from the buying unit" in txt0
 
 
 def test_dashboard_wired_to_index_and_has_export():
@@ -105,8 +102,8 @@ def test_dashboard_wired_to_index_and_has_export():
     assert 'DATA_URL: "./tenders.json"' in html
     assert "async function lppLoad" in html            # LPP loader present
     # DPMF export headers shipped in the dashboard's own export:
-    assert "DETAILS OF THE LAST PURCHASE" in html
-    assert "DPMF 5" in html and "DPMF 7" in html
+    assert "LAST PURCHASE" in html and "drafting aid" in html
+    assert "DPMF 5 Ser 7 / Ser 6(a) / DPMF 7" in html
     assert "5.33.4" in html and "5.32.2" in html
 
 

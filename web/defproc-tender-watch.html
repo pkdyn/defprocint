@@ -207,7 +207,6 @@
         <div class="lr"><span class="sw" style="background:var(--rout)"></span> Routine</div>
       </div>
 
-      <div class="controls"><button class="btn" id="inject">+ INJECT TENDER</button></div>
     </section>
   </div>
 
@@ -216,7 +215,7 @@
       <h2>LPP FINDER · PROCUREMENT REFERENCE SEARCH</h2>
       <p>Search an item/service to find the buyer + tender reference across the defproc catalogue, then export a DPMF 5 Ser 7 / Ser 6(a) / DPMF 7 drafting block per DPM 2025.</p>
       <p style="margin:0 0 11px;font-size:11px;line-height:1.45;color:var(--crit);border-left:2px solid var(--critdim);padding-left:8px">
-        The actual Last Purchase Price comes from <b>closed, awarded</b> tenders, whose Award-of-Contract pages are <b>CAPTCHA-gated</b> on defproc and can't be read automatically. Results show the item + buyer + tender ref; obtain the awarded LPP from the buying unit (or look it up manually on defproc). The export is a drafting aid — the indenter/IFA completes escalation/ERV and vets it.</p>
+        The actual Last Purchase Price comes from <b>closed, awarded</b> tenders, whose Award-of-Contract pages are <b>CAPTCHA-gated</b> on defproc and can't be read automatically. Results show the item + buyer + tender ref; obtain the awarded LPP from the buying unit.</p>
       <div class="lpp-search">
         <input id="lppQ" placeholder="Search the item keyword (not a phrase) — e.g. printer, otdr, amc for, sonar, radar">
         <select id="lppCrit"><option value="">All</option><option value="critical">Critical</option><option value="routine">Routine</option></select>
@@ -460,27 +459,6 @@ function tick(){
   if(!tenders.length&&!listEl.querySelector('.empty'))listEl.innerHTML='<div class="empty">No live tenders.<br>Window is clear.</div>';
 }
 
-/* inject demo arrival */
-const samples=[
-  ["Procurement of loitering munition with EO/IR seeker","critical",["UAS"],null],
-  ["Akash-NG missile test support equipment","critical",["AIR_DEFENCE"],"Akash-NG"],
-  ["Quantum key distribution link for secure comms","critical",["QUANTUM"],null],
-  ["Housekeeping services for administrative block","routine",[],null],
-  ["Supply of office stationery and consumables","routine",[],null],
-  ["Hull-mounted sonar spares for patrol craft","critical",["USV"],null]
-];
-const cities=Object.keys(CITY_COORDS);let seq=50000;
-document.getElementById('inject').addEventListener('click',()=>{
-  const s=samples[Math.floor(Math.random()*samples.length)];const city=cities[Math.floor(Math.random()*cities.length)];
-  const b=BUYERS[city]||["Indian Navy",city,''];
-  const t={tender_id:`2026_IN_${Math.random()<.5?'WNC':'ENC'}_${seq++}_1`,title:s[0],criticality:s[1],domains:s[2],named_system:s[3],confidence:s[1]==='critical'?0.8:0.9,
-    location:city,org_chain:`Ministry of Defence ▸ Indian Navy ▸ ${b[0]}`,first_seen:NOW(),closing_date:fmtDate(NOW()+(4+Math.random()*16)*24*H),unit:b[0],addr:b[1],pin:b[2]};
-  tenders.push(t);
-  const empty=listEl.querySelector('.empty');if(empty)empty.remove();
-  listEl.prepend(buildCard(t));mkEl.appendChild(buildMarker(t));updCounts();
-  select(t.tender_id,true);
-});
-
 /* data load */
 async function loadTenders(){
   if(CONFIG.DATA_URL){
@@ -568,7 +546,8 @@ function lppSearch(){
   lppCountEl.textContent=res.length;
   if(!res.length){lppResults.innerHTML='<div class="lpp-empty">No bids match. Try a broader item keyword.</div>';return;}
   lppResults.innerHTML='';
-  for(const b of res){
+  const LPP_CAP=200;
+  for(const b of res.slice(0,LPP_CAP)){
     const vint=lppVintage(b.date);
     const vtxt = vint>3 ? `LPP vintage ${vint} FY — exceeds 3 yrs (DPM \u00a75.33.4(a)): not a clean scale, escalate`
                         : `LPP vintage ${vint} FY (within 3 yrs)`;
@@ -593,38 +572,29 @@ function lppSearch(){
     el.querySelector('.lopen').addEventListener('click',()=>defprocCopy(b.id,b.ref));
     lppResults.appendChild(el);
   }
+  if(res.length>LPP_CAP){
+    const more=document.createElement('div');more.className='lpp-empty';
+    more.textContent=`showing first ${LPP_CAP} of ${res.length} — type a more specific item keyword to narrow it`;
+    lppResults.appendChild(more);
+  }
 }
 
 function lppExport(id){
   const b=LPP_ARCHIVE.find(x=>x.id===id); if(!b)return;
   const vint=lppVintage(b.date);
-  const lppLine = b.value!=null ? `${lppMoney(b.value)} (per unit basis to be derived from total \u00f7 qty)` : "NOT PUBLISHED on defproc \u2014 to be obtained from the buying unit";
+  const lppLine = b.value!=null ? `${lppMoney(b.value)}${b.l1?` (L1 ${b.l1})`:''}` : "NOT PUBLISHED on defproc \u2014 obtain from the buying unit";
+  const dnice = new Date(b.date).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});
+  const vflag = vint>3 ? `  [vintage ${vint} FY > 3 yrs \u2014 escalate, \u00a75.33.4(a)]` : '';
   const txt=
-`DETAILS OF THE LAST PURCHASE  (per DPM 2025, DPMF 5 \u2014 Statement of Case, Ser 7)
-(a) Similar item procured: ${b.title}
-    Quantity & date: ${b.qty} nos on ${new Date(b.date).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}
-(b) Recurring item: to be confirmed by indenter
-(c) Mode of tendering (last purchase): ${b.mode}
-(d) Source of last purchase: ${b.unit}, ${b.location}
-(e) Other: tender ref ${b.id}; defproc: ${b.detail_url}
-
-ESTIMATED COST \u2014 LPP BASIS  (DPMF 5 Ser 6(a) / DPMF 7)
-    Last Purchase Price: ${lppLine}
-    Price Level / FY of LPP: FY ${lppFY(b.date)}
-    Source: ${b.unit}
-    Quantity (LPP order): ${b.qty}
-    Escalation factor: __________  (to be worked out per DPM \u00a75.32.2(c)/(d))
-    ERV (if import content): __________  (DPM \u00a75.32.2(i))
-
-PRICE-REASONABLENESS CAVEATS  (DPM \u00a75.33.4)
-    - Vintage: LPP is ${vint} FY old \u2014 ${vint>3?'EXCEEDS 3 yrs: not a clean scale; escalate before use (\u00a75.33.4(a)).':'within 3 yrs.'}
-    - Confirm same magnitude & scope of supply (\u00a75.33.4(b)).
-    - Account for basket price / bulk discount (\u00a75.33.4(c)).
-    - Consider Price-Variation-Clause final cost paid (\u00a75.33.4(d)).
-    - Confirm current production vs ex-stock supply (\u00a75.33.4(e)).
-
-NOTE: Indicative aid drawn from public defproc data. Format is indicative (DPMF 5, Note b).
-Escalation/ERV to be completed and the case vetted by the indenter / IFA per DPM 2025.`;
+`LAST PURCHASE \u2014 drafting aid (DPM 2025 \u00b7 DPMF 5 Ser 7 / Ser 6(a) / DPMF 7)
+Item        : ${b.title}
+Tender ref  : ${b.id}
+FY / date   : FY ${lppFY(b.date)} (${dnice})
+Mode        : ${b.mode}
+Buyer/source: ${b.unit}, ${b.location}
+LPP         : ${lppLine}${vflag}
+Escalation/ERV: to be worked out by the indenter / IFA (\u00a75.32.2).
+defproc     : ${b.detail_url}`;
   lppShowModal(txt);
 }
 
@@ -667,7 +637,8 @@ function showView(which){
 }
 navLive.addEventListener('click',()=>showView('live'));
 navLpp.addEventListener('click',()=>showView('lpp'));
-lppQ.addEventListener('input',lppSearch);
+let lppDebounce;
+lppQ.addEventListener('input',()=>{clearTimeout(lppDebounce);lppDebounce=setTimeout(lppSearch,160);});
 lppCritSel.addEventListener('change',lppSearch);
 lppSearch();
 </script>

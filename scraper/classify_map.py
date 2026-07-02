@@ -7,13 +7,27 @@ is metadata and must never flip the verdict).
 """
 from __future__ import annotations
 
+import re
+
 from .classify import ProcurementClassifier
 
 _CLF = ProcurementClassifier()
 
+# 'INS <ship/estt name>' is a naval UNIT/ORG reference (INS Valsura, INS Angre) —
+# CLAUDE.md: unit/org is metadata only and must never flip the verdict. Left in,
+# it false-triggers the FINAL classifier's INS (inertial-navigation-system)
+# keyword and tags every naval civil-works tender CRITICAL. We strip it BEFORE
+# classifying (classify.py is untouched). Real INS items survive: 'INS/GPS',
+# 'INS-GNSS', 'inertial navigation system' have no space-then-name after INS.
+_SHIP_REF = re.compile(r"\bINS\s+[A-Za-z][\w()&.'-]*", re.I)
+
+
+def _declutter(text: str) -> str:
+    return _SHIP_REF.sub(" ", text or "")
+
 
 def classify_text(text: str) -> dict:
-    r = _CLF.classify(text or "")
+    r = _CLF.classify(_declutter(text))
     return {
         "criticality": r.classification.lower(),  # 'critical' | 'routine'
         "confidence": round(float(r.confidence), 2),

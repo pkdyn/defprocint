@@ -53,6 +53,18 @@ def test_named_system_sets_confidence_1():
     assert res["confidence"] == 1.0
 
 
+def test_naval_establishment_not_critical():
+    # 'INS <ship>' is a unit/org name — must NOT flip the verdict (CLAUDE.md rule),
+    # even though the FINAL classifier's INS keyword would otherwise match it.
+    assert classify_text("Special repairs to Bldg A-84 85 at INS Angre")["criticality"] == "routine"
+    assert classify_text("Single living accommodation for sailors at INS Valsura, Jamnagar")["criticality"] == "routine"
+    assert classify_text("Repairs to pavers walkway at INS Tunir, Naval Station Karanja")["criticality"] == "routine"
+    # a genuine INS (nav-system) item still classifies CRITICAL
+    assert classify_text("Supply of INS/GPS module for tactical UAV")["criticality"] == "critical"
+    # a real weapon item at a naval ship stays CRITICAL (the item keyword survives)
+    assert classify_text("BrahMos handling equipment for INS Vikrant")["criticality"] == "critical"
+
+
 def test_description_can_upgrade_not_downgrade():
     # Title alone routine-looking; description reveals a CRITICAL item -> upgrade.
     up = classify_record("Annual maintenance contract", "AMC for SIGINT receiver and EW suite")

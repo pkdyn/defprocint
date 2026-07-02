@@ -137,34 +137,21 @@ def soc_export_block(rec: dict, now: datetime | None = None) -> str:
         dnice = datetime.fromisoformat(iso[:10]).strftime("%d %b %Y")
     except (ValueError, TypeError):
         dnice = iso
-    lpp_line = (f"{_money(rec.get('value'))} (per unit basis = total ÷ qty)"
-                if rec.get("value") not in (None, "") else _money(rec.get("value")))
-    vint_txt = (f"EXCEEDS 3 yrs: not a clean scale; escalate before use (§5.33.4(a))."
-                if (vint or 0) > 3 else "within 3 yrs.")
+    l1 = rec.get("l1")
+    lpp_line = (_money(rec.get("value")) + (f" (L1 {l1})" if l1 else "")
+                if rec.get("value") not in (None, "")
+                else "NOT PUBLISHED on defproc — obtain from the buying unit")
+    vflag = f"  [vintage {vint} FY > 3 yrs — escalate, §5.33.4(a)]" if (vint or 0) > 3 else ""
     return (
-        "DETAILS OF THE LAST PURCHASE  (per DPM 2025, DPMF 5 — Statement of Case, Ser 7)\n"
-        f"(a) Similar item procured: {rec.get('title', '')}\n"
-        f"    Quantity & date: {rec.get('qty', '')} on {dnice}\n"
-        "(b) Recurring item: to be confirmed by indenter\n"
-        f"(c) Mode of tendering (last purchase): {rec.get('mode', '')}\n"
-        f"(d) Source of last purchase: {rec.get('source', '')}\n"
-        f"(e) Other: tender ref {rec.get('id', '')}; defproc: {rec.get('detail_url', '')}\n\n"
-        "ESTIMATED COST — LPP BASIS  (DPMF 5 Ser 6(a) / DPMF 7)\n"
-        f"    Last Purchase Price: {lpp_line}\n"
-        f"    Price Level / FY of LPP: FY {lpp_fy(iso)}\n"
-        f"    Source: {rec.get('source', '')}\n"
-        f"    Quantity (LPP order): {rec.get('qty', '')}\n"
-        "    Escalation factor: __________  (to be worked out per DPM §5.32.2(c)/(d))\n"
-        "    ERV (if import content): __________  (DPM §5.32.2(i))\n\n"
-        "PRICE-REASONABLENESS CAVEATS  (DPM §5.33.4)\n"
-        f"    - Vintage: LPP is {vint} FY old — {vint_txt}\n"
-        "    - Confirm same magnitude & scope of supply (§5.33.4(b)).\n"
-        "    - Account for basket price / bulk discount (§5.33.4(c)).\n"
-        "    - Consider Price-Variation-Clause final cost paid (§5.33.4(d)).\n"
-        "    - Confirm current production vs ex-stock supply (§5.33.4(e)).\n\n"
-        "NOTE: Indicative aid drawn from public defproc data. Format is indicative "
-        "(DPMF 5, Note b). Escalation/ERV to be completed and the case vetted by the "
-        "indenter / IFA per DPM 2025."
+        "LAST PURCHASE — drafting aid (DPM 2025 · DPMF 5 Ser 7 / Ser 6(a) / DPMF 7)\n"
+        f"Item        : {rec.get('title', '')}\n"
+        f"Tender ref  : {rec.get('id', '')}\n"
+        f"FY / date   : FY {lpp_fy(iso)} ({dnice})\n"
+        f"Mode        : {rec.get('mode', '')}\n"
+        f"Buyer/source: {rec.get('source', '')}\n"
+        f"LPP         : {lpp_line}{vflag}\n"
+        "Escalation/ERV: to be worked out by the indenter / IFA (§5.32.2).\n"
+        f"defproc     : {rec.get('detail_url', '')}"
     )
 
 
