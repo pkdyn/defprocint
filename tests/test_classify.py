@@ -76,6 +76,8 @@ def test_place_context_system_names_not_critical():
         "CAMOUFLAGE PAINTING WITH SMART PERIODICAL METHODOLOGY TO CERTAIN BLDGS AT AF STN BIKANER",
         "UPGRADATION OF VIP ROOMS OF TRISHUL OFFICERS MESS AT HQ WAC SUBROTO PARK",
         "REPAIR/ REPLACEMENT OF SEWAGE LINES AT 21 CSR DRONACHAL BASE UNDER GE DRONACHAL",
+        "SMART WELCOME MAINT OF OFFICERS, JCOS/OR, CIV MD ACCN AND CERTAIN ALLIED WORKS IN MES AT DAPPAR",
+        "PROVISION OF SMART CLASSROOM EQUIPMENT AT ARMY SCHOOL",
         "PROVN OF HOT WATER GENERATOR FOR CERTAIN BLDGS AT BB CANTT, SRINAGAR",
         "TERM CONTRACT FOR ARTIFICER WORK FOR RAJENDRA NAGAR, AT LONAVLA",
     ]
@@ -85,6 +87,7 @@ def test_place_context_system_names_not_critical():
     critical = [
         "Procurement of QRSAM missile system spares",
         "SMART missile test support equipment",
+        "SMART torpedo handling and storage equipment",
         "SATCOM terminal for tactical communications",
         "Supply of diesel generator 250 KVA for radar site",  # power genset = ENABLERS by taxonomy
         "Supply of INS/GPS module for tactical UAV",

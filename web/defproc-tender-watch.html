@@ -528,6 +528,9 @@ async function lppLoad(){
   }catch(e){console.warn('LPP index load failed, using demo archive',e);}
 }
 lppLoad();
+/* re-fetch the archive periodically too — a long-open tab must not serve a
+   week-old index (the live view already polls; this had loaded only once). */
+if(CONFIG.LPP_URL)setInterval(lppLoad,CONFIG.POLL_MS);
 
 function lppFY(iso){const d=new Date(iso),y=d.getFullYear(),m=d.getMonth();const s=(m>=3)?y:y-1;return `${s}-${String((s+1)%100).padStart(2,'0')}`;}
 function lppFYstart(iso){const d=new Date(iso),y=d.getFullYear(),m=d.getMonth();return (m>=3)?y:y-1;}

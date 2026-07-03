@@ -30,9 +30,10 @@ _DECLUTTER = [
                r"(?:AREA|NAGAR|MESS|VIHAR|BLOCK|GATE|CAMP|BASE|ENCLAVE|COMPLEX|COLONY)\b", re.I),
     # '<number> CSR' is a unit designation (21 CSR), not a surveillance radar
     re.compile(r"\b\d+\s+CSR\b", re.I),
-    # 'smart' as an everyday adjective on civil items — not the SMART system
-    re.compile(r"\bSMART(?=\s+(?:PREPAID|METERS?|PERIODICALS?|CARDS?|CITY|CLASS(?:ROOM)?S?|"
-               r"BOARDS?|TVS?|PHONES?|LIGHTS?|WATCH))", re.I),
+    # 'smart' is an everyday adjective (smart meters/welcome/city/…). Keep it ONLY
+    # in weapon context — the real SMART is DRDO's missile-launched torpedo, so a
+    # genuine tender says "SMART missile/torpedo/system/…". Everything else strips.
+    re.compile(r"\bSMART\b(?!\s+(?:MISSILE|TORPEDO|WEAPON|SYSTEM|LAUNCHERS?|MUNITION|TEST))", re.I),
     # hot-water generator = a boiler, not a power generator (ENABLERS keyword)
     re.compile(r"\bHOT\s+WATER\s+GENERATORS?\b", re.I),
     # SATCOM named as a room/building the works happen AT (item = the works)
