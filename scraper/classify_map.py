@@ -13,17 +13,38 @@ from .classify import ProcurementClassifier
 
 _CLF = ProcurementClassifier()
 
-# 'INS <ship/estt name>' is a naval UNIT/ORG reference (INS Valsura, INS Angre) —
-# CLAUDE.md: unit/org is metadata only and must never flip the verdict. Left in,
-# it false-triggers the FINAL classifier's INS (inertial-navigation-system)
-# keyword and tags every naval civil-works tender CRITICAL. We strip it BEFORE
-# classifying (classify.py is untouched). Real INS items survive: 'INS/GPS',
-# 'INS-GNSS', 'inertial navigation system' have no space-then-name after INS.
-_SHIP_REF = re.compile(r"\bINS\s+[A-Za-z][\w()&.'-]*", re.I)
+# CLAUDE.md rule: unit/org/place names are metadata only and must never flip a
+# verdict. Real MES/civil-works titles routinely reference system names as PLACE,
+# UNIT or FACILITY names ("QRSAM AREA", "TRISHUL OFFICERS MESS", "21 CSR ...
+# BASE", "INS Valsura"), and everyday adjectives collide with system names
+# ("SMART prepaid meters" vs the SMART torpedo). We strip these location/
+# collocation contexts BEFORE classifying — classify.py itself stays untouched.
+# Genuine items survive: "QRSAM missile", "SMART missile", "SATCOM terminal",
+# "INS/GPS module" contain none of these context patterns.
+_DECLUTTER = [
+    # naval ship / establishment: INS <Name>  (INS/GPS, INS-GNSS unaffected)
+    re.compile(r"\bINS\s+[A-Za-z][\w()&.'-]*", re.I),
+    # system name used as an area / mess / colony / base qualifier
+    re.compile(r"\b(?:QRSAM|MRSAM|LRSAM|VSHORAD|AKASH|TRISHUL|BRAHMOS|AGNI|PRITHVI|NAG|"
+               r"PINAKA|RAJENDRA|SAMAR|CSR)\s+(?:OFFICERS\s+)?"
+               r"(?:AREA|NAGAR|MESS|VIHAR|BLOCK|GATE|CAMP|BASE|ENCLAVE|COMPLEX|COLONY)\b", re.I),
+    # '<number> CSR' is a unit designation (21 CSR), not a surveillance radar
+    re.compile(r"\b\d+\s+CSR\b", re.I),
+    # 'smart' as an everyday adjective on civil items — not the SMART system
+    re.compile(r"\bSMART(?=\s+(?:PREPAID|METERS?|PERIODICALS?|CARDS?|CITY|CLASS(?:ROOM)?S?|"
+               r"BOARDS?|TVS?|PHONES?|LIGHTS?|WATCH))", re.I),
+    # hot-water generator = a boiler, not a power generator (ENABLERS keyword)
+    re.compile(r"\bHOT\s+WATER\s+GENERATORS?\b", re.I),
+    # SATCOM named as a room/building the works happen AT (item = the works)
+    re.compile(r"\b(?:[A-Z]{1,3}\s+BAND\s+)?SATCOM(?:\s+\w+){0,2}\s+ROOMS?\b", re.I),
+]
 
 
 def _declutter(text: str) -> str:
-    return _SHIP_REF.sub(" ", text or "")
+    out = text or ""
+    for pat in _DECLUTTER:
+        out = pat.sub(" ", out)
+    return out
 
 
 def classify_text(text: str) -> dict:

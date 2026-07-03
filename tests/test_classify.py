@@ -65,6 +65,34 @@ def test_naval_establishment_not_critical():
     assert classify_text("BrahMos handling equipment for INS Vikrant")["criticality"] == "critical"
 
 
+def test_place_context_system_names_not_critical():
+    # Real user-reported false positives (2026-06-29): system names appearing as
+    # PLACE/UNIT/FACILITY names or everyday adjectives must not flip the verdict.
+    routine = [
+        "SPECIAL REPAIR REPLACEMENT OF CONVENTIONAL TUBE LIGHTS WITH ALLIED WORKS AT C BAND SATCOM UPS ROOM AC FOR SIGNAL EQUIPMENT ROOM",
+        "SMART PERIODICAL AND MISC REPAIRS INCL CHAJJAS, MULTISTOREY BLDGS UNDER GE (WEST) BAREILLY",
+        "REPAIR/MAINTENANCE OF STREET LIGHTS AND CONNECTED ITEMS OF DRDL, ASL, NGARM AND QRSAM AREA UNDER GE (I) RND KANCHANBAGH",
+        "SPECIAL REPAIRS TOWARDS REPLACEMENT OF ALL EXISTING METERS WITH SMART PREPAID METERS INCLUDING SERVER",
+        "CAMOUFLAGE PAINTING WITH SMART PERIODICAL METHODOLOGY TO CERTAIN BLDGS AT AF STN BIKANER",
+        "UPGRADATION OF VIP ROOMS OF TRISHUL OFFICERS MESS AT HQ WAC SUBROTO PARK",
+        "REPAIR/ REPLACEMENT OF SEWAGE LINES AT 21 CSR DRONACHAL BASE UNDER GE DRONACHAL",
+        "PROVN OF HOT WATER GENERATOR FOR CERTAIN BLDGS AT BB CANTT, SRINAGAR",
+        "TERM CONTRACT FOR ARTIFICER WORK FOR RAJENDRA NAGAR, AT LONAVLA",
+    ]
+    for t in routine:
+        assert classify_text(t)["criticality"] == "routine", t[:60]
+    # Genuine critical items keep their verdicts (declutter must not over-strip):
+    critical = [
+        "Procurement of QRSAM missile system spares",
+        "SMART missile test support equipment",
+        "SATCOM terminal for tactical communications",
+        "Supply of diesel generator 250 KVA for radar site",  # power genset = ENABLERS by taxonomy
+        "Supply of INS/GPS module for tactical UAV",
+    ]
+    for t in critical:
+        assert classify_text(t)["criticality"] == "critical", t[:60]
+
+
 def test_description_can_upgrade_not_downgrade():
     # Title alone routine-looking; description reveals a CRITICAL item -> upgrade.
     up = classify_record("Annual maintenance contract", "AMC for SIGINT receiver and EW suite")

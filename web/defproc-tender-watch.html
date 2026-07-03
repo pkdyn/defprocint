@@ -335,11 +335,15 @@ svg.addEventListener('wheel',ev=>{ev.preventDefault();const p=ptUser(ev);
   const sx=(p.x-view.x)/view.k, sy=(p.y-view.y)/view.k;
   let k=view.k*(ev.deltaY<0?1.12:1/1.12);k=Math.max(0.8,Math.min(9,k));
   view.x=p.x-sx*k;view.y=p.y-sy*k;view.k=k;applyView();},{passive:false});
-let dragging=false,last=null,moved=0;
-svg.addEventListener('pointerdown',ev=>{dragging=true;moved=0;last=ptUser(ev);svg.classList.add('drag');svg.setPointerCapture(ev.pointerId)});
-svg.addEventListener('pointermove',ev=>{if(!dragging)return;const p=ptUser(ev);moved+=Math.abs(p.x-last.x)+Math.abs(p.y-last.y);view.x+=p.x-last.x;view.y+=p.y-last.y;last=p;applyView()});
-svg.addEventListener('pointerup',ev=>{dragging=false;svg.classList.remove('drag');if(moved<4&&!ev.target.closest('.mk'))hideFlash();});
-svg.addEventListener('pointercancel',()=>{dragging=false;svg.classList.remove('drag')});
+/* Capture the pointer only once a real drag starts — capturing on pointerdown
+   retargets the click to the svg, so marker clicks would never fire. */
+let dragging=false,last=null,moved=0,captured=false;
+svg.addEventListener('pointerdown',ev=>{dragging=true;moved=0;captured=false;last=ptUser(ev);});
+svg.addEventListener('pointermove',ev=>{if(!dragging)return;const p=ptUser(ev);moved+=Math.abs(p.x-last.x)+Math.abs(p.y-last.y);
+  if(moved>4&&!captured){captured=true;svg.classList.add('drag');try{svg.setPointerCapture(ev.pointerId);}catch(e){}}
+  view.x+=p.x-last.x;view.y+=p.y-last.y;last=p;applyView()});
+svg.addEventListener('pointerup',ev=>{dragging=false;captured=false;svg.classList.remove('drag');if(moved<4&&!ev.target.closest('.mk'))hideFlash();});
+svg.addEventListener('pointercancel',()=>{dragging=false;captured=false;svg.classList.remove('drag')});
 
 /* state */
 function getCSS(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()}
