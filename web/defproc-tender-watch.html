@@ -21,8 +21,9 @@
   .pill{font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.06em;border:1px solid var(--line);border-radius:999px;padding:3px 9px;white-space:nowrap}
   .pill .n{color:var(--ink);font-weight:600}
   .pill.critp .n{color:var(--crit)}
-  .pill.discl{color:var(--faint);text-decoration:none;border-style:dashed;cursor:help}
-  .pill.discl:hover{color:var(--dim);border-color:var(--dim)}
+  footer{flex:0 0 auto;padding:5px 16px;background:#0a0e15;border-top:1px solid var(--line);font-family:var(--mono);font-size:10px;letter-spacing:.04em;color:var(--faint);text-align:center}
+  footer a{color:var(--dim);text-decoration:none;border-bottom:1px dotted var(--faint)}
+  footer a:hover{color:var(--ink)}
   .grow{flex:1}
   .mapnote{font-family:var(--mono);font-size:10.5px;color:var(--landStroke);letter-spacing:.05em;border:1px solid #163039;background:#0c1a20;border-radius:4px;padding:4px 8px}
   .clock{font-family:var(--mono);font-size:11px;color:var(--dim)}
@@ -170,7 +171,6 @@
     <div class="pill critp">CRITICAL <span class="n" id="critcount">0</span></div>
     <div class="pill">RETENTION <span class="n">72H</span></div>
     <div class="grow"></div>
-    <a class="pill discl" href="https://github.com/pkdyn/defprocint/blob/main/DISCLAIMER.md" target="_blank" rel="noopener" title="Unofficial project. Data aggregated from public defproc.gov.in, reproduced as-is (may be inaccurate/misclassified). Not affiliated with MoD, GoI, NIC, GePNIC or defproc.gov.in. No warranty, no liability. Click for the full disclaimer.">ⓘ UNOFFICIAL · public data · no affiliation/warranty</a>
     <div class="mapnote">OFFICIAL MAP OF INDIA · J&amp;K · LADAKH · ARUNACHAL INCL.</div>
     <div class="clock">IST <b id="clock">--:--:--</b></div>
   </header>
@@ -228,6 +228,7 @@
     <div class="lpp-results" id="lppResults"></div>
   </div>
   </main>
+  <footer>Public data fetched from defproc.gov.in · Not affiliated with MoD / GoI · <a href="https://github.com/pkdyn/defprocint/blob/main/DISCLAIMER.md" target="_blank" rel="noopener">disclaimer</a></footer>
 </div>
 
 <script>
