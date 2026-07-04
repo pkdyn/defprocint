@@ -64,7 +64,7 @@ _AMBIGUOUS = {
     # acronyms colliding with everyday usage
     "smart", "ins", "csr", "pqc", "satcom", "pa", "ti", "io", "es", "ea", "ep",
     "df", "c2", "cop", "bms", "cms", "adc", "dsp", "atr", "mda", "fpa", "lna",
-    "twt", "aoa", "daa", "tes", "boss",
+    "twt", "aoa", "daa", "tes", "boss", "tip",
     # generic English words in the keyword sets
     "launcher", "magazine", "seeker", "interceptor", "swarm", "swarming",
     "generator", "certification", "qualification", "telemetry", "annotation",
@@ -77,6 +77,10 @@ _AMBIGUOUS = {
     "lakshya", "nishant", "rustom", "tapas", "ghatak", "muntra", "agni",
     "prithvi", "nag", "astra", "pralay", "prahaar", "barak", "samar",
     "trishul", "coral",
+    # network/C4ISR system names that double as unit/store designations
+    # ("21 CSR (AREN)", "shed for CIDSS", "ASCON store"), + EW 'expendable'
+    # which collides with expendable medical/ordnance stores
+    "aren", "ascon", "cidss", "afnet", "iaccs", "nc3i", "nmda", "expendable",
 }
 
 # strong civil-works signals (MES vocabulary) — presence marks repair/estate work
@@ -87,10 +91,20 @@ _CIVIL = re.compile(
     r"roads?|pavement|culverts?|footpath|hardstanding|water supply|pipe ?lines?|pumps?|"
     r"septic|manholes?|electric(?:al)? works?|wiring|tube lights?|street lights?|fans?|"
     r"coolers?|furniture|conservancy|housekeeping|horticulture|garden\w*|term contract|"
-    r"artificer|renovation|upgradation|improvement|sheds?|chajjas?|welcome maint)\b", re.I)
+    r"artificer|renovation|upgradation|improvement|sheds?|chajjas?|welcome maint|"
+    # medical / provisioning routine contexts (ECHS drugs, hospital stores, rations)
+    r"drugs?|medical|medicines?|hospital|surgical|dental|polyclinic|veterinary|"
+    r"dietary|reagents?|rations?|workshop|leasing|leased?)\b", re.I)
 
 
-def _gate(r, text: str) -> dict:
+_VETOED = {"criticality": "routine", "confidence": 0.75, "domains": [], "named_system": None}
+
+
+def _gate(r, text: str, rich: bool = False) -> dict:
+    """rich=True means the full description is available (Layer-2 verified). A
+    genuine system tender's description names real items, so with rich signal a
+    LONE ambiguous token is treated as noise; two distinct ambiguous tokens
+    co-occurring ("Akash launcher") still corroborate each other and stand."""
     out = {
         "criticality": r.classification.lower(),
         "confidence": round(float(r.confidence), 2),
@@ -104,22 +118,23 @@ def _gate(r, text: str) -> dict:
     if unambiguous:
         return out
     if _CIVIL.search(text or ""):
-        return {"criticality": "routine", "confidence": 0.75,
-                "domains": [], "named_system": None}
+        return dict(_VETOED)
+    if rich and len(set(matched)) <= 1:
+        return dict(_VETOED)
     return out
 
 
-def classify_text(text: str) -> dict:
+def classify_text(text: str, rich: bool = False) -> dict:
     clean = _declutter(text)
-    return _gate(_CLF.classify(clean), clean)
+    return _gate(_CLF.classify(clean), clean, rich=rich)
 
 
 def classify_record(title: str, description: str = "") -> dict:
     """Classify on title; with a description, classify on title+description and
     trust that verdict — the combined text is a superset, so unambiguous title
     evidence always survives, while the gate can veto ambiguous-only hits once
-    the description reveals civil-works context (Layer 2 verify)."""
+    the description reveals civil/medical context or adds no real item words."""
     desc = (description or "").strip()
     if desc and desc.lower() != (title or "").strip().lower():
-        return classify_text(f"{title} {description}")
+        return classify_text(f"{title} {description}", rich=True)
     return classify_text(title)

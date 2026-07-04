@@ -119,6 +119,29 @@ def test_ambiguity_gate():
     assert classify_text("AMC for SIGINT receiver and EW suite")["criticality"] == "critical"
 
 
+def test_unit_designation_system_names_vetoed():
+    # AREN/ASCON/CIDSS as unit/store designations + medical 'PA' ref-titles
+    # (real Jul-4 false positives caught in live data)
+    assert classify_text("COMPREHENSIVE MAINTENANCE WORK TO OTM ACCN 21 CSR (AREN) AT DRONACHAL BASE")["criticality"] == "routine"
+    assert classify_text("PROVN OF MT SHED FOR CIDSS AND FCC VEH")["criticality"] == "routine"
+    assert classify_text("2433/MS/EXP/Onco Surg/Drugs/PAC PA 497/2026-27")["criticality"] == "routine"  # 'drugs' civil
+    assert classify_text("INVITATION OF BIDS FOR REPAIR OF 01 NIV EXPENDABLE MEDICAL STORE")["criticality"] == "routine"
+
+
+def test_rich_signal_lone_ambiguous_vetoed():
+    # With a full description (Layer-2), ONE lone ambiguous token = noise...
+    assert classify_record("81203/OBM PA/ENGR/0079",
+                           "SUPPLY OF ENGINE SPARES FOR SCANIA TIPPER TRUCK")["criticality"] == "routine"
+    assert classify_record("EP/D-26/170/2026-27",
+                           "PROCUREMENT OF EXPENDABLE STORES FOR WORKSHOP")["criticality"] == "routine"
+    # ...but two distinct ambiguous tokens corroborate each other and stand
+    assert classify_record("Spares for Akash launcher unit",
+                           "supply of spares for Akash launcher")["criticality"] == "critical"
+    # and an unambiguous item in the description always stands
+    assert classify_record("EP/D-26/171/2026-27",
+                           "procurement of thermal imager sights")["criticality"] == "critical"
+
+
 def test_verify_desc_can_veto_ambiguous_title():
     # Layer 2 semantics: a title-critical on ambiguous-only evidence is re-judged
     # on title+description; civil-works description vetoes it.
