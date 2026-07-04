@@ -105,17 +105,31 @@ def collect_recent_rows(fetcher: Fetcher, retention_hours: int, now: datetime) -
 
 
 def run_live(fetcher: Fetcher, out_path: str = DEFAULT_OUT, retention_hours: int = 72,
-             max_enrich: int | None = None, now: datetime | None = None) -> list[dict]:
+             max_enrich: int | None = None, now: datetime | None = None,
+             verify_cap: int = 100) -> list[dict]:
     now = now or datetime.now(timezone.utc)
     rows = collect_recent_rows(fetcher, retention_hours, now)
     log.info("tenders published within %dh: %d", retention_hours, len(rows))
     records = []
     enriched = 0
+    verified = 0
     for i, row in enumerate(rows):
         do_enrich = max_enrich is None or i < max_enrich  # enrich -> classify on title+desc
         base = enrich_record(fetcher, row) if do_enrich else _listing_only(row)
         enriched += int(bool(base.get("enriched")))
-        records.append(assemble_record(base))
+        rec = assemble_record(base)
+        # Layer 2 — verify-before-flag: a CRITICAL verdict from an un-enriched
+        # title gets its (session-open, non-captcha) detail page fetched and is
+        # re-classified on title + work-description through the same gate.
+        if rec["criticality"] == "critical" and not base.get("enriched") and verified < verify_cap:
+            base2 = enrich_record(fetcher, row)
+            verified += 1
+            if base2.get("enriched"):
+                rec = assemble_record(base2)
+                enriched += 1
+        records.append(rec)
+    if verified:
+        log.info("verify-before-flag: enriched %d title-critical records", verified)
 
     existing = _load(out_path)
     merged = merge_and_retain(records, existing, now=now, retention_hours=retention_hours)
@@ -156,10 +170,13 @@ def main() -> None:
                     help="show tenders published within this window")
     ap.add_argument("--max-enrich", type=int, default=None,
                     help="cap detail-page fetches (enrich -> classify on title+description)")
+    ap.add_argument("--verify-cap", type=int, default=100,
+                    help="max extra detail fetches to verify title-critical verdicts")
     ap.add_argument("--min-delay", type=float, default=3.0)
     args = ap.parse_args()
     fetcher = Fetcher(min_delay=args.min_delay)
-    recs = run_live(fetcher, args.out, args.retention_hours, args.max_enrich)
+    recs = run_live(fetcher, args.out, args.retention_hours, args.max_enrich,
+                    verify_cap=args.verify_cap)
     crit = sum(r["criticality"] == "critical" for r in recs)
     print(f"tenders.json: {len(recs)} records, {crit} critical, {fetcher.count} requests")
 

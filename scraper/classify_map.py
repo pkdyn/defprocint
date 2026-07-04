@@ -48,26 +48,78 @@ def _declutter(text: str) -> str:
     return out
 
 
-def classify_text(text: str) -> dict:
-    r = _CLF.classify(_declutter(text))
-    return {
-        "criticality": r.classification.lower(),  # 'critical' | 'routine'
+# ---------------------------------------------------------------------------
+# Ambiguity gate (Layer 1). The FINAL classifier flips CRITICAL on ANY single
+# keyword hit. Some of its keywords are polysemous in Indian-MoD tender prose —
+# short acronyms that double as everyday terms, and named systems that are
+# common Indian names/words used for buildings, messes and enclaves. Gate rule:
+#   * >=1 UNAMBIGUOUS critical keyword         -> CRITICAL stands
+#   * only ambiguous hits + civil-works context -> vetoed to ROUTINE
+#   * only ambiguous hits, no civil context     -> CRITICAL stands
+# Known tradeoff (accepted, precision-first): a genuine critical described ONLY
+# by ambiguous words inside civil phrasing ("repair of Akash launcher") is
+# vetoed; Layer 2's description re-check runs through this same gate.
+# ---------------------------------------------------------------------------
+_AMBIGUOUS = {
+    # acronyms colliding with everyday usage
+    "smart", "ins", "csr", "pqc", "satcom", "pa", "ti", "io", "es", "ea", "ep",
+    "df", "c2", "cop", "bms", "cms", "adc", "dsp", "atr", "mda", "fpa", "lna",
+    "twt", "aoa", "daa", "tes", "boss",
+    # generic English words in the keyword sets
+    "launcher", "magazine", "seeker", "interceptor", "swarm", "swarming",
+    "generator", "certification", "qualification", "telemetry", "annotation",
+    "rocket", "constellation", "gimbal", "autopilot", "catapult", "flare",
+    "decoy", "beacon", "transponder", "interrogator", "radome", "fuel cell",
+    # named systems that are common Indian names/words (buildings, messes, roads)
+    "rajendra", "bharat", "drishti", "netra", "netro", "akash", "shakti",
+    "indra", "abhay", "kavach", "sanket", "tarang", "ajanta", "bharani",
+    "rohini", "ashwini", "revathi", "aslesha", "tempest", "porpoise", "archer",
+    "lakshya", "nishant", "rustom", "tapas", "ghatak", "muntra", "agni",
+    "prithvi", "nag", "astra", "pralay", "prahaar", "barak", "samar",
+    "trishul", "coral",
+}
+
+# strong civil-works signals (MES vocabulary) — presence marks repair/estate work
+_CIVIL = re.compile(
+    r"\b(repairs?|maint|maintenance|whitewash\w*|painting|distemper\w*|plumbing|"
+    r"sewage|sanitary|drainage|roofing|flooring|fencing|boundary wall|compound wall|"
+    r"accn|bldgs?|buildings?|quarters|accommodation|barracks?|mess|canteen|toilets?|"
+    r"roads?|pavement|culverts?|footpath|hardstanding|water supply|pipe ?lines?|pumps?|"
+    r"septic|manholes?|electric(?:al)? works?|wiring|tube lights?|street lights?|fans?|"
+    r"coolers?|furniture|conservancy|housekeeping|horticulture|garden\w*|term contract|"
+    r"artificer|renovation|upgradation|improvement|sheds?|chajjas?|welcome maint)\b", re.I)
+
+
+def _gate(r, text: str) -> dict:
+    out = {
+        "criticality": r.classification.lower(),
         "confidence": round(float(r.confidence), 2),
         "domains": list(r.domains),
         "named_system": r.named_system_match,
     }
+    if out["criticality"] != "critical":
+        return out
+    matched = [k.lower().replace("[system] ", "") for k in r.matched_keywords]
+    unambiguous = [k for k in matched if k not in _AMBIGUOUS]
+    if unambiguous:
+        return out
+    if _CIVIL.search(text or ""):
+        return {"criticality": "routine", "confidence": 0.75,
+                "domains": [], "named_system": None}
+    return out
+
+
+def classify_text(text: str) -> dict:
+    clean = _declutter(text)
+    return _gate(_CLF.classify(clean), clean)
 
 
 def classify_record(title: str, description: str = "") -> dict:
-    """Classify on title; if a description adds CRITICAL signal, prefer the
-    richer (title+description) verdict. Never let a description downgrade."""
-    base = classify_text(title)
+    """Classify on title; with a description, classify on title+description and
+    trust that verdict — the combined text is a superset, so unambiguous title
+    evidence always survives, while the gate can veto ambiguous-only hits once
+    the description reveals civil-works context (Layer 2 verify)."""
     desc = (description or "").strip()
     if desc and desc.lower() != (title or "").strip().lower():
-        combined = classify_text(f"{title} {description}")
-        if combined["criticality"] == "critical" and base["criticality"] != "critical":
-            return combined
-        if base["criticality"] == "critical" and combined["criticality"] == "critical":
-            # keep the more-informative (more domains / named system) result
-            return combined if len(combined["domains"]) >= len(base["domains"]) else base
-    return base
+        return classify_text(f"{title} {description}")
+    return classify_text(title)

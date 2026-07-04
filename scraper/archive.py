@@ -97,9 +97,20 @@ def row_to_record(row: dict) -> dict:
     }
 
 
+def _apply_enrichment(rec: dict, e: dict) -> None:
+    """Copy enriched fields into rec and re-classify on title + description."""
+    for k in _ENRICH_FIELDS:
+        if e.get(k) not in (None, ""):
+            rec[k] = e[k]
+    cls = classify_record(rec["title"], e.get("description", ""))
+    rec.update(criticality=cls["criticality"], confidence=cls["confidence"],
+               domains=cls["domains"], named_system=cls["named_system"])
+    rec["enriched"] = True
+
+
 def scrape_corpus(fetcher: Fetcher, max_orgs: int | None = None,
                   per_org_cap: int | None = None, enrich_match: str | None = None,
-                  enrich_cap: int = 40) -> list[dict]:
+                  enrich_cap: int = 40, verify_cap: int = 150) -> list[dict]:
     """Harvest the catalogue, classify, and enrich a bounded matched subset."""
     rows = harvest_active(fetcher, max_orgs, per_org_cap)
     records = [row_to_record(r) for r in rows]
@@ -113,15 +124,27 @@ def scrape_corpus(fetcher: Fetcher, max_orgs: int | None = None,
             if not pat.search(rec["title"]):
                 continue
             e = enrich_record(fetcher, row)
-            if not e.get("enriched"):
-                continue
-            for k in _ENRICH_FIELDS:
-                if e.get(k) not in (None, ""):
-                    rec[k] = e[k]
-            cls = classify_record(rec["title"], e.get("description", ""))
-            rec.update(criticality=cls["criticality"], confidence=cls["confidence"],
-                       domains=cls["domains"], named_system=cls["named_system"])
-            rec["enriched"] = True
-            done += 1
+            if e.get("enriched"):
+                _apply_enrichment(rec, e)
+                done += 1
         log.info("enriched %d records matching %r", done, enrich_match)
+
+    # Layer 2 — verify-before-flag: every un-enriched CRITICAL gets its detail
+    # page (session-open, non-captcha) and is re-classified on title+description
+    # through the ambiguity gate before the flag is served.
+    verified = 0
+    for rec, row in zip(records, rows):
+        if verified >= verify_cap:
+            log.info("verify cap %d reached; remaining criticals keep title verdicts", verify_cap)
+            break
+        if rec["criticality"] != "critical" or rec.get("enriched"):
+            continue
+        e = enrich_record(fetcher, row)
+        verified += 1
+        if e.get("enriched"):
+            _apply_enrichment(rec, e)
+    if verified:
+        n_crit = sum(1 for r in records if r["criticality"] == "critical")
+        log.info("verify-before-flag: checked %d title-criticals -> %d remain critical",
+                 verified, n_crit)
     return records

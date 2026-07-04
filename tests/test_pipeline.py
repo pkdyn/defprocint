@@ -44,6 +44,38 @@ class FixtureFetcher:
         return _Resp(self._detail)  # any $DirectLink detail
 
 
+ORG_LISTING_CRIT = """<html><body><table>
+<tr><td>S.No</td><td>e-Published Date</td><td>Closing Date</td><td>Opening Date</td><td>Title</td><td>Org</td></tr>
+<tr><td>1</td><td>26-Jun-2026 05:00 PM</td><td>21-Jul-2026 02:30 PM</td><td>22-Jul-2026 03:00 PM</td>
+<td><a href="https://defproc.gov.in/nicgep/app?component=$DirectLink&service=direct&sp=T1">[Provision of launcher spares]</a> [REF/1][2026_TEST_000001_1]</td>
+<td>Test Org</td></tr>
+</table></body></html>"""
+
+
+class VerifyFetcher(FixtureFetcher):
+    """Org listing has ONE title-critical (ambiguous-only) row; the detail page
+    (live_detail fixture) reveals civil works -> Layer 2 must veto to routine."""
+    def get(self, url):
+        self.count += 1
+        if "FrontEndTendersByOrganisation" in url and "service=page" in url:
+            return _Resp(ORG_TREE)
+        if "ORGLIST" in url:
+            return _Resp(ORG_LISTING_CRIT)
+        return _Resp(self._detail)
+
+
+def test_verify_before_flag_vetoes_ambiguous_critical():
+    with tempfile.TemporaryDirectory() as d:
+        out = os.path.join(d, "tenders.json")
+        recs = run_live(VerifyFetcher(), out_path=out, retention_hours=10_000_000,  # type: ignore[arg-type]
+                        max_enrich=0, now=datetime(2026, 6, 28, tzinfo=timezone.utc))
+    assert len(recs) == 1
+    # title said critical ('launcher', no civil words); detail description is
+    # plumbing repairs -> the gate re-judged it routine, and it got enriched.
+    assert recs[0]["criticality"] == "routine"
+    assert recs[0]["pincode"] == "786189"  # proof the detail page was fetched
+
+
 def test_pipeline_recent_publish_window_and_contract():
     # huge window so every fixture row counts as "recent" regardless of its date
     with tempfile.TemporaryDirectory() as d:

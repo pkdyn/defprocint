@@ -185,6 +185,8 @@ def main() -> None:
                     r"photocop|toner|laptop|\bups\b|networking|software|repair of",
                     help="regex: enrich (detail page) records whose title matches")
     ap.add_argument("--enrich-cap", type=int, default=40)
+    ap.add_argument("--verify-cap", type=int, default=150,
+                    help="max detail fetches to verify title-critical verdicts (Layer 2)")
     ap.add_argument("--min-delay", type=float, default=3.0)
     args = ap.parse_args()
 
@@ -194,7 +196,8 @@ def main() -> None:
         from .fetch import Fetcher
         f = Fetcher(min_delay=args.min_delay)
         records += scrape_corpus(f, max_orgs=args.max_orgs, per_org_cap=args.per_org_cap,
-                                 enrich_match=args.enrich_match, enrich_cap=args.enrich_cap)
+                                 enrich_match=args.enrich_match, enrich_cap=args.enrich_cap,
+                                 verify_cap=args.verify_cap)
     doc = build_index(records, args.out)
     crit = sum(r["crit"] == "critical" for r in doc["records"])
     print(f"lpp-index.json: {doc['count']} records ({crit} critical) -> {args.out}")

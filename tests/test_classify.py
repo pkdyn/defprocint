@@ -96,6 +96,41 @@ def test_place_context_system_names_not_critical():
         assert classify_text(t)["criticality"] == "critical", t[:60]
 
 
+def test_ambiguity_gate():
+    # Layer 1: ambiguous-only evidence + civil-works context -> vetoed to ROUTINE
+    routine = [
+        "REPAIR OF PA SYSTEM AT PARADE GROUND",                    # 'PA' acronym
+        "WHITEWASHING OF LAKSHYA INSTITUTE BUILDING",              # named system as building name
+        "MAINT OF ROADS NEAR TAPAS ENCLAVE",                       # named system as enclave name
+        "PROVN OF FURNITURE FOR AGNI BLOCK QUARTERS",              # named system as block name
+    ]
+    for t in routine:
+        assert classify_text(t)["criticality"] == "routine", t
+    # ambiguous-only WITHOUT civil context -> verdict stands (precision, not blindness)
+    critical = [
+        "Procurement of Astra missile seekers",                    # ambiguous named + seeker, no civil
+        "SMART torpedo handling and storage equipment",
+        "Supply of diesel generator 250 KVA for radar site",
+    ]
+    for t in critical:
+        assert classify_text(t)["criticality"] == "critical", t
+    # >=1 unambiguous keyword always stands, even inside civil phrasing
+    assert classify_text("Repair of night vision devices")["criticality"] == "critical"
+    assert classify_text("AMC for SIGINT receiver and EW suite")["criticality"] == "critical"
+
+
+def test_verify_desc_can_veto_ambiguous_title():
+    # Layer 2 semantics: a title-critical on ambiguous-only evidence is re-judged
+    # on title+description; civil-works description vetoes it.
+    r = classify_record("Provision of launcher spares",
+                        "REPAIRS TO LEAKAGE/SEEPAGE, PLUMBING AND MISC WORKS AT ZONE-I")
+    assert r["criticality"] == "routine"
+    # ...but an unambiguous item in the title survives any description
+    r2 = classify_record("Supply of thermal imager",
+                         "repairs to building and whitewashing of store")
+    assert r2["criticality"] == "critical"
+
+
 def test_description_can_upgrade_not_downgrade():
     # Title alone routine-looking; description reveals a CRITICAL item -> upgrade.
     up = classify_record("Annual maintenance contract", "AMC for SIGINT receiver and EW suite")
