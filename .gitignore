@@ -5,3 +5,8 @@ __pycache__/
 venv/
 *.egg-info/
 .DS_Store
+
+# AI-assistant scaffolding & build notes — kept local, not published
+CLAUDE.md
+CLAUDE-TIPS.md
+BUILD_PROMPT.md

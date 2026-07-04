@@ -4,6 +4,11 @@ on:
   push:
   pull_request:
 
+# Least privilege: tests never need write. On a public repo this means a fork's
+# pull-request run gets a read-only token and can do nothing beyond run the suite.
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest

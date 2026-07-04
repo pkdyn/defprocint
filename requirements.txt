@@ -1,3 +1,4 @@
 # defproc-monitor — scraper deps (classify.py is stdlib-only; dashboard is static).
-requests>=2.31
-beautifulsoup4>=4.12
+# Pinned for reproducible CI/cron runs; bump deliberately after re-running the suite.
+requests==2.34.2
+beautifulsoup4==4.14.3

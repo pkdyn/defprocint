@@ -1,5 +1,13 @@
 # defproc-monitor
 
+> **Disclaimer:** Independent, non-commercial, informational project — **not affiliated
+> with, endorsed by, or connected to** MoD, the Government of India, NIC, GePNIC, or
+> defproc.gov.in. All data is aggregated from **publicly accessible** pages of
+> defproc.gov.in and reproduced **"as is"**; it may be inaccurate, incomplete, outdated,
+> or auto-misclassified, and is **not an official record** — verify against defproc.gov.in.
+> Provided with **no warranty and no liability** to the maximum extent permitted by law.
+> See [`DISCLAIMER.md`](DISCLAIMER.md). Licensed under **Apache-2.0** (see [`LICENSE`](LICENSE)).
+
 A **free, single-source tender monitor** for [`defproc.gov.in`](https://defproc.gov.in)
 (NIC GePNIC, MoD eProcurement). It scrapes public tender listings, tags + geocodes
 them, and serves a static public dashboard with two views:
