@@ -38,6 +38,20 @@ _DECLUTTER = [
     re.compile(r"\bHOT\s+WATER\s+GENERATORS?\b", re.I),
     # SATCOM named as a room/building the works happen AT (item = the works)
     re.compile(r"\b(?:[A-Z]{1,3}\s+BAND\s+)?SATCOM(?:\s+\w+){0,2}\s+ROOMS?\b", re.I),
+    # 'firing range' is estate/infrastructure — repairing/fencing/cleaning it is
+    # civil works. A genuine range-instrumentation tender still hits radar/sensor.
+    re.compile(r"\bfiring\s+ranges?\b", re.I),
+    # 'EW' as a unit designation / building number / project name, NOT electronic
+    # warfare: '8 EW', 'EW-175', 'EW BDE/BN/COY', 'EW PROJECT'. 'EW SYSTEM'/'EW
+    # SUITE'/'EW SPARES' carry their own keyword and survive.
+    re.compile(r"\b\d+\s*EW\b|\bEW\s*[-–]\s*\d+\b|"
+               r"\bEW\s+(?:BDE|BN|COY|EME|BRIGADE|REGT|REGIMENT|PROJECT|SIGNAL)\b", re.I),
+    # named systems used as a POST / vehicle / centre name, not the weapon
+    re.compile(r"\bSHIV\s+SHAKTI\b|\bMARUTI\s+SWIFT\b", re.I),
+    # 'Army Air Defence Centre/College' is the formation NAME (accn/works there
+    # stays routine); a real AD radar/missile tender hits its own keyword
+    re.compile(r"\b(?:ARMY\s+)?AIR\s+DEFENCE\s+(?:CENTRE|COLLEGE|SCHOOL)\b|"
+               r"\bAAD\s+(?:CENTRE|COLLEGE|COL)\b", re.I),
 ]
 
 
@@ -60,16 +74,32 @@ def _declutter(text: str) -> str:
 # by ambiguous words inside civil phrasing ("repair of Akash launcher") is
 # vetoed; Layer 2's description re-check runs through this same gate.
 # ---------------------------------------------------------------------------
+# Tier-1 WEAK tokens: short acronyms / utility phrases that collide with unit
+# designations, building numbers, place names and estate services. Unlike the
+# tier-2 set below, a LONE weak hit is NEVER enough for CRITICAL (even title-only)
+# — these are only ever critical when a genuine keyword co-occurs. Verified false
+# positives: 'HQ IDS' (Integrated Defence Staff), '1 EW BDE' sewage, 'MCC PANEL'
+# (motor control centre), 'SCADA' pump control, 'ES NETWORK' (electrical supply),
+# 'GCS MESS', 'SOC' accn, 'ITR' artificer works, 'Project Beacon' road, rooftop
+# 'solar panel', AC 'cooling system', EV 'charging station'.
+_WEAK = {
+    "ids", "es", "ew", "mcc", "scada", "soc", "gcs", "itr", "beacon",
+    "qualification", "solar panel", "cooling system", "charging station",
+    # network/C4ISR names that surface as PROJECT / store / unit designations in
+    # MES civil works ('Project ASCON power supply', '21 CSR (AREN)', 'CIDSS shed')
+    "aren", "ascon", "cidss", "afnet", "expendable",
+}
+
 _AMBIGUOUS = {
     # acronyms colliding with everyday usage
-    "smart", "ins", "csr", "pqc", "satcom", "pa", "ti", "io", "es", "ea", "ep",
+    "smart", "ins", "csr", "pqc", "satcom", "pa", "ti", "io", "ea", "ep",
     "df", "c2", "cop", "bms", "cms", "adc", "dsp", "atr", "mda", "fpa", "lna",
     "twt", "aoa", "daa", "tes", "boss", "tip",
     # generic English words in the keyword sets
     "launcher", "magazine", "seeker", "interceptor", "swarm", "swarming",
-    "generator", "certification", "qualification", "telemetry", "annotation",
+    "generator", "certification", "telemetry", "annotation",
     "rocket", "constellation", "gimbal", "autopilot", "catapult", "flare",
-    "decoy", "beacon", "transponder", "interrogator", "radome", "fuel cell",
+    "decoy", "transponder", "interrogator", "radome", "fuel cell",
     # named systems that are common Indian names/words (buildings, messes, roads)
     "rajendra", "bharat", "drishti", "netra", "netro", "akash", "shakti",
     "indra", "abhay", "kavach", "sanket", "tarang", "ajanta", "bharani",
@@ -77,10 +107,8 @@ _AMBIGUOUS = {
     "lakshya", "nishant", "rustom", "tapas", "ghatak", "muntra", "agni",
     "prithvi", "nag", "astra", "pralay", "prahaar", "barak", "samar",
     "trishul", "coral",
-    # network/C4ISR system names that double as unit/store designations
-    # ("21 CSR (AREN)", "shed for CIDSS", "ASCON store"), + EW 'expendable'
-    # which collides with expendable medical/ordnance stores
-    "aren", "ascon", "cidss", "afnet", "iaccs", "nc3i", "nmda", "expendable",
+    # higher C4ISR/air-defence system names (genuine when procured as equipment)
+    "iaccs", "nc3i", "nmda",
 }
 
 # strong civil-works signals (MES vocabulary) — presence marks repair/estate work
@@ -114,12 +142,17 @@ def _gate(r, text: str, rich: bool = False) -> dict:
     if out["criticality"] != "critical":
         return out
     matched = [k.lower().replace("[system] ", "") for k in r.matched_keywords]
-    unambiguous = [k for k in matched if k not in _AMBIGUOUS]
-    if unambiguous:
+    # a genuine critical keyword (neither weak nor ambiguous) always stands
+    strong = [k for k in matched if k not in _AMBIGUOUS and k not in _WEAK]
+    if strong:
         return out
+    # only ambiguous/weak evidence remains
     if _CIVIL.search(text or ""):
         return dict(_VETOED)
-    if rich and len(set(matched)) <= 1:
+    named = [k for k in matched if k in _AMBIGUOUS]  # tier-2 CAN stand alone ('Rohini radar')
+    if not named:                                    # only tier-1 weak acronyms -> never critical
+        return dict(_VETOED)
+    if rich and len(set(named)) <= 1:                # lone tier-2 token + full desc = noise
         return dict(_VETOED)
     return out
 
