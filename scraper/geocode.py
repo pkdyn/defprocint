@@ -65,6 +65,18 @@ CITY_COORDS = {
     "jalandhar": (31.33, 75.58), "amritsar": (31.63, 74.87), "ferozepur": (30.93, 74.61),
     "bathinda": (30.21, 74.95), "patiala": (30.34, 76.39), "ambala": (30.38, 76.78),
     "chandigarh": (30.740, 76.790), "chandimandir": (30.74, 76.95), "roorkee": (29.850, 77.890),
+    # Delhi-NCR + common AF-station / MES sites (site fields, not command HQs)
+    "palam": (28.589, 77.081), "subroto park": (28.591, 77.157), "delhi cantt": (28.596, 77.160),
+    "gurgaon": (28.459, 77.026), "gurugram": (28.459, 77.026), "faridabad": (28.408, 77.317),
+    "dwarka": (28.592, 77.046), "naraina": (28.630, 77.140), "rajokri": (28.556, 77.113),
+    "tughlakabad": (28.510, 77.260), "dadri": (28.552, 77.552), "chandinagar": (29.079, 77.470),
+    "halwara": (30.756, 75.630), "suratgarh": (29.320, 73.903), "sarsawa": (30.006, 77.412),
+    "bhisiana": (30.170, 74.930), "palampur": (32.110, 76.536), "dharamshala": (32.219, 76.323),
+    "khadakwasla": (18.44, 73.77), "khadakvasla": (18.44, 73.77), "pulgaon": (20.72, 78.32),
+    "nagrota": (32.66, 74.90), "mathura": (27.49, 77.67), "amla": (21.93, 78.13),
+    "kargil": (34.56, 76.13), "khumbathang": (34.55, 76.20), "tenga": (27.25, 92.42),
+    "missamari": (26.79, 92.50), "sri vijaya puram": (11.62, 92.73),
+    "minnie bay": (11.65, 92.73), "minniebay": (11.65, 92.73), "car nicobar": (9.17, 92.82),
     "dehradun": (30.32, 78.03), "meerut": (28.98, 77.71), "bareilly": (28.36, 79.42),
     "agra": (27.18, 78.01), "kanpur": (26.45, 80.33), "lucknow": (26.85, 80.95),
     "prayagraj": (25.44, 81.85), "allahabad": (25.44, 81.85), "varanasi": (25.32, 82.97),
@@ -216,11 +228,20 @@ def _query_candidates(rec: dict) -> list[str]:
     return out
 
 
+def _org_tail(org_chain) -> str:
+    """Last node of the org chain (the specific unit) — its upper nodes are
+    command / zone HQs that sit in DIFFERENT cities than the tender site."""
+    parts = [p.strip() for p in (org_chain or "").split("▸") if p.strip()]
+    return parts[-1] if parts else ""
+
+
 def geocode_record(rec: dict):
     """Triangulate (lat, lng), most precise first:
     online (Nominatim full-address -> pincode -> city, if enabled) ->
-    exact pincode CSV -> place-name scan (address/org/location/title) ->
-    PIN-prefix centroid -> (None, None)."""
+    exact pincode CSV -> place scan of the ACTUAL-SITE fields (location /
+    buyer_address / title) -> the org chain's LAST node only -> PIN-prefix ->
+    (None, None). The site fields beat the admin hierarchy on purpose: a tender
+    under 'HQ MC Nagpur' or 'CE Shillong Zone' is rarely in Nagpur/Shillong."""
     if ONLINE:
         for q in _query_candidates(rec):
             hit = geocode_online(q)
@@ -229,10 +250,13 @@ def geocode_record(rec: dict):
     pin = re.sub(r"\D", "", rec.get("pincode") or "")
     if pin and pin in _PINCODES:
         return _PINCODES[pin]
-    for field in ("buyer_address", "org_chain", "location", "title"):
+    for field in ("location", "buyer_address", "title"):
         hit = _scan_places(rec.get(field))
         if hit:
             return hit
+    hit = _scan_places(_org_tail(rec.get("org_chain")))
+    if hit:
+        return hit
     if len(pin) >= 2 and pin[:2] in PIN_PREFIX:
         return PIN_PREFIX[pin[:2]]
     return (None, None)
