@@ -22,13 +22,14 @@ from __future__ import annotations
 
 import logging
 import time
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 import requests
 
 USER_AGENT = "defproc-monitor/0.1"
 ORIGIN = "https://defproc.gov.in"
 BASE = "https://defproc.gov.in/nicgep/app"
+ALLOWED_HOST = "defproc.gov.in"   # scraper may reach ONLY this host (anti-SSRF)
 MIN_DELAY = 3.0  # seconds between requests — politeness hard rule (>= 3 s)
 
 # defproc exposes NO stable per-tender URL — every detail link is session-scoped
@@ -74,6 +75,13 @@ def is_forbidden_url(url: str) -> bool:
     return any(tok in low for tok in FORBIDDEN_URL_TOKENS)
 
 
+def is_allowed_host(url: str) -> bool:
+    """Only defproc.gov.in (and its subdomains) may be fetched — a scraped/
+    injected off-site href must never send the crawler elsewhere (anti-SSRF)."""
+    host = (urlparse(url).hostname or "").lower()
+    return host == ALLOWED_HOST or host.endswith("." + ALLOWED_HOST)
+
+
 class Fetcher:
     """Single-worker, rate-limited HTTP GET with a hard policy deny-list."""
 
@@ -94,7 +102,9 @@ class Fetcher:
             time.sleep(self.min_delay - dt)
 
     def get(self, url: str) -> requests.Response:
-        """GET a public page. Refuses forbidden endpoints; enforces the delay."""
+        """GET a public page. Refuses off-host + forbidden endpoints; delays."""
+        if not is_allowed_host(url):
+            raise ForbiddenEndpoint(f"policy: refusing off-site host -> {url}")
         if is_forbidden_url(url):
             raise ForbiddenEndpoint(f"policy: refusing CAPTCHA/login/download endpoint -> {url}")
         self._wait()

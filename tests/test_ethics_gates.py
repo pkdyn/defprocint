@@ -71,6 +71,21 @@ def test_open_endpoints_allowed():
         assert not fetch.is_forbidden_url(u), f"open endpoint wrongly blocked: {name}"
 
 
+def test_offsite_host_refused():
+    # anti-SSRF: only defproc.gov.in may be fetched; injected hrefs go nowhere
+    assert fetch.is_allowed_host("https://defproc.gov.in/nicgep/app?page=Home")
+    assert fetch.is_allowed_host("https://sub.defproc.gov.in/x")
+    for bad in ("https://evil.example.com/x", "http://169.254.169.254/latest/meta-data/",
+                "https://defproc.gov.in.evil.com/x", "file:///etc/passwd"):
+        assert not fetch.is_allowed_host(bad), f"should refuse off-site host: {bad}"
+    f = fetch.Fetcher()
+    try:
+        f.get("https://evil.example.com/x")
+        assert False, "Fetcher must refuse off-site host"
+    except fetch.ForbiddenEndpoint:
+        pass
+
+
 def test_polite_crawler_invariants():
     assert fetch.USER_AGENT == "defproc-monitor/0.1"
     assert "@" not in fetch.USER_AGENT and "gmail" not in fetch.USER_AGENT.lower()  # no PII

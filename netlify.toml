@@ -9,3 +9,16 @@
   from = "/"
   to = "/defproc-tender-watch.html"
   status = 200
+
+# Security headers. The dashboard is fully self-contained (inline script/style,
+# same-origin JSON only), so this CSP is tight; 'unsafe-inline' is unavoidable
+# for the inline app but XSS is already neutralised by escaping scraped data.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-ancestors 'none'"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"

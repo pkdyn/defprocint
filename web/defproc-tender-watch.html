@@ -2,6 +2,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DEFPROC · Tender Watch</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0d12'/><circle cx='16' cy='16' r='9' fill='none' stroke='%2334d6a0' stroke-width='2.4'/><circle cx='16' cy='16' r='3.4' fill='%23ff9e2c'/></svg>">
 <style>
   :root{
     --bg:#0a0d12; --panel:#0c121b; --panel2:#0f1722; --line:#1b2734;
@@ -373,13 +374,17 @@ function defprocCopy(id, ref){
 }
 function updCounts(){document.getElementById('count').textContent=tenders.length;document.getElementById('critcount').textContent=tenders.filter(t=>critOf(t)==='critical').length;}
 
+/* XSS guards: all scraped strings (titles, orgs, addresses, refs) are escaped
+   before going into innerHTML, and link URLs are restricted to http(s). */
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function safeUrl(u){u=String(u==null?'':u);return /^https?:\/\//i.test(u)?u:'#';}
 function buildCard(t){
   const c=critOf(t),col=COL[c];
   const el=document.createElement('div');el.className='card enter'+(c==='critical'?' crit':'');el.dataset.id=t.tender_id;
-  const doms=(t.domains&&t.domains.length)?`<div class="doms">${t.domains.map(d=>`<span class="dom">${d}</span>`).join('')}${t.named_system?`<span class="dom">${t.named_system}</span>`:''}</div>`:'';
-  el.innerHTML=`<div class="row1"><span class="tid">${t.tender_id}</span><a class="findlink" href="${t.detail_url||'#'}" target="_blank" rel="noopener" title="find on defproc — Tender ID auto-copied">defproc ↗</a><span class="badge ${c==='critical'?'crit':'rout'}">${c}</span></div>
-    <p class="title">${t.title}</p>${doms}
-    <div class="meta"><span class="org">${t.org_chain}</span><span class="loc">${t.location}</span><span>closes ${t.closing_date}</span></div>
+  const doms=(t.domains&&t.domains.length)?`<div class="doms">${t.domains.map(d=>`<span class="dom">${esc(d)}</span>`).join('')}${t.named_system?`<span class="dom">${esc(t.named_system)}</span>`:''}</div>`:'';
+  el.innerHTML=`<div class="row1"><span class="tid">${esc(t.tender_id)}</span><a class="findlink" href="${esc(safeUrl(t.detail_url))}" target="_blank" rel="noopener" title="find on defproc — Tender ID auto-copied">defproc ↗</a><span class="badge ${c==='critical'?'crit':'rout'}">${c}</span></div>
+    <p class="title">${esc(t.title)}</p>${doms}
+    <div class="meta"><span class="org">${esc(t.org_chain)}</span><span class="loc">${esc(t.location)}</span><span>closes ${esc(t.closing_date)}</span></div>
     <div class="life"><i style="background:${col}"></i></div>
     <div class="lifelabel"><span>published ${ago(pubOf(t))}</span><span class="rem">${remLabel(t)}</span></div>`;
   el.addEventListener('click',()=>select(t.tender_id,true));
@@ -474,7 +479,7 @@ async function loadTenders(){
       const cut=NOW()-CONFIG.RETENTION_HOURS*H;
       tenders=data.map(d=>({...d,first_seen:typeof d.first_seen==='string'?Date.parse(d.first_seen):d.first_seen,
         criticality:critOf(d),domains:d.domains||[]})).filter(d=>pubOf(d)>=cut);
-    }catch(e){console.warn('data load failed, using demo',e);tenders=demoData();}
+    }catch(e){console.warn('data load failed',e);tenders=[];}  // public: empty, never fake data
   }else tenders=demoData();
   fullRender();
 }
@@ -528,7 +533,7 @@ async function lppLoad(){
       }
       lppSearch();
     }
-  }catch(e){console.warn('LPP index load failed, using demo archive',e);}
+  }catch(e){console.warn('LPP index load failed',e);LPP_ARCHIVE.length=0;lppSearch();}  // public: no demo archive
 }
 lppLoad();
 /* re-fetch the archive periodically too — a long-open tab must not serve a
@@ -561,23 +566,23 @@ function lppSearch(){
     const vint=lppVintage(b.date);
     const vtxt = vint>3 ? `LPP vintage ${vint} FY — exceeds 3 yrs (DPM \u00a75.33.4(a)): not a clean scale, escalate`
                         : `LPP vintage ${vint} FY (within 3 yrs)`;
-    const price = b.value!=null ? `<span class="lv price">${lppMoney(b.value)}${b.l1?` \u00b7 L1 ${b.l1}`:''}</span>`
+    const price = b.value!=null ? `<span class="lv price">${esc(lppMoney(b.value))}${b.l1?` \u00b7 L1 ${esc(b.l1)}`:''}</span>`
                                 : `<span class="lv ask">not published \u2014 obtain LPP from buyer unit</span>`;
-    const doms=(b.domains&&b.domains.length)?`<div class="ldoms">${b.domains.map(d=>`<span class="ldom">${d}</span>`).join('')}${b.named?`<span class="ldom">${b.named}</span>`:''}</div>`:'';
+    const doms=(b.domains&&b.domains.length)?`<div class="ldoms">${b.domains.map(d=>`<span class="ldom">${esc(d)}</span>`).join('')}${b.named?`<span class="ldom">${esc(b.named)}</span>`:''}</div>`:'';
     const el=document.createElement('div');
     el.className='lcard'+(b.crit==='critical'?' crit':'');
-    el.innerHTML=`<div class="lr1"><span class="ltid">${b.id}</span><span class="lbadge ${b.crit==='critical'?'crit':'rout'}">${b.crit}</span></div>
-      <p class="ltitle">${b.title}</p>${doms}
+    el.innerHTML=`<div class="lr1"><span class="ltid">${esc(b.id)}</span><span class="lbadge ${b.crit==='critical'?'crit':'rout'}">${b.crit==='critical'?'critical':'routine'}</span></div>
+      <p class="ltitle">${esc(b.title)}</p>${doms}
       <div class="lgrid">
-        <span class="lk">BUYER</span><span class="lv">${b.unit}, ${b.location}</span>
-        <span class="lk">MODE</span><span class="lv">${b.mode}</span>
-        <span class="lk">DATE</span><span class="lv">${new Date(b.date).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})} (FY ${lppFY(b.date)})</span>
-        <span class="lk">QTY</span><span class="lv">${b.qty}</span>
+        <span class="lk">BUYER</span><span class="lv">${esc(b.unit)}, ${esc(b.location)}</span>
+        <span class="lk">MODE</span><span class="lv">${esc(b.mode)}</span>
+        <span class="lk">DATE</span><span class="lv">${esc(new Date(b.date).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}))} (FY ${esc(lppFY(b.date))})</span>
+        <span class="lk">QTY</span><span class="lv">${esc(b.qty)}</span>
         <span class="lk">LPP</span>${price}
       </div>
       <div class="lvint ${vint>3?'':'ok'}">${vtxt}</div>
-      <div class="lacts"><a class="lopen" href="${b.detail_url}" target="_blank" rel="noopener">find on defproc \u2197 \u2014 ID auto-copied</a>
-        <button class="lexp" data-id="${b.id}">Copy LPP / SoC block</button></div>`;
+      <div class="lacts"><a class="lopen" href="${esc(safeUrl(b.detail_url))}" target="_blank" rel="noopener">find on defproc \u2197 \u2014 ID auto-copied</a>
+        <button class="lexp">Copy LPP / SoC block</button></div>`;
     el.querySelector('.lexp').addEventListener('click',()=>lppExport(b.id));
     el.querySelector('.lopen').addEventListener('click',()=>defprocCopy(b.id,b.ref));
     lppResults.appendChild(el);
