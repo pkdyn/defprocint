@@ -53,6 +53,16 @@ def test_triangulation_from_multiple_fields():
     assert near(geocode_record({"title": "RUNWAY WORKS AT AFS KUMBHIRGRAM"}), (24.91, 92.98))
 
 
+def test_known_city_beats_ambiguous_fragment():
+    # location is a bare works-site fragment ('HAMLA'); the buyer address plainly
+    # says Mumbai -> resolve to Mumbai, never chase the fragment (which Nominatim
+    # would mis-map to a Gujarat village).
+    rec = {"location": "HAMLA",
+           "buyer_address": "Commander Works Engineer Subs, NCHC Powai Bhandup Post Office, Mumbai 400 078",
+           "title": "SPL REPAIRS TO SAILORS ACCN AT INS HAMLA"}
+    assert near(geocode_record(rec), (19.076, 72.877))
+
+
 def test_longest_place_wins():
     # 'new delhi' beats 'delhi'; 'port blair' resolves as a unit
     assert near(geocode_record({"location": "New Delhi"}), (28.613, 77.209))

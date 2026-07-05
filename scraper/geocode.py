@@ -1,15 +1,16 @@
 """Offline coarse geocoder: triangulate a tender's location from every field
 defproc gives us, in order of precision. All offline, free, stdlib-only.
 
-geocode_record() resolution order (best signal wins, then falls back):
+geocode_record() resolution order (reliability first, then falls back):
   1. exact pincode in data/pincodes.csv (India Post directory subset)
-  2. place name found in buyer_address  (e.g. 'Dist Tinsukia', 'Cantt Kanpur')
-  3. place name in the org-chain tail    (e.g. 'CE SHILLONG ZONE' -> Shillong)
-  4. explicit location field
-  5. place name anywhere in the title    (e.g. 'AFS KUMBHIRGRAM')
-  6. PIN first-2-digit postal-circle centroid (always in-country)
-We use whatever is remotely relevant to triangulate; if nothing resolves we
-return (None, None) and the dashboard simply omits the marker.
+  2. known gazetteer place in buyer_address / location / title
+  3. known place in the org-chain tail   (e.g. 'CE SHILLONG ZONE' -> Shillong)
+  4. online Nominatim -- ONLY for places the gazetteer doesn't know
+  5. PIN first-2-digit postal-circle centroid (always in-country)
+A KNOWN city wins over the online lookup: Nominatim will confidently map a bare
+works-site fragment ('HAMLA') to the wrong village, so we prefer the plainly
+stated city ('Mumbai') and use online only for genuinely unknown towns. If
+nothing resolves we return (None, None) and the dashboard omits the marker.
 """
 from __future__ import annotations
 
@@ -236,27 +237,32 @@ def _org_tail(org_chain) -> str:
 
 
 def geocode_record(rec: dict):
-    """Triangulate (lat, lng), most precise first:
-    online (Nominatim full-address -> pincode -> city, if enabled) ->
-    exact pincode CSV -> place scan of the ACTUAL-SITE fields (location /
-    buyer_address / title) -> the org chain's LAST node only -> PIN-prefix ->
-    (None, None). The site fields beat the admin hierarchy on purpose: a tender
-    under 'HQ MC Nagpur' or 'CE Shillong Zone' is rarely in Nagpur/Shillong."""
-    if ONLINE:
-        for q in _query_candidates(rec):
-            hit = geocode_online(q)
-            if hit:
-                return hit
+    """Triangulate (lat, lng), reliability first:
+      1. exact pincode in the CSV directory
+      2. a KNOWN gazetteer place in the postal address / location / title
+      3. a KNOWN place in the org-chain's last (unit) node
+      4. online Nominatim -- ONLY for places our gazetteer doesn't know
+      5. PIN first-2-digit postal-circle centroid
+    A known city outranks the online lookup on purpose: Nominatim confidently
+    resolves a bare works-site fragment to the wrong place (it maps 'HAMLA' to a
+    Gujarat village, not INS Hamla in Mumbai), whereas the buyer address plainly
+    reads 'Mumbai'. Site fields also beat the admin hierarchy: a tender under
+    'HQ MC Nagpur' / 'CE Shillong Zone' is rarely in Nagpur/Shillong."""
     pin = re.sub(r"\D", "", rec.get("pincode") or "")
     if pin and pin in _PINCODES:
         return _PINCODES[pin]
-    for field in ("location", "buyer_address", "title"):
+    for field in ("buyer_address", "location", "title"):
         hit = _scan_places(rec.get(field))
         if hit:
             return hit
     hit = _scan_places(_org_tail(rec.get("org_chain")))
     if hit:
         return hit
+    if ONLINE:
+        for q in _query_candidates(rec):
+            hit = geocode_online(q)
+            if hit:
+                return hit
     if len(pin) >= 2 and pin[:2] in PIN_PREFIX:
         return PIN_PREFIX[pin[:2]]
     return (None, None)

@@ -382,7 +382,7 @@ function buildCard(t){
   const c=critOf(t),col=COL[c];
   const el=document.createElement('div');el.className='card enter'+(c==='critical'?' crit':'');el.dataset.id=t.tender_id;
   const doms=(t.domains&&t.domains.length)?`<div class="doms">${t.domains.map(d=>`<span class="dom">${esc(d)}</span>`).join('')}${t.named_system?`<span class="dom">${esc(t.named_system)}</span>`:''}</div>`:'';
-  el.innerHTML=`<div class="row1"><span class="tid">${esc(t.tender_id)}</span><a class="findlink" href="${esc(safeUrl(t.detail_url))}" target="_blank" rel="noopener" title="find on defproc — Tender ID auto-copied">defproc ↗</a><span class="badge ${c==='critical'?'crit':'rout'}">${c}</span></div>
+  el.innerHTML=`<div class="row1"><span class="tid">${esc(t.tender_id)}</span><a class="findlink" href="${esc(safeUrl(t.detail_url))}" target="_blank" rel="noopener" title="find on defproc — Tender ID auto-copied">defproc ↗</a><span class="badge ${c==='critical'?'crit':'rout'}">${c==='critical'?'critical':'routine'}</span></div>
     <p class="title">${esc(t.title)}</p>${doms}
     <div class="meta"><span class="org">${esc(t.org_chain)}</span><span class="loc">${esc(t.location)}</span><span>closes ${esc(t.closing_date)}</span></div>
     <div class="life"><i style="background:${col}"></i></div>
