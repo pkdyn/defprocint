@@ -27,33 +27,6 @@
     "last_seen": "2026-11-22T07:41:10Z"
   },
   {
-    "tender_id": "2026_DRDO_799321_1",
-    "title": "Development of Shipborne and Airborne Data Terminal",
-    "org_chain": "Department of Defence Research and Development ▸ Defence Research and Development Organisation ▸ DFMM ▸ Office of DG(ECS) ▸ DEAL",
-    "location": "DEAL, Dehradun",
-    "unit": "Director DEAL",
-    "buyer_address": "DEAL DEHRADUN",
-    "pincode": "",
-    "lat": 30.32,
-    "lng": 78.03,
-    "criticality": "critical",
-    "confidence": 0.6,
-    "domains": [
-      "UAS"
-    ],
-    "named_system": null,
-    "closing_date": "14 Dec",
-    "published": "2026-11-19T10:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": null,
-    "tender_type": "Single",
-    "category": "Goods",
-    "ref_no": "27MDL008",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
     "tender_id": "2026_NAVY_799574_1",
     "title": "Repair and Refurbishment of 06 defective Brahmos Articles",
     "org_chain": "IHQ of MOD (Navy) ▸ WESTERN NAVAL COMMAND - NAVY ▸ HQKNA - NAVY ▸ WED(KAR) - NAVY",
@@ -184,7 +157,7 @@
     "ref_no": "",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_IAF_799932_1",
@@ -211,1182 +184,34 @@
     "ref_no": "11BRD/6201/35/ISC/TyBM-217",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
-    "tender_id": "2026_ARMY_799469_1",
-    "title": "Supply of30512 Kgs of Green Fodder",
-    "org_chain": "IHQ of MoD (Army)-(OSCC) ▸ Western Comd-IHQ of MoD (Army)-(OSCC) ▸ CORPS 1-Western Comd-IHQ of MoD (Army)-(OSCC) ▸ SUP COY 10-IHQ of MoD (Army)",
-    "location": "Supply Depot ASC, Delhi Cantt",
-    "unit": "Commandant, Supply Depot ASC, Delhi Cantt",
-    "buyer_address": "Supply Depot ASC Delhi Cantt",
+    "tender_id": "2026_NAVY_799959_1",
+    "title": "WEDK/PR/RFP/08/26-27",
+    "org_chain": "IHQ of MOD (Navy) ▸ SOUTHERN NAVAL COMMAND - NAVY ▸ WEAPON EQUIPMENT DEPOT (KOCHI) - NAVY",
+    "location": "WED Kochi",
+    "unit": "OIC WED Kochi",
+    "buyer_address": "WED Kochi, Naval Base, Kochi-682004",
     "pincode": "",
-    "lat": 28.596,
-    "lng": 77.16,
-    "criticality": "routine",
+    "lat": 9.931,
+    "lng": 76.267,
+    "criticality": "critical",
     "confidence": 0.7,
-    "domains": [],
+    "domains": [
+      "INTELLIGENCE_EQUIPMENT"
+    ],
     "named_system": null,
-    "closing_date": "25 Nov",
-    "published": "2026-11-19T08:15:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 347837,
-    "tender_type": "Limited",
-    "category": "Goods",
-    "ref_no": "3015/C/I/Green Fodder/ST-5",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799429_1",
-    "title": "PROVN OF 1X UNDERGROUND LIVING BUNKER OF 12 INF BDE CAMP AT URI UNDER GE 969 EWS",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE NC AND CE 31 ZONE - MES ▸ 133 WORKS ENGINEER - MES ▸ GE 969 EWS - MES",
-    "location": "URI",
-    "unit": "MAJOR DEEPANSHU GE",
-    "buyer_address": "GE 969 EWS C/O 56 APO",
-    "pincode": "",
-    "lat": 22.3511148,
-    "lng": 78.6677428,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T07:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2430000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CA NO 969 WS- /2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_786469_4",
-    "title": "Provn of parking shed for four wheelers and two wheelers adjacent to camp gate and provn of aluminium partition wall in the verandah at Bldg No T-34 (FS Sec) HQ 11 Corps Camp under GE West JRC",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC AND CE JALANDHAR ZONE - MES ▸ CWE JALANDHAR - MES ▸ GE (WEST) JALANDHAR CANTT - MES",
-    "location": "JALANDHAR CANTT",
-    "unit": "GE (WEST) JRC",
-    "buyer_address": "KABIR ROAD, JALANDHAR CANTT",
-    "pincode": "",
-    "lat": 31.33,
-    "lng": 75.58,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "01 Dec",
-    "published": "2026-11-19T07:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 472000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GE/JAL(W)-70/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_ARMY_799417_1",
-    "title": "SUPPLY AND CONSTRUCTION OF LIVING SHELTER (ORL) DOUBLE STOREY (40 MEN) IN HQ 56 INF DIV AOR",
-    "org_chain": "IHQ of MoD (Army)-(OSCC) ▸ Eastern Comd-IHQ of MoD (Army)-(OSCC) ▸ CORPS 4-IHQ of MoD (Army)-(OSCC) ▸ ENGR UNIT 2-IHQ of MoD (Army)",
-    "location": "250 Km Radius from Borarupak (B)",
-    "unit": "Commanding Officer 3 Engr Regt C/o 99 APO Dimapur",
-    "buyer_address": "3 Engineer Regiment, Rangapahar Military Station, Dimapur",
-    "pincode": "",
-    "lat": 25.91,
-    "lng": 93.73,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "30 Nov",
-    "published": "2026-11-19T07:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": null,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "OT/EC/3/56/26-27/3243",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_ARMY_799415_1",
-    "title": "SUPPLY AND CONSTRUCTION OF LIVING SHELTER (ORL) DOUBLE STOREY (40 MEN) IN 56 INF DIV AOR",
-    "org_chain": "IHQ of MoD (Army)-(OSCC) ▸ Eastern Comd-IHQ of MoD (Army)-(OSCC) ▸ CORPS 4-IHQ of MoD (Army)-(OSCC) ▸ ENGR UNIT 2-IHQ of MoD (Army)",
-    "location": "250 Km Radius from Borarupak (A)",
-    "unit": "Commanding Officer 3 Engr Regt C/o 99 APO Dimapur",
-    "buyer_address": "3 Engr Regt, c/o 99 APO Dimapur",
-    "pincode": "",
-    "lat": 25.91,
-    "lng": 93.73,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "28 Nov",
-    "published": "2026-11-19T07:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": null,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "OT/EC/3/56/26-27/3243",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_ARMY_799421_1",
-    "title": "SUPPLY AND CONSTRUCTION OF LIVING SHELTER (ORL) DOUBLE STOREY (40 MEN) IN HQ 56 INF DIV AOR",
-    "org_chain": "IHQ of MoD (Army)-(OSCC) ▸ Eastern Comd-IHQ of MoD (Army)-(OSCC) ▸ CORPS 4-IHQ of MoD (Army)-(OSCC) ▸ ENGR UNIT 2-IHQ of MoD (Army)",
-    "location": "250 Km Radius from Borarupak (C)",
-    "unit": "Commanding officer 3 Engr Regt C/o 99 APO Dimapur",
-    "buyer_address": "3 Engr Regt, C/o 99 APO, Dimapur",
-    "pincode": "",
-    "lat": 25.91,
-    "lng": 93.73,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "30 Nov",
-    "published": "2026-11-19T07:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": null,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "OT/EC/3/56/26-27/3243",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_ARMY_799448_1",
-    "title": "SUPPLY AND CONSTRUCTION OF LIVING SHELTER (ORL) DOUBLE STOREY (40 MEN) IN HQ 56 INF DIV AOR",
-    "org_chain": "IHQ of MoD (Army)-(OSCC) ▸ Eastern Comd-IHQ of MoD (Army)-(OSCC) ▸ CORPS 4-IHQ of MoD (Army)-(OSCC) ▸ ENGR UNIT 2-IHQ of MoD (Army)",
-    "location": "250 Km Radius from Borarupak (D)",
-    "unit": "Commanding Officer 3 Engr Regt C/o 99 APO Dimapur",
-    "buyer_address": "Commanding Officer, 3 Engr Regt, C/o 99 APO Dimapur",
-    "pincode": "",
-    "lat": 25.91,
-    "lng": 93.73,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "30 Nov",
-    "published": "2026-11-19T07:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": null,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "OT/EC/3/56/26-27/3243",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_ARMY_799450_1",
-    "title": "SUPPLY OF FRUIT FRESH OF 12652 KGS",
-    "org_chain": "IHQ of MoD (Army)-(OSCC) ▸ Western Comd-IHQ of MoD (Army)-(OSCC) ▸ CORPS 1-Western Comd-IHQ of MoD (Army)-(OSCC) ▸ SUP COY 10-IHQ of MoD (Army)",
-    "location": "NSG Manesar NSG Palam 91 Medium Regt",
-    "unit": "Commandant, Supply Depot ASC, Delhi Cantt",
-    "buyer_address": "Supply Depot ASC Delhi Cantt",
-    "pincode": "",
-    "lat": 28.596,
-    "lng": 77.16,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "25 Nov",
-    "published": "2026-11-19T07:00:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 538343,
-    "tender_type": "Limited",
-    "category": "Goods",
-    "ref_no": "3015/C/I/Fruit/NSG/ST-5",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799439_1",
-    "title": "COMPREHENSIVE MAINT OF OFFRS MD ACCN IN SITE 3 AND 4 IN THE AOR OF AGE B/R-I UNDER GE (WEST) FEROZEPUR CANTT",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC AND CE JALANDHAR ZONE - MES ▸ CWE FEROZEPUR - MES",
-    "location": "FEROZEPUR CANTT",
-    "unit": "CWE FEROZEPUR",
-    "buyer_address": "HQ CWE FEROZEPUR CANTT",
-    "pincode": "152001",
-    "lat": 30.93,
-    "lng": 74.61,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T06:50:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": null,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CWE/FZR-90/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_798826_1",
-    "title": "REPAIR AND MAINT PERIODICAL SERVICES OF DG SETS AND AMF PANELS AT MIL STN DAPPAR UNDER AGE(I) DAPPAR",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC AND CE CHANDIGARH ZONE - MES ▸ CWE PATIALA - MES ▸ GE (P) DAPPAR - MES",
-    "location": "AGE (I) DAPPAR",
-    "unit": "Capt Nagesh Kumar",
-    "buyer_address": "AGE(I) DAPPAR",
-    "pincode": "",
-    "lat": null,
-    "lng": null,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T06:40:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": null,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CA No AGE(I)/DPR/T-23/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_DRDO_798884_1",
-    "title": "Toxicity Study of Liquid and Solid Aerosols generated from HAFES Qty 06 Job",
-    "org_chain": "Department of Defence Research and Development ▸ Defence Research and Development Organisation ▸ DFMM ▸ Office of DG R and D (SAM) ▸ CFEES",
-    "location": "CFEES,DRDO,DELHI",
-    "unit": "DIRECTOR CFEES",
-    "buyer_address": "CFEES DRDO Brig. S. K. Mazumdar Marg Timarpur Delhi - 110054",
-    "pincode": "",
-    "lat": 28.613,
-    "lng": 77.209,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "03 Dec",
-    "published": "2026-11-19T06:30:00Z",
+    "closing_date": "14 Dec",
+    "published": "2026-11-24T03:30:00Z",
     "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
     "value_inr": null,
     "tender_type": "Single",
-    "category": "Services",
-    "ref_no": "CFEES/27FCP032/ST/SB/090",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799426_1",
-    "title": "PROVN OF 1X UNDERGROUND LIVING BUNKER AT 9 COMPO PL AT URI UNDER GE 969 EWS",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE NC AND CE 31 ZONE - MES ▸ 133 WORKS ENGINEER - MES ▸ GE 969 EWS - MES",
-    "location": "URI",
-    "unit": "MAJOR DEEPANSHU GE",
-    "buyer_address": "GE 969 EWS C/O 56 APO",
-    "pincode": "",
-    "lat": 22.3511148,
-    "lng": 78.6677428,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T06:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2430000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CA NO 969 WS- /2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_767616_5",
-    "title": "COMPREHENSIVE DAY TO DAY MAINT FOR MD ACCN AT MIL STN UDAIPUR UNDER AGE (I) UDAIPUR",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE JODHPUR ZONE - MES ▸ CWE(ARMY) JODHPUR - MES",
-    "location": "UDAIPUR",
-    "unit": "CWE ARMY JODHPUR",
-    "buyer_address": "CWE ARMY MULTAN LINE ARMY AREA JODHPUR-342010",
-    "pincode": "",
-    "lat": 26.24,
-    "lng": 73.02,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "03 Dec",
-    "published": "2026-11-19T06:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CWE (A) JODH/UDR- OF 2026-27(82627/39/E8)",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799420_1",
-    "title": "PROVISION OF INTERLOCKING PAVER BLOCK, CHAINLINK FENCING AT OPEN AREA NEAR BOUNDARY WALL OF CRF AT MBC RESTRICTED AREA UNDER GE SOUTH WEST NEW DELHI-03",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC and CE DELHI ZONE-MES",
-    "location": "Delhi Cantt-10",
-    "unit": "HQ Chief Engineer Delhi Zone",
-    "buyer_address": "HQ Chief Engineer Delhi Zone Delhi Cantt-10",
-    "pincode": "",
-    "lat": 28.596,
-    "lng": 77.16,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "17 Dec",
-    "published": "2026-11-19T06:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 21600000,
-    "tender_type": "Closed Limited",
-    "category": "Works",
-    "ref_no": "NIT NO. 46/CEDZ/2026-2027",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799436_1",
-    "title": "REPAIRS TO COOK HOUSE AND DINING HALL OF BLDG NO P-02 AT MUKKUNNIMALA FIRING RANGE AT PANGODE MILITARY STATION TRIVANDRUM",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE SC AND CE CHENNAI ZONE - MES ▸ CWE WELLINGTON - MES ▸ GE (ARMY) TRIVANDRUM - MES",
-    "location": "Trivandrum",
-    "unit": "Garrison Engineer Army Trivansrum",
-    "buyer_address": "Office of Garrison Engineer Army, Thirumala Post, Trivandrum-695006",
-    "pincode": "",
-    "lat": 8.52,
-    "lng": 76.94,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T06:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 3714000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8430/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799431_1",
-    "title": "REPAIR AND REPLACEMENT OF OLD UNSERVICEABLE STREET/ FLOOD LIGHT FITTINGS AND CONNECTED ITEMS AT OTM AND MD ACCN OF CANNANORE AND CALICUT AREA UNDER GE (ARMY) TRIVANDRUM",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE SC AND CE CHENNAI ZONE - MES ▸ CWE WELLINGTON - MES ▸ GE (ARMY) TRIVANDRUM - MES",
-    "location": "Kannur",
-    "unit": "Garrison Engineer Army Trivansrum",
-    "buyer_address": "Office of Garrison Engineer Army, Thirumala Post, Trivandrum-695006",
-    "pincode": "",
-    "lat": 8.52,
-    "lng": 76.94,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "07 Dec",
-    "published": "2026-11-19T06:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2245000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8421/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799060_1",
-    "title": "GES/PKT/80/2026-27 CERTAIN REPAIR/ MAINT/ RENEWAL TO WINDOW/ SPLIT ACs, CERTAIN REF AND AC ITEMS AND OTHER ALLIED WORK AT DAMTAL, NANGAL BHUR, KANDRORI, KAUNTERPUR, MIRTHAL AND UNCHIBASSI UNDER GE SOUTH PATHANKOT",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC AND CE PATHANKOT ZONE - MES ▸ CWE PATHANKOT - MES ▸ GE (SOUTH) PATHANKOT - MES",
-    "location": "KANDRORI, UNCHIBASSI",
-    "unit": "GE SOUTH PATHANKOT",
-    "buyer_address": "GE SOUTH PATHANKOT",
-    "pincode": "",
-    "lat": 32.27,
-    "lng": 75.65,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "09 Dec",
-    "published": "2026-11-19T06:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 1300000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GES/PKT/80/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799058_1",
-    "title": "GES/PKT/79/2026-27 CERTAIN REPAIRS TO SUMMER COOLING APPLIANCES (SPLIT/ WINDOW ACs, WATER COOLER, DEEP FREEZER, WALK IN COOLER) AND ALLIED WORK AT DHANGU MIL COMPLEX UNDER GE SOUTH PATHANKOT",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC AND CE PATHANKOT ZONE - MES ▸ CWE PATHANKOT - MES ▸ GE (SOUTH) PATHANKOT - MES",
-    "location": "PATHANKOT",
-    "unit": "GE SOUTH PATHANKOT",
-    "buyer_address": "GE SOUTH PATHANKOT",
-    "pincode": "",
-    "lat": 32.27,
-    "lng": 75.65,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "09 Dec",
-    "published": "2026-11-19T06:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 1200000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GES/PKT/79/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_ARMY_799227_1",
-    "title": "SUPPLY AND CONSTRUCTION OF LIVING SHELTER (ORL) DOUBLE STOREY (40 MEN) IN HQ 56 INF DIV AOR",
-    "org_chain": "IHQ of MoD (Army)-(OSCC) ▸ Eastern Comd-IHQ of MoD (Army)-(OSCC) ▸ CORPS 4-IHQ of MoD (Army)-(OSCC) ▸ ENGR UNIT 2-IHQ of MoD (Army)",
-    "location": "250 Km Radius from Borarupak",
-    "unit": "Commanding Officer 3 Engr Regt C/o 99 APO Dimapur",
-    "buyer_address": "3 Engr Regt, c/o 99 APO Dimapur",
-    "pincode": "",
-    "lat": 25.91,
-    "lng": 93.73,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "28 Nov",
-    "published": "2026-11-19T06:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": null,
-    "tender_type": "Open Tender",
     "category": "Goods",
-    "ref_no": "OT/EC/3/56/26-27/3243",
+    "ref_no": "",
     "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799424_1",
-    "title": "PROVN OF 1X UNDERGROUND LIVING BUNKER AT 238 FD REGT AT URI UNDER GE 969 EWS",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE NC AND CE 31 ZONE - MES ▸ 133 WORKS ENGINEER - MES ▸ GE 969 EWS - MES",
-    "location": "URI",
-    "unit": "MAJOR DEEPANSHU GE",
-    "buyer_address": "GE 969 EWS C/O 56 APO",
-    "pincode": "",
-    "lat": 22.3511148,
-    "lng": 78.6677428,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T05:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2430000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CA NO 969 WS- /2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799423_1",
-    "title": "PROVISION OF FIRE ALARM AND DETECTION SYSTEM IN HANGARS AND FACILITIES PRONE TO FIRE AT 25 ED AFS DEVLALI UNDER GE (AF) OJHAR",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) NAGPUR - MES",
-    "location": "GE AF OJHAR",
-    "unit": "CWE AF NAGPUR",
-    "buyer_address": "HQ CWE AF NAGPUR, VAYUSENA NAGAR, NAGPUR 440007, MILITARY ENGINEER SERVICES",
-    "pincode": "",
-    "lat": 21.15,
-    "lng": 79.09,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "09 Dec",
-    "published": "2026-11-19T05:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 5623000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "80800/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_772521_3",
-    "title": "PROVN OF TOILET WITH BATHROOM NEAR BLDG NO. T-17, HARDSTANDING AT MT AREA, FOOTPATH AT ENGR REGT AND SPECIAL REPAIR TO TOILETS OF BLDG NO. P-51, P-68 AND P-98 UNDER AGE B/R-II OF GE (S) MAMUN",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC AND CE PATHANKOT ZONE - MES ▸ CWE MAMUN - MES ▸ GE(SOUTH) MAMUN - MES",
-    "location": "GE (South) Mamun, MES Complex, Mamun Cantt, Pathan",
-    "unit": "GE (S) Mamun",
-    "buyer_address": "GE (South) Mamun, MES Complex, Mamun Cantt, Pathankot",
-    "pincode": "",
-    "lat": 32.27,
-    "lng": 75.65,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "04 Dec",
-    "published": "2026-11-19T05:00:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2863170,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GE(S)/M-36/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799422_1",
-    "title": "SPECIAL REPAIR / RENEWAL / REPLACEMENT OF TRANSFORMERS DECLARED BER AT 8 WG AT AF STN ADAMPUR",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC and CE(AF) WAC PALAM-MES ▸ CWE (AF) Chandigarh-MES ▸ GE (AF) Adampur-MES",
-    "location": "Under GE (AF) ADAMPUR",
-    "unit": "GE (AF) ADAMPUR",
-    "buyer_address": "GE (AF) ADAMPUR",
-    "pincode": "",
-    "lat": null,
-    "lng": null,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "11 Dec",
-    "published": "2026-11-19T04:45:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 3730000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GE(AF)/ADM/T-58 OF 2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799419_1",
-    "title": "SPL REPAIR IMPROVEMENT OF PERIMETER SECURITY LIGHTS POST SECURITY LIGHTS AND STREET LIGHTS AT ANAND PRABAT MIL STN UNDER GE NORTH DELHI CANTT10",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC and CE DELHI ZONE-MES ▸ CWE DELHI CANTT-MES ▸ GE (NORTH) DELHI CANTT-MES",
-    "location": "GE NORTH DELHI CANTT 10",
-    "unit": "GE North Delhi Cantt-10",
-    "buyer_address": "GE NORTH DELHI CANTT",
-    "pincode": "",
-    "lat": 28.596,
-    "lng": 77.16,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T04:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4850000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GE/NORTH-186/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799416_1",
-    "title": "SPL REPAIR TO BOUNDARY WALL AND PATH HARD STANDING OF DPDO COMPLEX AT RED FORT AREA AND PROVN OF 04 X SPLIT AC FOR BLDG NO P01 ECHS OF 339 ASC I SUPPLY PI AT KWC TIMARPUR MIL STN UNDER GE NORTH DELHI CANTT10",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC and CE DELHI ZONE-MES ▸ CWE DELHI CANTT-MES ▸ GE (NORTH) DELHI CANTT-MES",
-    "location": "GE NORTH DELHI CANTT 10",
-    "unit": "GE North Delhi Cantt-10",
-    "buyer_address": "GE NORTH DELHI CANTT-10",
-    "pincode": "",
-    "lat": 28.596,
-    "lng": 77.16,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T04:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 3338000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GE/NORTH-179/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_DGDE_799387_1",
-    "title": "Selection of Agency for the Operation and Management of Kala Kendra at Sadar Bazar, Delhi Cantt.",
-    "org_chain": "Directorate General Defence Estates ▸ Principal Directorate Defence Estates -Western Command Chandigarh ▸ Cantonment Board Delhi -WC Chandigarh",
-    "location": "Delhi Cantt.",
-    "unit": "Chief Executive Officer",
-    "buyer_address": "Office of the Cantonment Board, Sushma Swaraj Marg, Sadar Bazar, Delhi Cantt.",
-    "pincode": "",
-    "lat": 28.596,
-    "lng": 77.16,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "09 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4500000,
-    "tender_type": "Open Tender",
-    "category": "Services",
-    "ref_no": "DCB/IT/KK/2026",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_BRO_799410_1",
-    "title": "PDG AND LYG OF HMP READY MIX BC 30 MM TH INCL CLEANING RD SURF APPLYING TACK COAT, CORRECTION WKS WITH BM 75 MM FOR RE-SURF WKS ON VARIOUS LOC KM 0.00 TO KM 136.550 (NET LENGTH 17.12 KM) ON H-S-S RD UNDER 71 RCC PROJECT PSK IN MIZORAM STATE(5TH CALL)",
-    "org_chain": "Dte General Border Roads Organisation ▸ HQ CE(P) Phuspak(Aizawal) - BRO",
-    "location": "Between KM 0.00 TO KM 136.55 on HSS rd",
-    "unit": "Chief Engineer Project Pushpak",
-    "buyer_address": "HQ CE (P) Pushpak, CO 99 APO, Zemabawk, Aizawl Mizoram",
-    "pincode": "",
-    "lat": null,
-    "lng": null,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "09 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 43050000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "NIT-32 OF 2025-26",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_798593_1",
-    "title": "REPAIR AND MAINTENANCE OF WATER SUPPLY LINES WITH CONNECTED ITEM AT CHARARI, N2 ROAD, SUBHASH ROAD, JK COLONY, RAMA DEVI AND KAZIKHEDA AT AFS KANPUR.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) CHAKERI - MES ▸ GE E/M AF CHAKERI - MES",
-    "location": "AOR of GE(AF) E/M CHAKERI",
-    "unit": "GE(AF) E/M CHAKERI",
-    "buyer_address": "O/o GE(AF) E/M CHAKERI",
-    "pincode": "",
-    "lat": 26.45,
-    "lng": 80.33,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8883/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_798936_1",
-    "title": "REPAIR AND MAINTENANCE OF INTERNAL ELECTRICAL INFRASTRUCTURE AT N1, NAIR, KULDEEP AND N4 AT AFS KANPUR.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) CHAKERI - MES ▸ GE E/M AF CHAKERI - MES",
-    "location": "AOR of GE(AF) E/M CHAKERI",
-    "unit": "GE(AF) E/M CHAKERI",
-    "buyer_address": "O/o GE(AF) E/M CHAKERI",
-    "pincode": "",
-    "lat": 26.45,
-    "lng": 80.33,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 5000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8887/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_789727_2",
-    "title": "ADDN / ALTN TO CERTAIN JCO/OR MD ACCN AT VIJAY LINES UNDER AOR AGE B/R-I OF GE(S) MAMUN",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC AND CE PATHANKOT ZONE - MES ▸ CWE MAMUN - MES ▸ GE(SOUTH) MAMUN - MES",
-    "location": "GE (South) Mamun, MES Complex, Mamun Cantt, Pathan",
-    "unit": "GE (S) Mamun",
-    "buyer_address": "GE (South) Mamun, MES Complex, Mamun Cantt, Pathankot",
-    "pincode": "",
-    "lat": 32.27,
-    "lng": 75.65,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "03 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4512000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GE(S)/M-65/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_798952_1",
-    "title": "REPAIR/MAINT/REPLACEMENT AND IMPROVEMENT WORK OF LT CABLES, CABLE JOINTS, LT OVERHEAD DISTRIBUTION SYSTEM VARIOUS SERVICES CONNECTIONS AND DISTRIBUTION SYSTEMS AND OTHER CONNECTED WORKS IN TECH AREA AT AFS KANPUR.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) CHAKERI - MES ▸ GE E/M AF CHAKERI - MES",
-    "location": "AOR of GE(AF) E/M CHAKERI",
-    "unit": "GE(AF) E/M CHAKERI",
-    "buyer_address": "O/o GE(AF) E/M CHAKERI",
-    "pincode": "",
-    "lat": 26.45,
-    "lng": 80.33,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 5000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8874/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799009_1",
-    "title": "COMPREHENSIVE MAINTENANCE OF SOLAR SUB STATION AND CONNECTED WORKS AT AFS CHAKERI.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) CHAKERI - MES ▸ GE E/M AF CHAKERI - MES",
-    "location": "AOR of GE(AF) E/M CHAKERI",
-    "unit": "GE(AF) E/M CHAKERI",
-    "buyer_address": "O/o GE(AF) E/M CHAKERI",
-    "pincode": "",
-    "lat": null,
-    "lng": null,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8865/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_784417_3",
-    "title": "REPAIR AND CLEANING OF SEWAGE LINE, SEPTIC TANKS AND SOAKAGE WELL IN LAL TIKKU KHAD AREA UNDER AGE B/R-II OF GE (SOUTH) MAMUN",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC AND CE PATHANKOT ZONE - MES ▸ CWE MAMUN - MES ▸ GE(SOUTH) MAMUN - MES",
-    "location": "GE (South) Mamun, MES Complex, Mamun Cantt, Pathan",
-    "unit": "GE (S) Mamun",
-    "buyer_address": "E (South) Mamun, MES Complex, Mamun Cantt, Pathankot",
-    "pincode": "",
-    "lat": 32.27,
-    "lng": 75.65,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "03 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2500000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GE(S)/M-43/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799413_1",
-    "title": "SPL REPAIR REPLACEMENT TO GI SHEET INCLUDING CONNECTING WORKS AT OTM ACCN BLDG NO T-4 AT 505 ABW UNDER GE NORTH DELHI CANTT10",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC and CE DELHI ZONE-MES ▸ CWE DELHI CANTT-MES ▸ GE (NORTH) DELHI CANTT-MES",
-    "location": "GE NORTH DELHI CANTT 10",
-    "unit": "GE North Delhi Cantt-10",
-    "buyer_address": "GE NORTH DELHI CANTT-10",
-    "pincode": "",
-    "lat": 28.596,
-    "lng": 77.16,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4851000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GE/NORTH-177/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_798816_1",
-    "title": "MAINTENANCE OF OVER HEAD TANKS, UG SUMPS, STATIC WATER TANK AND REDEVELOPMENT OF BOREWELL INCLUDING OTHER ALLIED WORKS AT AFS KANPUR.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) CHAKERI - MES ▸ GE E/M AF CHAKERI - MES",
-    "location": "AOR of GE(AF) E/M CHAKERI",
-    "unit": "GE(AF) E/M CHAKERI",
-    "buyer_address": "O/o GE(AF) E/M CHAKERI",
-    "pincode": "",
-    "lat": 26.45,
-    "lng": 80.33,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4500000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8882/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_798930_1",
-    "title": "REPAIR/REPLACEMENT OF OLD ALUMINUM WIRING INFRASTRUCTURE AND CONNECTED ITEMS AT AFSK.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) CHAKERI - MES ▸ GE E/M AF CHAKERI - MES",
-    "location": "AOR of GE(AF) E/M CHAKERI",
-    "unit": "GE(AF) E/M CHAKERI",
-    "buyer_address": "O/o GE(AF) E/M CHAKERI",
-    "pincode": "",
-    "lat": null,
-    "lng": null,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4500000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8886/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799202_1",
-    "title": "REPAIR AND MAINTENANCE OF INTERNAL ELECTRICAL INFRASTRUCTURE IN TECHNICAL AREA AT AFS KANPUR.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) CHAKERI - MES ▸ GE E/M AF CHAKERI - MES",
-    "location": "AOR of GE(AF) E/M CHAKERI",
-    "unit": "GE(AF) E/M CHAKERI",
-    "buyer_address": "O/o GE(AF) E/M CHAKERI",
-    "pincode": "",
-    "lat": 26.45,
-    "lng": 80.33,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 5000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8890/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_798931_1",
-    "title": "REPAIR AND MAINTENANCE OF INTERNAL ELECTRICAL INFRASTRUCTURE IN SEMI TECHNICAL AREA AT AFS KANPUR.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) CHAKERI - MES ▸ GE E/M AF CHAKERI - MES",
-    "location": "AOR of GE(AF) E/M CHAKERI",
-    "unit": "GE(AF) E/M CHAKERI",
-    "buyer_address": "O/o GE(AF) E/M CHAKERI",
-    "pincode": "",
-    "lat": 26.45,
-    "lng": 80.33,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4500000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8888/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_798943_1",
-    "title": "REPAIR/ MAINT OF INTERNAL ELECTRIFICATION WORKS AND REPAIR/ RENEWAL AND MAINT VARIOUS TYPES OF CEILING FANS, EXHAUST FAN AND CONNECTED MISC ELECTRICAL ACCESSORIES WORKS AT SNCOS AND OR MD ACCN AT AGV AFS KANPUR.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) CHAKERI - MES ▸ GE E/M AF CHAKERI - MES",
-    "location": "AOR of GE(AF) E/M CHAKERI",
-    "unit": "GE(AF) E/M CHAKERI",
-    "buyer_address": "O/o GE(AF) E/M CHAKERI",
-    "pincode": "",
-    "lat": 26.45,
-    "lng": 80.33,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 3000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8885/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_798975_1",
-    "title": "REPAIR AND MAINT OF PACKAGE TYPE AIR CONDITIONER AND WATER COOLED AIR CONDITIONER PLANT AT VARIOUS LOCATION IN TECH AREA AT AFS CHAKERI KANPUR.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) CHAKERI - MES ▸ GE E/M AF CHAKERI - MES",
-    "location": "AOR of GE(AF) E/M CHAKERI",
-    "unit": "GE(AF) E/M CHAKERI",
-    "buyer_address": "O/o GE(AF) E/M CHAKERI",
-    "pincode": "",
-    "lat": 26.45,
-    "lng": 80.33,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 5000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8879/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_798580_1",
-    "title": "REPAIR AND MAINTENANCE OF WATER SUPPLY LINES WITH CONNECTED ITEM IN N1, N4 NARENDRA, NAIR, KULDEEP AND POWER HOUSE QTR AREA AT AFS KANPUR.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) CHAKERI - MES ▸ GE E/M AF CHAKERI - MES",
-    "location": "AOR of GE(AF) E/M CHAKERI",
-    "unit": "GE(AF) E/M CHAKERI",
-    "buyer_address": "O/o GE(AF) E/M CHAKERI",
-    "pincode": "",
-    "lat": 26.45,
-    "lng": 80.33,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 5000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8884/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_798606_1",
-    "title": "REPAIR/MAINTENANCE OF DBS, JUNCTION BOX, EARTHING SYSTEM AND CONNECTED ITEMS AT DOMESTIC AREA.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) CHAKERI - MES ▸ GE E/M AF CHAKERI - MES",
-    "location": "AOR of GE(AF) E/M CHAKERI",
-    "unit": "GE(AF) E/M CHAKERI",
-    "buyer_address": "O/o GE(AF) E/M CHAKERI",
-    "pincode": "",
-    "lat": null,
-    "lng": null,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8889/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_791825_2",
-    "title": "REPAIR AND MAINT OF UNSERVICEABLE LT PANELS, SWITCH GEARS AND CABLES NETWORK AT BANA ENCLAVE (LTK AREA) UNDER GE (S) MAMUN",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC AND CE PATHANKOT ZONE - MES ▸ CWE MAMUN - MES ▸ GE(SOUTH) MAMUN - MES",
-    "location": "GE (South) Mamun, MES Complex, Mamun Cantt, Pathan",
-    "unit": "GE (S) Mamun",
-    "buyer_address": "GE (South) Mamun, MES Complex, Mamun Cantt, Ptk",
-    "pincode": "",
-    "lat": null,
-    "lng": null,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "03 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "REPAIR AND MAINT OF UNSERVICEABLE LT PANELS, SWITCH GEARS AND CABLES NETWORK AT BANA ENCLAVE (LTK AREA) UNDER GE (S) MAMUN GE(S)/M-67/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799411_1",
-    "title": "SPL REPAIR TO BLDG NO T18 AT 226 COY ASC SUPPLY DEPOT AREA UNDER GE NORTH DELHI CANTT10",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC and CE DELHI ZONE-MES ▸ CWE DELHI CANTT-MES ▸ GE (NORTH) DELHI CANTT-MES",
-    "location": "GE NORTH DELHI CANTT 10",
-    "unit": "GE NORTH DELHI CANTT",
-    "buyer_address": "GE NORTH DELHI CANTT-10",
-    "pincode": "",
-    "lat": 28.596,
-    "lng": 77.16,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4181000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GE/NORTH-175/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_799402_1",
-    "title": "SPL REPAIR TO HARDSTANDING AT CONVEY GROUND AT ZANGLI GRN IN THE AOR AGE B/R-I UNDER GE 874 EWS",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE NC AND CE 31 ZONE - MES ▸ 133 WORKS ENGINEER - MES",
-    "location": "GE 874 EWS",
-    "unit": "CWE HQ 133 WORKS ENGRS",
-    "buyer_address": "HQ 133 WORKS ENGRS, C/O 56 APO, PIN-914133",
-    "pincode": "914133",
-    "lat": null,
-    "lng": null,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "09 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4425000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CWEK/T-83/874 EWS/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_MES_798960_1",
-    "title": "REPAIR/MAINT OF UG CABLES, JOINTING KIT STRAIGHT THROUGH JOINT RE-ROUTING OF CABLE AND OTHER CONNECTED WORK AT TECH AREA AT AFS KANPUR.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (AF) NAGPUR - MES ▸ CWE (AF) CHAKERI - MES ▸ GE E/M AF CHAKERI - MES",
-    "location": "AOR of GE(AF) E/M CHAKERI",
-    "unit": "GE(AF) E/M CHAKERI",
-    "buyer_address": "O/o GE(AF) E/M CHAKERI",
-    "pincode": "",
-    "lat": 26.45,
-    "lng": 80.33,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 5000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8875/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
-  },
-  {
-    "tender_id": "2026_ARMY_799414_1",
-    "title": "Sup of Veg and Fruit Fresh at Sup Depot ASC Timapur and its Delivery Point wef 01 Nov 26 to 15 Nov 2026",
-    "org_chain": "IHQ of MoD (Army)-(OSCC) ▸ Western Comd-IHQ of MoD (Army)-(OSCC) ▸ CORPS 1-Western Comd-IHQ of MoD (Army)-(OSCC) ▸ SUP COY 1-IHQ of MoD (Army)",
-    "location": "Timarpur_ Del Point_AF_Stn GRTC and 2228 AF SQN Ne",
-    "unit": "OC  Kingsway Camp Timapur",
-    "buyer_address": "OC Kingsway Camp Timapur",
-    "pincode": "",
-    "lat": null,
-    "lng": null,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "25 Nov",
-    "published": "2026-11-19T03:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 667110,
-    "tender_type": "Limited",
-    "category": "Goods",
-    "ref_no": "50315/TIMARPUR/LP/DEC/ST-5",
-    "status": "active",
-    "first_seen": "2026-11-19T08:18:09Z",
-    "last_seen": "2026-11-21T19:53:51Z"
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799563_1",
@@ -3684,806 +2509,6 @@
     "tender_type": "Open Tender",
     "category": "Works",
     "ref_no": "8072/GE/2026-27/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_DGDE_799459_1",
-    "title": "Supply, installation, testing, commissioning and operation and Maintenance for 5 years of 9 Kwp grid connected roof top solar PV system at Akash Ganga Community Hall, RHA Bazar, Ambala Cantt.",
-    "org_chain": "Directorate General Defence Estates ▸ Principal Directorate Defence Estates -Western Command Chandigarh ▸ Cantonment Board Ambala -WC Chandigarh",
-    "location": "Ambala Cantt",
-    "unit": "Chief Executive officer.",
-    "buyer_address": "229, Race Course Road, Cantonment Board office, Ambala Cantt.",
-    "pincode": "",
-    "lat": 30.38,
-    "lng": 76.78,
-    "criticality": "routine",
-    "confidence": 0.75,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "30 Nov",
-    "published": "2026-11-19T10:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 430000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "ACB/AE/TDR/2026/19",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799488_1",
-    "title": "REPAIR/MAINT OF EXTERNAL WATER SUPPLY IN TXR AND TECHNICAL AREA AT AF STN SONEGAON.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE CC AND CE (AF) ALLAHABAD - MES ▸ CWE (AF) KHERIA - MES ▸ AGE (AF) (I) SONEGAON - MES",
-    "location": "Sonegaon",
-    "unit": "AGE (I) AF Sonegaon, Nagpur",
-    "buyer_address": "Bldg P-51, 44 Wing AF Station Sonegaon, Nagpur 440005",
-    "pincode": "",
-    "lat": 21.15,
-    "lng": 79.09,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T10:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 990000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8628/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799484_1",
-    "title": "CWE/AF AMB/SAR-T37/2026-27 REPAIR TO CERTAIN ROADS HARDSTANDING ROAD FURNITURE AND MISC CONNECTED ITEMS IN ARC SG AND PTS AT AF STN SARSAWA",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC and CE(AF) WAC PALAM-MES ▸ CWE (AF) Ambala-MES",
-    "location": "Sarsawa",
-    "unit": "CWE (AF) Ambala",
-    "buyer_address": "HQ CWE (AF) Ambala Cantt, 133001",
-    "pincode": "",
-    "lat": 30.38,
-    "lng": 76.78,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "17 Dec",
-    "published": "2026-11-19T10:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 6700000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CWE/AF AMB/SAR-T37/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799497_1",
-    "title": "CWE/AF AMB/SAR-T39/2026-27 REPAIR TO ROADS BERMS CULVERTS HARD STANDING AND CONNECTED ITEMS AT AF STN DEHRADUN UNDER GE AF SARSAWA",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC and CE(AF) WAC PALAM-MES ▸ CWE (AF) Ambala-MES",
-    "location": "Sarsawa",
-    "unit": "CWE (AF) Ambala",
-    "buyer_address": "HQ CWE (AF) Ambala Cantt, 133001",
-    "pincode": "",
-    "lat": 30.38,
-    "lng": 76.78,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T10:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CWE/AF AMB/SAR-T39/2026-27 REPAIR TO ROADS BERMS CULVERTS HARD STANDING AND CONNECTED ITEMS AT AF STN DEHRADUN UNDER GE AF SARSAWA CWE/AF AMB/SAR-T39/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799427_1",
-    "title": "REPAIR AND PAINTING TO STEEL FURNITURE AND GI CHARPOYS AT RCI COMPLEX MARRIED ACCN AND DSC PLATOON UNDER GE I RND RCI HYDARABAD",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ ADG (OF and DRDO) AND CE (R and D) SECUNDERABAD - MES ▸ GE (I) RND RCI HYDERABAD - MES",
-    "location": "GE(I) R AND D RCI, HYDERABAD",
-    "unit": "GE(I) R AND D RCI, HYDERABAD",
-    "buyer_address": "GE(I) RND RCI, MILITARY ENGINEER SERVICES, VIGNYANAKANCHA, RCI, HYDERABAD",
-    "pincode": "",
-    "lat": 17.39,
-    "lng": 78.49,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T10:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4500000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "REPAIR AND PAINTING TO STEEL FURNITURE AND GI CHARPOYS AT RCI COMPLEX MARRIED ACCN AND DSC PLATOON UNDER GE I RND RCI HYDARABAD 8507",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799495_1",
-    "title": "PROVN OF FOUR HIGH MAST LIGHTS AT CERTAIN LOC AT OTA GAYA UNDER GE GAYA",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE CC AND CE JABALPUR ZONE - MES ▸ CWE RANCHI - MES ▸ GE (P) GAYA - MES",
-    "location": "OTA Gaya",
-    "unit": "Garrison Engineer Gaya",
-    "buyer_address": "Garrison Engineer Gaya Paharpur Mil Stn Gaya Bihar, PIN-823005",
-    "pincode": "823005",
-    "lat": 24.7477606,
-    "lng": 84.9720865,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T10:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 3336554,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8060/A/GE/26-27/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799492_1",
-    "title": "PERIODICAL SERVICES AND MISC REPAIRS TO CERTAIN BLDGS AT GC AREA AT MIL STN GAYA",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE CC AND CE JABALPUR ZONE - MES ▸ CWE RANCHI - MES ▸ GE (P) GAYA - MES",
-    "location": "Mil Stn Gaya",
-    "unit": "Garrison Engineer Gaya",
-    "buyer_address": "Garrison Engineer Gaya Paharpur Mil Stn Gaya Bihar, PIN-823005",
-    "pincode": "823005",
-    "lat": 24.7477606,
-    "lng": 84.9720865,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T10:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8074/GE/26-27/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799501_1",
-    "title": "REPAIR AND MAINTENANCE OF HT EXTERNAL ELECTRIC SUPPLY DISTRIBUTION SYSTEM INCLUDING FILTRATION / REPAIR OF TRANSFORMER VCB / RMU AND REPLACEMENT OF HT UG CABLE AT AUNDH MILIITARY COMPLEX UNDER GE (MH AND RH) KHADKI",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE SC AND CE PUNE ZONE - MES ▸ CWE KIRKEE - MES",
-    "location": "CWE Khadki Pune",
-    "unit": "CWE Khadki Pune",
-    "buyer_address": "Headquarters CWE Khadki, Military Engineer Services, Range Hills Road, Khadki, Pune-411003",
-    "pincode": "",
-    "lat": 18.563,
-    "lng": 73.853,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "14 Dec",
-    "published": "2026-11-19T10:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2474000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CWE/KKE/TOKEN- 76 OF 2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799489_1",
-    "title": "CWE/AF AMB/AMB-T38/2026-27 REPAIR TO CERTAIN ROADS AT RAJPURA BAKNAUR AND KALPI UNDER GE AF AMBALA",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC and CE(AF) WAC PALAM-MES ▸ CWE (AF) Ambala-MES",
-    "location": "Ambala",
-    "unit": "CWE (AF) Ambala",
-    "buyer_address": "HQ CWE (AF) Ambala Cantt, 133001",
-    "pincode": "",
-    "lat": 30.38,
-    "lng": 76.78,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T10:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 3500000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CWE/AF AMB/AMB-T38/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799019_1",
-    "title": "SPL REPAIR OF MT GUN SHED PILLARS AND REPAIR OF BLDG NO E20 E6 E5 E43 E44 E45 E46 E47 E48 E49 E22 E11 E54 E50 E51 E53 E58 E56 E57 E55 AND THER SANCTIONED WORKS UNDER GE (WEST) FEROZEPUR CANTT",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC AND CE JALANDHAR ZONE - MES ▸ CWE FEROZEPUR - MES ▸ GE (WEST) FEROZEPUR - MES",
-    "location": "FEROZEPUR CANTT",
-    "unit": "GE (WEST) FEROZEPUR CANTT",
-    "buyer_address": "GE (WEST) FEROZEPUR CANTT",
-    "pincode": "",
-    "lat": 30.93,
-    "lng": 74.61,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "09 Dec",
-    "published": "2026-11-19T10:00:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4355000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "802026/GE-09/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_ARMY_799476_1",
-    "title": "14865/Z3/FLY/RRC/2025-28/Prov (FR)",
-    "org_chain": "IHQ of MoD (Army)-(OSCC) ▸ MGO BR-IHQ of MoD (Army)-(OSCC) ▸ ADG PROC-MGO BR-IHQ of MoD (Army)-(OSCC) ▸ PPO-ADG PROC-MGO BR-IHQ of MoD(Army)",
-    "location": "COD Agra",
-    "unit": "COL OS (LANDE)",
-    "buyer_address": "ROOM NO 220 D-II WING SENA BHAWAN",
-    "pincode": "",
-    "lat": 27.18,
-    "lng": 78.01,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T09:50:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": null,
-    "tender_type": "Single",
-    "category": "Goods",
-    "ref_no": "14865/Z3/FLY/RRC/2025-28/Prov (FR)",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799483_1",
-    "title": "PROVISION OF AIR CONDITIONER FOR MULTIMEDIA SMART CLASSROOMS IN ARYABHATTA P 153C AND BHASKARA P 153B AT INA EZHIMALA",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (NAVY) KOCHI - MES ▸ CWE EZHIMALA - MES ▸ GE MAINT EZHIMALA - MES",
-    "location": "Ezhimala",
-    "unit": "GE(MAINT)EZHIMALA",
-    "buyer_address": "GARRISON ENGINEER (MAINT) MILITARY ENGINEER SERVICES INDIAN NAVAL ACADEMY POST KANNUR DIST KERALA 670 310",
-    "pincode": "",
-    "lat": 11.87,
-    "lng": 75.37,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "11 Dec",
-    "published": "2026-11-19T09:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4491000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GE MAINT EZHIMALA 8923",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799481_1",
-    "title": "SPL REPAIR AND RESURFACING OF INTERNAL ROADS AT ABHERA CAMP AT KOTA MIL STN",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE SWC AND CE JAIPUR JAIPUR - MES ▸ CWE JAIPUR - MES",
-    "location": "GE KOTA",
-    "unit": "CWE JAIPUR",
-    "buyer_address": "Military Engineer Services, HQ Commander Works Engineer, Kalyan Marg, Banipark, Jaipur-06",
-    "pincode": "",
-    "lat": 26.92,
-    "lng": 75.79,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "12 Dec",
-    "published": "2026-11-19T09:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2904000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "82607/KOTA/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799478_1",
-    "title": "SPECIAL REP TO BLDG NO P-293 (VIDHYANCHAL GUEST ROOM) AT EME SCHOOL,VADODARA.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE JODHPUR ZONE - MES ▸ CWE AHMEDABAD - MES ▸ GE (ARMY ) BARODA - MES",
-    "location": "GE ARMY BARODA",
-    "unit": "Harikesh Meena EE",
-    "buyer_address": "Opp Akashwani, Makarpura road PO-ONGC Baroda-390009",
-    "pincode": "",
-    "lat": 22.31,
-    "lng": 73.18,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "09 Dec",
-    "published": "2026-11-19T09:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 3410000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "SPECIAL REP TO BLDG NO P-293 (VIDHYANCHAL GUEST ROOM) AT EME SCHOOL,VADODARA. 8139",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799391_1",
-    "title": "SPECIAL REPAIRS TO ARJUN BLOCK (BLOCK NO. P-143) AT SNC(O) MESS, NAVAL BASE, KOCHI",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (NAVY) KOCHI - MES ▸ CWE NW KOCHI - MES",
-    "location": "GE NW KOCHI",
-    "unit": "Col Siddharth Sharma CWE NW Kochi",
-    "buyer_address": "HQ CWE NW Kochi",
-    "pincode": "",
-    "lat": 9.931,
-    "lng": 76.267,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T09:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 975000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CWE(NW)KOCHI/81718",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799434_1",
-    "title": "PROVN OF 1X UNDERGROUND LIVING BUNKER AT 419 FD HOSP AT URI UNDER GE 969 EWS.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE NC AND CE 31 ZONE - MES ▸ 133 WORKS ENGINEER - MES ▸ GE 969 EWS - MES",
-    "location": "URI",
-    "unit": "MAJOR DEEPANSHU GE",
-    "buyer_address": "GE 969 EWS C/O 56 APO",
-    "pincode": "",
-    "lat": 22.3511148,
-    "lng": 78.6677428,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T09:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2430000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CA NO 969 WS- /2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_IAF_799480_1",
-    "title": "EXPRESSION OF INTEREST FOR PROCUREMENT OF 3D CO-ORDINATE MEASURING MACHINE (3D-CMM)",
-    "org_chain": "Indian Air Force ▸ HQ MC NAGPUR - IAF ▸ BRD AF STN SULUR - IAF",
-    "location": "IF, 5BRD, AFS SULUR",
-    "unit": "Wg Cdr J Naveen Kumar",
-    "buyer_address": "IF SECTION, 5BRD, AFS SULUR, COIMBATORE-641401",
-    "pincode": "",
-    "lat": 11.02,
-    "lng": 76.96,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "01 Dec",
-    "published": "2026-11-19T09:00:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": null,
-    "tender_type": "Open Tender",
-    "category": "Goods",
-    "ref_no": "5BRD/6201/13/IF BM-II",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799462_1",
-    "title": "SPECIAL REP AND REPLACEMENT OF ROOF SHEETS AT VARIOUS BAYS,EME SCHOOL,VADODARA.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE JODHPUR ZONE - MES ▸ CWE AHMEDABAD - MES ▸ GE (ARMY ) BARODA - MES",
-    "location": "GE ARMY BARODA",
-    "unit": "Harikesh Meena EE",
-    "buyer_address": "Opp Akashwani, Makarpura road PO-ONGC Baroda-390009",
-    "pincode": "",
-    "lat": 22.31,
-    "lng": 73.18,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "09 Dec",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4040000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8136",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799477_1",
-    "title": "REPAIR/ REPLACEMENT / MAINTENANCE OF OLD CONTROL PANELS, SWITCHGREARS, BUS BARS, CABLES, CRANE TRACKS AND CONNECTED REPAIRS OF VARIOUS EOT CRANES AND LIFTS AT 512 ABWS AND CAFVD TECH AREA AT AGE E/M II UNDER GE (C) KHADKI",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE SC AND CE PUNE ZONE - MES ▸ CWE KIRKEE - MES",
-    "location": "CWE Khadki Pune",
-    "unit": "CWE Khadki Pune",
-    "buyer_address": "Headquarters CWE Khadki, Military Engineer Services, Range Hills Road, Khadki, Pune-411003",
-    "pincode": "",
-    "lat": 18.563,
-    "lng": 73.853,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "14 Dec",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4469000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CWE/KKE/TOKEN- 73 OF 2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799473_1",
-    "title": "SPECIAL REP OF BLDG NO T-62 AT FWT,EME SCHOOL,VADODARA.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE JODHPUR ZONE - MES ▸ CWE AHMEDABAD - MES ▸ GE (ARMY ) BARODA - MES",
-    "location": "GE ARMY BARODA",
-    "unit": "Harikesh Meena EE",
-    "buyer_address": "Opp Akashwani, Makarpura road PO-ONGC Baroda-390009",
-    "pincode": "",
-    "lat": 22.31,
-    "lng": 73.18,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "09 Dec",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4759000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "SPECIAL REP OF BLDG NO T-62 AT FWT,EME SCHOOL,VADODARA. 8135",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799257_1",
-    "title": "COMPREHENSIVE MAINTENANCE/REPAIR OF APFC PANELS, SERVO VOLTAGE STABILIZERS AND CONNECTED ITEMS INCLUDING OTHER MISC ITEMS IN THE CAMERO AREA UNDER GE (AF) SUBROTO PARK",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC and CE(AF) WAC PALAM-MES ▸ CWE (AF) Palam-MES ▸ GE (AF) Subroto Park-MES",
-    "location": "GE (AF) SUBROTO PARK",
-    "unit": "GE (AF) SUBROTO PARK",
-    "buyer_address": "GE (AF) Subroto Park,, Delhi Cantt, Delhi-110010",
-    "pincode": "",
-    "lat": 28.591,
-    "lng": 77.157,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "09 Dec",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GE/SP/TOKEN-79/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799470_1",
-    "title": "CWE/AF AMB/SAR-T36/2026-27 REPAIR TO CERTAIN ROADS IN DOMESTIC AND TECHNICAL AREA AT AF STN SARSAWA UNDER GE AF SARSAWA",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC and CE(AF) WAC PALAM-MES ▸ CWE (AF) Ambala-MES",
-    "location": "Sarsawa",
-    "unit": "CWE (AF) Ambala",
-    "buyer_address": "HQ CWE (AF) Ambala Cantt, 133001",
-    "pincode": "",
-    "lat": 30.38,
-    "lng": 76.78,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "17 Dec",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 10100000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CWE/AF AMB/SAR-T36/2026-27 REPAIR TO CERTAIN ROADS IN DOMESTIC AND TECHNICAL AREA AT AF STN SARSAWA UNDER GE AF SARSAWA CWE/AF AMB/SAR-T36/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_788601_3",
-    "title": "SPL REPAIR AND CONVERSION OF OVERHEAD LT LINE TO UG LT LINE AND CONNECTED ITEMS AT PH-II OF AGE E/M UNDER GE TENGA",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE EC AND CE SILIGURI ZONE - MES ▸ CWE TENGA - MES ▸ GE TENGA-MEA",
-    "location": "GE TENGA",
-    "unit": "GE TENGA",
-    "buyer_address": "GE TENGA",
-    "pincode": "790116",
-    "lat": 27.25,
-    "lng": 92.42,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "03 Dec",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 3800000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "8272/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799444_1",
-    "title": "PROVN OF 23X WATER TANK 1000 LTR CAPACITY AT MES BLDG NO P08 P09 P10 P14 P15 AND P106 AT UNIT LOCATION 5 SIKH LI, SHED FOR COOK HOUSE BUILDING NP P16 AT UNIT LOCTION OF 5 SIKH AND BATH AREA AT COD, VEHICALE REPAIR CUM WASHING RAMP NEAR MT AREA OF 505",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC and CE DELHI ZONE-MES ▸ CWE DELHI CANTT-MES ▸ GE (NORTH) DELHI CANTT-MES",
-    "location": "GE NORTH DELHI CANTT 10",
-    "unit": "GE North Delhi Cantt-10",
-    "buyer_address": "GE NORTH DELHI CANTT-10",
-    "pincode": "",
-    "lat": 28.596,
-    "lng": 77.16,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "10 Dec",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4792000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GE/NORTH-140/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_790847_2",
-    "title": "REPAIR/REPLACEMENT OF FURNITURE AGAINST SURVEYED OFF FURNITURE AT AF STN BHISIANA UNDER GE (AF) BHISIANA",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC and CE(AF) WAC PALAM-MES ▸ CWE(AF) BHISIANA - MES",
-    "location": "Bathinda",
-    "unit": "CWE AF BHISIANA",
-    "buyer_address": "HQ CWE AF BHISIANA",
-    "pincode": "",
-    "lat": 30.17,
-    "lng": 74.93,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "01 Dec",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2500000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CWE(BHI)/BHI-65/2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_784334_3",
-    "title": "REPAIRS TO ROOF AND WATER PROOFING TREATMENT AT SQNS TRG AREA ETTINA ETTIKULAM AND CERTAIN OTM ACCN AREA UNDER AGE BR I AT INA EZHIMALA",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (NAVY) KOCHI - MES ▸ CWE EZHIMALA - MES ▸ GE MAINT EZHIMALA - MES",
-    "location": "Ezhimala",
-    "unit": "GE(MAINT)EZHIMALA",
-    "buyer_address": "GARRISON ENGINEER (MAINT) MILITARY ENGINEER SERVICES INDIAN NAVAL ACADEMY POST KANNUR DIST KERALA 670 310",
-    "pincode": "",
-    "lat": 11.87,
-    "lng": 75.37,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "11 Dec",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 3000000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "REPAIRS TO ROOF AND WATER PROOFING TREATMENT AT SQNS TRG AREA ETTINA ETTIKULAM AND CERTAIN OTM ACCN AREA UNDER AGE BR I AT INA EZHIMALA GE MAINT EZHIMALA 8904",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_792855_2",
-    "title": "REPAIR/ MAINT TO CERTAIN ROAD INCLUDING ROAD FURNITURE AT NEW MIL STN UNDER GE GANGTOK(2nd Call)",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE EC AND CE SILIGURI ZONE - MES ▸ HQ 136 WORKS ENGINEERS - MES",
-    "location": "Gangtok",
-    "unit": "CWE",
-    "buyer_address": "HQ 136 WORKS ENGINEERS PIN - 914136 C/O 99 APO",
-    "pincode": "914136",
-    "lat": 27.329046,
-    "lng": 88.6122673,
-    "criticality": "routine",
-    "confidence": 0.9,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "05 Dec",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 1400000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CWE/136-WE/66 OF 2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_777389_3",
-    "title": "COMPREHENSIVE MAINT/REPAIR OF GOODS/PASSENGER LIFTS MAKE ESCON AT INS DRONACHARYA AND SMA RAMESHWARAM UNDER GE FORT KOCHI",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (NAVY) KOCHI - MES ▸ CWE (NB) KOCHI - MES",
-    "location": "KOCHI",
-    "unit": "CWE NB KOCHI",
-    "buyer_address": "CWE (NB) KOCHI,, Kataribagh, Naval Base PO, Kochi-04",
-    "pincode": "",
-    "lat": 9.931,
-    "lng": 76.267,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "03 Dec",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2600000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "81280/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799461_1",
-    "title": "REPAIR TO 22 KV ELECTRIC PANEL, CABLE, GODs IN SUB STATION UNDER GE (I) (NAVY) LONAVLA",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (NAVY) KOCHI - MES ▸ GE (I) NAVY LONAWALA - MES",
-    "location": "GE (I) (NAVY) LONAVLA",
-    "unit": "Shri Gaurav Tiwari, IDSE",
-    "buyer_address": "GE (I) (NAVY), INS SHIVAJI - POST, LONAVLA -410402",
-    "pincode": "",
-    "lat": null,
-    "lng": null,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "12 Dec",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 4358000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "GE/LONAVLA/8517/E8",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799430_1",
-    "title": "PROVN OF 1X UNDERGROUND LIVING BUNKER AT 9 JAT URI UNDER GE 969 EWS.",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE NC AND CE 31 ZONE - MES ▸ 133 WORKS ENGINEER - MES ▸ GE 969 EWS - MES",
-    "location": "URI",
-    "unit": "MAJOR DEEPANSHU GE",
-    "buyer_address": "GE 969 EWS C/O 56 APO",
-    "pincode": "",
-    "lat": 22.3511148,
-    "lng": 78.6677428,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 2430000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "CA NO 969 WS- /2026-27",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_IAF_799467_1",
-    "title": "EXPRESSION OF INTEREST FOR SUPPLY OF INDIGENOUS WEATHER RADAR TESTER",
-    "org_chain": "Indian Air Force ▸ HQ MC NAGPUR - IAF ▸ BRD AF STN SULUR - IAF",
-    "location": "RSD, 5BRD, AFS SULUR",
-    "unit": "Wg Cdr KM Priya",
-    "buyer_address": "RSD, 5BRD, AFS SULUR COIMBATORE-641401",
-    "pincode": "",
-    "lat": 11.02,
-    "lng": 76.96,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "28 Nov",
-    "published": "2026-11-19T08:30:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": null,
-    "tender_type": "Open Tender",
-    "category": "Goods",
-    "ref_no": "5BRD/6803/57/RSDM BM-I",
-    "status": "active",
-    "first_seen": "2026-11-19T21:07:34Z",
-    "last_seen": "2026-11-22T07:41:10Z"
-  },
-  {
-    "tender_id": "2026_MES_799475_1",
-    "title": "REPAIR/MAINTENANCE OF CENTRAL AC PLANT AND CONNECTED ITEMS AT MH NASIRABAD UNDER GE NASIRABAD",
-    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE BHOPAL ZONE - MES ▸ CWE BHOPAL - MES",
-    "location": "Nasirabad",
-    "unit": "Col Pawan Kumar, CWE",
-    "buyer_address": "Headquarters, Commander Works Engineer, Bhopal, Military Engineer Services, SI Line, Bhopal, Pin Code - 462001 (Madhya Pradesh)",
-    "pincode": "",
-    "lat": 23.26,
-    "lng": 77.41,
-    "criticality": "routine",
-    "confidence": 0.7,
-    "domains": [],
-    "named_system": null,
-    "closing_date": "08 Dec",
-    "published": "2026-11-19T08:20:00Z",
-    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
-    "value_inr": 1500000,
-    "tender_type": "Open Tender",
-    "category": "Works",
-    "ref_no": "84375/E8",
     "status": "active",
     "first_seen": "2026-11-19T21:07:34Z",
     "last_seen": "2026-11-22T07:41:10Z"
@@ -11611,7 +9636,7 @@
     "ref_no": "GE/PNH-77/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799883_1",
@@ -11636,7 +9661,7 @@
     "ref_no": "8599/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799888_1",
@@ -11661,7 +9686,7 @@
     "ref_no": "8097/SHL/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799887_1",
@@ -11686,7 +9711,7 @@
     "ref_no": "8850/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_782379_4",
@@ -11711,7 +9736,7 @@
     "ref_no": "GE/PNH-58/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799884_1",
@@ -11736,7 +9761,7 @@
     "ref_no": "8671/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799782_1",
@@ -11761,7 +9786,7 @@
     "ref_no": "GE/PNH-76/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799885_1",
@@ -11786,7 +9811,7 @@
     "ref_no": "8096/SHL/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799233_1",
@@ -11811,7 +9836,7 @@
     "ref_no": "313201/CKFZN/LIKABALI/02/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799324_1",
@@ -11836,7 +9861,7 @@
     "ref_no": "313201/CKFZN/MISAMARI/13/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799345_1",
@@ -11861,7 +9886,7 @@
     "ref_no": "313201/CKFZN/DAHUNG/18/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799886_1",
@@ -11886,7 +9911,7 @@
     "ref_no": "GE/SHL/TOKEN-105 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799889_1",
@@ -11911,7 +9936,7 @@
     "ref_no": "GE/SHL/TOKEN-106 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799300_1",
@@ -11936,7 +9961,7 @@
     "ref_no": "313201/CKFZN/KOLKATA/11/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799230_1",
@@ -11961,7 +9986,7 @@
     "ref_no": "313201/CKFZN/RANGA/01/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799334_1",
@@ -11986,7 +10011,7 @@
     "ref_no": "313201/CKFZN/PANITOLA/15/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799274_1",
@@ -12011,7 +10036,7 @@
     "ref_no": "313201/CKFZN/SHILLONG/08/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799319_1",
@@ -12036,7 +10061,7 @@
     "ref_no": "313201/CKFZN/TEZPUR/12/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799337_1",
@@ -12061,7 +10086,7 @@
     "ref_no": "313201/CKFZN/TEZU/16/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799256_1",
@@ -12086,7 +10111,7 @@
     "ref_no": "313201/CKFZN/SEVOKERD/06/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799330_1",
@@ -12111,7 +10136,7 @@
     "ref_no": "313201/CKFZN/LEIMA/14/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799252_1",
@@ -12136,7 +10161,7 @@
     "ref_no": "313201/CKFZN/RANGIYA/05/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799292_1",
@@ -12161,7 +10186,7 @@
     "ref_no": "313201/CKFZN/PANAGARH/10/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799236_1",
@@ -12186,7 +10211,7 @@
     "ref_no": "313201/CKFZN/BENGD/03/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799340_1",
@@ -12211,7 +10236,7 @@
     "ref_no": "313201/CKFZN/NAMKUM/17/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799284_1",
@@ -12236,7 +10261,7 @@
     "ref_no": "313201/CKFZN/SILCHAR/09/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799270_1",
@@ -12261,7 +10286,7 @@
     "ref_no": "313201/CKFZN/NARANGI/07/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799247_1",
@@ -12286,7 +10311,7 @@
     "ref_no": "313201/CKFZN/BINNAG/04/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799781_1",
@@ -12311,7 +10336,7 @@
     "ref_no": "8597/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799817_1",
@@ -12336,7 +10361,7 @@
     "ref_no": "GE/LONAVLA/8510/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799841_1",
@@ -12361,7 +10386,7 @@
     "ref_no": "SPECIAL REPAIRS TO FIRE FIGHTING PIPE LINES FIRE HYDRANTS AND ASSOCIATED FITTING AND FIXTURES FROM DNPM OFFICE JUNCTION TO TO ADA GROUND AT NAVAL STATION KARANJA 84616-K/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799845_1",
@@ -12386,7 +10411,7 @@
     "ref_no": "8483/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799868_1",
@@ -12411,7 +10436,7 @@
     "ref_no": "SPECIAL REPAIRS TO BUILDING NOS. P-583/01 TO P-583/04 (OR MARRIED ACCOMMODATION) OF RAJPUT AT MILITARY STATION ALWAR. 8610/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799808_1",
@@ -12436,7 +10461,7 @@
     "ref_no": "3002/JOB/EQ/15/E3",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799767_1",
@@ -12461,7 +10486,7 @@
     "ref_no": "CWE/T-105/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799874_1",
@@ -12486,7 +10511,7 @@
     "ref_no": "SPECIAL REPAIRS TO BUILDING NOS PP 06 AND PP 08 OR MARRIED ACCOMMODATION IN PP LINES AND ADDITIONS ALTERATIONS TO BUILDING NO. ML-01 OFFICERS MESS IN ML LINES, ALWAR MILITARY STATION 8611/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_792357_2",
@@ -12511,7 +10536,7 @@
     "ref_no": "80051/37/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799835_1",
@@ -12536,7 +10561,7 @@
     "ref_no": "SPECIAL REPAIRS TO BLDG NO. JP-208 OF EME BN AT JP LINE AT ALWAR MIL STN 8607/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799842_1",
@@ -12561,7 +10586,7 @@
     "ref_no": "8504/E8 OF 2026-2027",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_792015_2",
@@ -12586,7 +10611,7 @@
     "ref_no": "REPAIR AND MAINT OF INTERNAL ROADS INCLUDING ROADS SIDE FURNITURE AT UPPER AND LOWER LEIMAKHONG MIL STN UNDER GE 869 EWS 8178",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799787_1",
@@ -12611,7 +10636,7 @@
     "ref_no": "COMPREHENSIVE MAINTENANCE OF LIFT AT DSC MESS AND SNCO MESS AT AIR FORCE STATION MUMBAI UNDER GE (AF) THANE 3039/LIFT/MUM/E3",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_794614_2",
@@ -12636,7 +10661,7 @@
     "ref_no": "SPL REPAIR WORK OF BLDG NO T-26 AND T-27 (A VEH REPAIR SHEDS) OF 6023 (I) ARMD WKSP AND OTHER SANCTIONED WORK AT NAMS (2nd Call) GE NAMS-68/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_790131_2",
@@ -12661,7 +10686,7 @@
     "ref_no": "GEK-79/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799823_1",
@@ -12686,7 +10711,7 @@
     "ref_no": "3002/JOB/EQ/16/E3",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799809_1",
@@ -12711,7 +10736,7 @@
     "ref_no": "CA No CWE BKN-Token No 54/2026-2027",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799752_1",
@@ -12736,7 +10761,7 @@
     "ref_no": "COMPREHENSIVE MAINTENANCE AMC OF LIFT IN VARIOUS LAB AT METCALFE HOUSE AND JCB AREA UNDER GE I RND DELHI GE/RND/T-60/DLI/2026-2027",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_774189_2",
@@ -12761,7 +10786,7 @@
     "ref_no": "8446/26-27/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799819_1",
@@ -12786,7 +10811,7 @@
     "ref_no": "CA No CWE BKN-Token No 89/2026-2027",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_790454_2",
@@ -12811,7 +10836,7 @@
     "ref_no": "GEK-73/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799865_1",
@@ -12836,7 +10861,7 @@
     "ref_no": "REPAIR/ REPLACEMENT OF CENTRAL/ PACKAGE TYPE AC PLANTS, COLD STORAGE NO 1 AND 2 AT MH AND DESERT COOLERS, DEEP FREEZERS, VOLTAGE STABILIZER, SPLIT AC, REFRIGERETOR, WATER COOLER OF VARIOUS CAPACITIES FOR COOLING APPLIANCES HELD AT ACCS UNDER GE(N) 8312/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_757205_4",
@@ -12861,7 +10886,7 @@
     "ref_no": "GE/RND/T-64/AGR/2025-2026",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799523_1",
@@ -12886,7 +10911,7 @@
     "ref_no": "8500/E8 OF 2026-2027",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799756_1",
@@ -12911,7 +10936,7 @@
     "ref_no": "8608/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_790344_2",
@@ -12936,7 +10961,7 @@
     "ref_no": "COMPREHENSIVE MAINT OF OTM ACCN AT SUBATHU UNDER GE KASAULI GEK-41/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799866_1",
@@ -12961,7 +10986,7 @@
     "ref_no": "8331/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799743_1",
@@ -12986,7 +11011,7 @@
     "ref_no": "REAPIR/MAINT OF TRANSFORMER, VCB PANEL INCLUDING OF HT CABLES AND CERTAIN ALLIED MISC WORKS AT METCALFE HOUSE AND JCB LAB AREA UNDER GE I RND DELHI GE/RND/T-62/DLI/2026-2027",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799855_1",
@@ -13011,7 +11036,7 @@
     "ref_no": "8484/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799831_1",
@@ -13036,7 +11061,7 @@
     "ref_no": "E QUOTATION FOR REPAIR/MAINT OF IR HEATER AT PAINT SHOP TECH AREA AIR FORCE STATION CHAKERI KANPUR UNDER GE (AF) E/M CHAKERI 3002/JOB/EQ/17/E3",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799850_1",
@@ -13061,7 +11086,7 @@
     "ref_no": "SPECIAL REPAIR OF BLDG NO T-283 T-284 AND T-292(APPS) AT MIL STN DHARCHULA UNDER GE(MES) PITHORAGARH GE/PGH/83 of 2026-27 (8826/PGH/E8)",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799805_1",
@@ -13086,7 +11111,7 @@
     "ref_no": "8481/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799757_1",
@@ -13111,7 +11136,7 @@
     "ref_no": "8612/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_790467_2",
@@ -13136,7 +11161,7 @@
     "ref_no": "GEK-61/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799856_1",
@@ -13161,7 +11186,7 @@
     "ref_no": "8485/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799747_1",
@@ -13186,7 +11211,7 @@
     "ref_no": "GE/RND/T-63/DLI/2026-2027",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_790469_2",
@@ -13211,7 +11236,7 @@
     "ref_no": "GEK-60/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799793_1",
@@ -13236,7 +11261,7 @@
     "ref_no": "3002/JOB/EQ/14/E3",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799853_1",
@@ -13261,7 +11286,7 @@
     "ref_no": "CWE/LKO/W/T-66 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799814_1",
@@ -13286,7 +11311,7 @@
     "ref_no": "C/8775/26-27/E8 TOKEN 94 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799749_1",
@@ -13311,7 +11336,7 @@
     "ref_no": "GE (AF)/CHD/T-49/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799733_1",
@@ -13336,7 +11361,7 @@
     "ref_no": "GE NAMS-104/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799753_1",
@@ -13361,7 +11386,7 @@
     "ref_no": "REPAIR/MAINT OF EXTERNAL ELECTRIFICATION TRANSFORMER VCB, LT PANELS, LT UG CABLE AND OTHER CONNECTED WORKS IN DIPAS, DIPR, CFEES AND RAC OF KWC AREA UNDER GE I RND DELHI GE/RND/T-64/DLI/2026-2027",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799764_1",
@@ -13386,7 +11411,7 @@
     "ref_no": "GE NAMS-97/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799774_1",
@@ -13411,7 +11436,7 @@
     "ref_no": "SPECIAL REPAIR OF BLDG NO P - 66 (06 X or MD ACCN) KHETERPAL ENCLAVE AT GE NAMS GE NAMS-113/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_781625_2",
@@ -13436,7 +11461,7 @@
     "ref_no": "8438/26-27/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_781620_2",
@@ -13461,7 +11486,7 @@
     "ref_no": "8437/26-27/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_788949_3",
@@ -13486,7 +11511,7 @@
     "ref_no": "86077",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799760_1",
@@ -13511,7 +11536,7 @@
     "ref_no": "8614/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799770_1",
@@ -13536,7 +11561,7 @@
     "ref_no": "8609/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799849_1",
@@ -13561,7 +11586,7 @@
     "ref_no": "REPAIR TO EXISTING ROAD POT HOLES, BERMS AT CERTAIN POCKETS AT ROWRIAH, SARAIBARI AND BHALUKMARA UNDER JORHAT MIL STN 83121/JOR/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799843_1",
@@ -13586,7 +11611,7 @@
     "ref_no": "CELZ/PRJ/T-27 of 2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_783091_2",
@@ -13611,7 +11636,7 @@
     "ref_no": "SMART PERIODICAL SERVICES TO JCOS, ORS MD ACCN AND OTM ACCN INCL MAP AREA OF 223 ABOD AND 23 FAD AREA AT MIL STN 8326/28/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799149_1",
@@ -13636,7 +11661,7 @@
     "ref_no": "313201/MFC/NAMKUM/15/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799104_1",
@@ -13661,7 +11686,7 @@
     "ref_no": "313201/MFC/RANGIYA/05/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799875_1",
@@ -13686,7 +11711,7 @@
     "ref_no": "OT/EC/3/56/26-27/3244",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799117_1",
@@ -13711,7 +11736,7 @@
     "ref_no": "313201/MFC/NARANGI/08/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799111_1",
@@ -13736,7 +11761,7 @@
     "ref_no": "313201/MFC/SEVOKERD/06/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799882_1",
@@ -13761,7 +11786,7 @@
     "ref_no": "OT/EC/3/56/26-27/3244",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799093_1",
@@ -13786,7 +11811,7 @@
     "ref_no": "313201/MFC/BENGDUBI/04/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799049_1",
@@ -13811,7 +11836,7 @@
     "ref_no": "313201/MFC/LEIMAK/02/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799089_1",
@@ -13836,7 +11861,7 @@
     "ref_no": "313201/MFC/LIKABALI/03/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799881_1",
@@ -13861,7 +11886,7 @@
     "ref_no": "GE(I)CG/VIZ/TOKEN/50 OF 2026-2027",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799876_1",
@@ -13886,7 +11911,7 @@
     "ref_no": "GER-90/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799877_1",
@@ -13911,7 +11936,7 @@
     "ref_no": "8006/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_BRO_799794_1",
@@ -13936,7 +11961,7 @@
     "ref_no": "CE (P) BCN/EPC/08/2026-27",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799872_1",
@@ -13961,7 +11986,7 @@
     "ref_no": "C/8154/2026-27/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799869_1",
@@ -13986,7 +12011,7 @@
     "ref_no": "8001/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799871_1",
@@ -14011,7 +12036,7 @@
     "ref_no": "8003/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799852_1",
@@ -14036,7 +12061,7 @@
     "ref_no": "C/8156/2026-27/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799101_1",
@@ -14061,7 +12086,7 @@
     "ref_no": "AGE (I)/FAT/E-3/QT-02 OF 2026-2027",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799806_1",
@@ -14086,7 +12111,7 @@
     "ref_no": "3042/02/E3",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799870_1",
@@ -14111,7 +12136,7 @@
     "ref_no": "8002/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799873_1",
@@ -14136,7 +12161,7 @@
     "ref_no": "REPAIR / MAINT OF WEATHER PROOF CCD OF BOUNDARY WALL IN TECH AREA AT AFS HASI MARA C/8157/2026-27/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799867_1",
@@ -14161,7 +12186,7 @@
     "ref_no": "8999/E8",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799123_1",
@@ -14186,7 +12211,7 @@
     "ref_no": "313201/MFC/PANAGARH/10/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799139_1",
@@ -14211,7 +12236,7 @@
     "ref_no": "313201/MFC/PANITOLA/13/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799120_1",
@@ -14236,7 +12261,7 @@
     "ref_no": "313201/MFC/SILCHAR/09/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799157_1",
@@ -14261,7 +12286,7 @@
     "ref_no": "313201/MFC/DAHUNG/16/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799114_1",
@@ -14286,7 +12311,7 @@
     "ref_no": "313201/MFC/BINNAGURI/07/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799862_1",
@@ -14311,7 +12336,7 @@
     "ref_no": "OT/EC/3/56/26-27/3244",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799043_1",
@@ -14336,7 +12361,7 @@
     "ref_no": "313201/MFC/RANGAPA/01/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799146_1",
@@ -14361,7 +12386,7 @@
     "ref_no": "313201/MFC/TEZPUR/14/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799854_2",
@@ -14386,7 +12411,7 @@
     "ref_no": "OT/EC/3/56/26-27/3244",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799126_1",
@@ -14411,7 +12436,7 @@
     "ref_no": "313201/MFC/KOLKATA/11/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799132_1",
@@ -14436,7 +12461,7 @@
     "ref_no": "313201/MFC/SHILLONG/12/27-28",
     "status": "active",
     "first_seen": "2026-11-21T19:53:51Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799864_1",
@@ -15386,7 +13411,7 @@
     "ref_no": "8252/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799944_1",
@@ -15411,7 +13436,7 @@
     "ref_no": "8417/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799938_1",
@@ -15436,7 +13461,7 @@
     "ref_no": "864/WS-105(T)/2026-27",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799936_1",
@@ -15461,7 +13486,7 @@
     "ref_no": "CERTAIN WORKS UNDER GE (N) BATHINDA MIL STN AGAINST JOB NO 81SA/BTD/ REV-17/2026-27, 81SA/BTD/REV-26/2026-27, 81SA/BTD/REV-39/2026-27, 81SA/BTD/REV-51/2026-27, 81SA/BTD/MINOR-03/2026-27, 81SA/BTD/MINOR-17/2026-27 AND 81SA/BTD/MINOR-34/ 8941/NIT-70/26-27/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_792951_2",
@@ -15486,7 +13511,7 @@
     "ref_no": "SPECIAL REPAIR/ REPLACEMENT OF ROAD FURNITURE AND INFO BOARD AT CERTAIN PLACE UNDER GE (N) BATHINDA AT BATHINDA MIL STN 8941/NIT-52/26-27/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799933_1",
@@ -15511,7 +13536,7 @@
     "ref_no": "REPAIR AND MAINTENANCE OF MISC FURNITURE OF OFFRS ACCN OF BSO 864 EWS AT BB CANTT UNDER GE 864 EWS 864/WS-104(T)/2026-27",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799931_1",
@@ -15536,7 +13561,7 @@
     "ref_no": "SPECIAL REPAIR TO BLDG. NO P-60 (OTM-B SQN) UNDER GE (N) BATHINDA AT BATHINDA MIL STN 8941/NIT-69/26-27/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_NAVY_799934_1",
@@ -15561,7 +13586,7 @@
     "ref_no": "434/3/67/RFP-0245",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_DRDO_799909_1",
@@ -15586,7 +13611,7 @@
     "ref_no": "DRDL/2026-27/STAR/27STA026",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799924_1",
@@ -15611,7 +13636,7 @@
     "ref_no": "8743/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_IAF_799926_1",
@@ -15636,7 +13661,7 @@
     "ref_no": "7BRD/INDG/EOI/11/27-27",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799920_1",
@@ -15661,7 +13686,7 @@
     "ref_no": "4414/AMSB/2026-27/01/GS(EM) dt 23 Nov 2026",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_793233_4",
@@ -15686,7 +13711,7 @@
     "ref_no": "",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799922_1",
@@ -15711,7 +13736,7 @@
     "ref_no": "8892/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799913_1",
@@ -15736,7 +13761,7 @@
     "ref_no": "GERD/PSN/TOKEN/72 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799921_1",
@@ -15761,7 +13786,7 @@
     "ref_no": "8720/E8 GE (P) NAVY MANDOVI",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_786167_2",
@@ -15786,7 +13811,7 @@
     "ref_no": "84082/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799918_1",
@@ -15811,7 +13836,7 @@
     "ref_no": "8869/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799911_1",
@@ -15836,7 +13861,7 @@
     "ref_no": "PROVISION OF DEFICIENT FURNITURE FOR OFFICE OF AGE I UNDER GE NAVY CHENNAI 8884/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_IAF_799910_1",
@@ -15861,7 +13886,7 @@
     "ref_no": "7BRD/INDG/EOI/05/27-27",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799908_1",
@@ -15886,7 +13911,7 @@
     "ref_no": "",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_764431_3",
@@ -15911,7 +13936,7 @@
     "ref_no": "GE/E/LKO/T-09 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799907_1",
@@ -15936,7 +13961,7 @@
     "ref_no": "8621/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_789944_3",
@@ -15961,7 +13986,7 @@
     "ref_no": "8743/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799905_1",
@@ -15986,7 +14011,7 @@
     "ref_no": "GE/E/LKO/T-115 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799904_1",
@@ -16011,7 +14036,7 @@
     "ref_no": "8620/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799890_1",
@@ -16036,7 +14061,7 @@
     "ref_no": "8128/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_788099_3",
@@ -16061,7 +14086,7 @@
     "ref_no": "9083/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_776411_4",
@@ -16086,7 +14111,7 @@
     "ref_no": "9051/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799879_1",
@@ -16111,7 +14136,7 @@
     "ref_no": "PROVISION OF SEWAGE TREATMENT PLANT AT OLD AIR FIELD, SRINAGAR UNDER GE 970 EWS GE 970 EWS-90(T)/2026-27",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799898_1",
@@ -16136,7 +14161,7 @@
     "ref_no": "REPAIR / MAINT OF WEATHER PROOF CCD OF VARIOUS BLDGS IN TECH AREA AT AFS HASI MARA C/8152/2026-27/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799902_1",
@@ -16161,7 +14186,7 @@
     "ref_no": "C/8159/2026-27/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799880_1",
@@ -16186,7 +14211,7 @@
     "ref_no": "GE/JHA/TOK/79 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799894_1",
@@ -16211,7 +14236,7 @@
     "ref_no": "GE/JHA/TOK/83 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799892_1",
@@ -16236,7 +14261,7 @@
     "ref_no": "8967/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799891_1",
@@ -16261,7 +14286,7 @@
     "ref_no": "8965/E8",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799893_1",
@@ -16286,7 +14311,7 @@
     "ref_no": "GE/JHA/TOK/81 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-23T08:30:27Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800016_1",
@@ -16311,7 +14336,7 @@
     "ref_no": "84715",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_798200_1",
@@ -16336,7 +14361,7 @@
     "ref_no": "8588/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800033_1",
@@ -16361,7 +14386,7 @@
     "ref_no": "8344/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800031_1",
@@ -16386,7 +14411,7 @@
     "ref_no": "8076/GE/26-27/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_794437_2",
@@ -16411,7 +14436,7 @@
     "ref_no": "9141",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_792994_2",
@@ -16436,7 +14461,7 @@
     "ref_no": "GE/U-102/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800029_1",
@@ -16461,7 +14486,7 @@
     "ref_no": "8188/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800025_1",
@@ -16486,7 +14511,7 @@
     "ref_no": "8661/V/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_794709_2",
@@ -16511,7 +14536,7 @@
     "ref_no": "COMPREHENSIVE MAINTENANCE OF JOINERY WORK AND OTHER CONNECTED B R WORKS AT A AND C BLOCK OF AKASH GANGA INS RAJALI ARAKKONAM 8639E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800028_1",
@@ -16536,7 +14561,7 @@
     "ref_no": "8665/V/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800023_1",
@@ -16561,7 +14586,7 @@
     "ref_no": "CWE(AF)SGR/AWA-43/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_796546_1",
@@ -16586,7 +14611,7 @@
     "ref_no": "8787/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800018_1",
@@ -16611,7 +14636,7 @@
     "ref_no": "CWE/KKE/TOKEN- 70 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800010_1",
@@ -16636,7 +14661,7 @@
     "ref_no": "SPL REPAIR TO ROOF, VALLEY GUTTER OF PT SHED OF TRG BNS AND ACC WG AND PROVN OF STREET LIGHT FROM MITHIBERI GATE TO OTCT AREA (200M) AND PROVN OF 08XSTREET LIGHT AT MA BN 04XELECTRIC POLE WITH LIGHT (NO 1DEMOCOYKOTE TO EW-127) AT GE IMA DEHRADUN GE/IMA/T-80 OF 2026-27 9721/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_DGDE_791654_15",
@@ -16686,7 +14711,7 @@
     "ref_no": "PW/RD/KCB/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_BRO_799919_1",
@@ -16711,7 +14736,7 @@
     "ref_no": "80652",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799976_1",
@@ -16736,7 +14761,7 @@
     "ref_no": "8161/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799901_1",
@@ -16761,7 +14786,7 @@
     "ref_no": "CWE/D-73/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799989_1",
@@ -16786,7 +14811,7 @@
     "ref_no": "8120/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799807_1",
@@ -16811,7 +14836,7 @@
     "ref_no": "REPAIR OF GI CHARPOY 32 MM HARD TOP INCLUDING POLISHING/ PAINTING OF WOODEN/ STEEL FURNITURE ITEMS UNDER BSO OF GE SUKNA GE Sukna/9241",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799979_1",
@@ -16836,7 +14861,7 @@
     "ref_no": "SPL REPAIR OF OR MD ACCN BLDG NO P-440 (1 TO 08) OF EME BN AT DIPATOLI MIL STN UNDER GE DIPATOLI 8000/2267/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800019_1",
@@ -16861,7 +14886,7 @@
     "ref_no": "GE/H/T-76/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800005_1",
@@ -16886,7 +14911,7 @@
     "ref_no": "8626/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800003_1",
@@ -16911,7 +14936,7 @@
     "ref_no": "GE (NW) NOFRA 8633",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799804_1",
@@ -16936,7 +14961,7 @@
     "ref_no": "REPAIR AND MAINT OF STP AT U AND SUKNA AREA UNDER AGE E/M OF GE SUKNA AT MIL STN SUKNA GE Sukna/9151",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800008_1",
@@ -16961,7 +14986,7 @@
     "ref_no": "85698/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800015_1",
@@ -16986,7 +15011,7 @@
     "ref_no": "8316/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_788614_2",
@@ -17011,7 +15036,7 @@
     "ref_no": "GE (AF)/CHD/T-39/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799912_1",
@@ -17036,7 +15061,7 @@
     "ref_no": "GEK-71/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799925_1",
@@ -17061,7 +15086,7 @@
     "ref_no": "8333/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799968_1",
@@ -17086,7 +15111,7 @@
     "ref_no": "8154/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799906_1",
@@ -17111,7 +15136,7 @@
     "ref_no": "CWE/D-77/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799937_1",
@@ -17136,7 +15161,7 @@
     "ref_no": "8361/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799972_1",
@@ -17161,7 +15186,7 @@
     "ref_no": "PROVN OF 1 LAKH GALLON CAPACITY OHT AND 2 LAKH GALLONS CAPACITY SEMI UG SUMP ALONGWITH CONNECTED PIPELINE AT KHOJATOLI UNDER GE RANCHI 89143/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799983_1",
@@ -17186,7 +15211,7 @@
     "ref_no": "SPL REPAIRS TO BLDG NO P-18 (1 TO 08) (JCOs MD ACCN) OF FD HOSP AT DIPATOLI MIL STN UNDER GE DIPATOLI 8000/2268/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_794816_2",
@@ -17211,7 +15236,7 @@
     "ref_no": "PREVENTIVE/CORRECTIVE MAINTENANCE OF RAIN WATER HARVESTING AND EXISTING EXTERNAL WATER SUPPLY AND ALLIED WORKS AT VARIOUS LOCATIONS AT INS BAAZ, ARMY LAND AREA UNDER GE CAMPBELL BAY 8239/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799900_1",
@@ -17236,7 +15261,7 @@
     "ref_no": "CWE/D-71/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799999_1",
@@ -17261,7 +15286,7 @@
     "ref_no": "8412/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799996_1",
@@ -17286,7 +15311,7 @@
     "ref_no": "CWE-ND/T-88/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_794570_2",
@@ -17311,7 +15336,7 @@
     "ref_no": "PREVENTION OR CORRECTIVE MAINTENANCE TO RO PLANT AND PRESSURE SAND FILTER 7 ALLIED WORKS AT PUMP HPUSEES IN INS, BAAZ, ARMY LAND UNDER GE CAMPBELL BAY 8279/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799971_1",
@@ -17336,7 +15361,7 @@
     "ref_no": "8330/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_793443_2",
@@ -17361,7 +15386,7 @@
     "ref_no": "8000/2231/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800014_1",
@@ -17386,7 +15411,7 @@
     "ref_no": "GE/H/T-72/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799997_1",
@@ -17411,7 +15436,7 @@
     "ref_no": "GE/H/T-80/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799283_1",
@@ -17436,7 +15461,7 @@
     "ref_no": "",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_783070_2",
@@ -17461,7 +15486,7 @@
     "ref_no": "8424/26-27/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799994_1",
@@ -17486,7 +15511,7 @@
     "ref_no": "ADDITION ALTERATION AND SPECIAL REPAIR OF LAUNDRY WITH IRONING ROOM DRYING SHED (T 44) AT INS CHILKA UNDER GE CHILKA GE/CHL/8240 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_782796_3",
@@ -17511,7 +15536,7 @@
     "ref_no": "CANO GEN/TOKEN-86/2026-2027",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799992_1",
@@ -17536,7 +15561,7 @@
     "ref_no": "8312/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800000_1",
@@ -17561,7 +15586,7 @@
     "ref_no": "8586",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799946_1",
@@ -17586,7 +15611,7 @@
     "ref_no": "8012/1237/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800007_1",
@@ -17611,7 +15636,7 @@
     "ref_no": "8309/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_794562_2",
@@ -17636,7 +15661,7 @@
     "ref_no": "8243/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799916_1",
@@ -17661,7 +15686,7 @@
     "ref_no": "GEK-105/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799952_1",
@@ -17686,7 +15711,7 @@
     "ref_no": "",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800009_1",
@@ -17711,7 +15736,7 @@
     "ref_no": "GE/H/T-70/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_787845_3",
@@ -17736,7 +15761,7 @@
     "ref_no": "8249/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799941_1",
@@ -17761,7 +15786,7 @@
     "ref_no": "8362/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799734_1",
@@ -17786,7 +15811,7 @@
     "ref_no": "3000/01/E3",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_787863_3",
@@ -17811,7 +15836,7 @@
     "ref_no": "8254/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799943_1",
@@ -17836,7 +15861,7 @@
     "ref_no": "8012/1236/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_783320_3",
@@ -17861,7 +15886,7 @@
     "ref_no": "GE/CHL/8150 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799897_1",
@@ -17886,7 +15911,7 @@
     "ref_no": "CWE/D-70/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800001_1",
@@ -17911,7 +15936,7 @@
     "ref_no": "8389/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799903_1",
@@ -17936,7 +15961,7 @@
     "ref_no": "CWE/D-76/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_799928_1",
@@ -17961,7 +15986,7 @@
     "ref_no": "",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_ARMY_793626_2",
@@ -17986,7 +16011,7 @@
     "ref_no": "MS/160064/CAMC/NE/2026 MS/160064/CAMC/NE/2026",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799991_1",
@@ -18011,7 +16036,7 @@
     "ref_no": "CWE/KKE/TOKEN- 64 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_800004_1",
@@ -18036,7 +16061,7 @@
     "ref_no": "8342/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_784974_4",
@@ -18061,7 +16086,7 @@
     "ref_no": "80535",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799988_1",
@@ -18086,7 +16111,7 @@
     "ref_no": "84864/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799986_1",
@@ -18111,7 +16136,7 @@
     "ref_no": "8339/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799978_1",
@@ -18136,7 +16161,7 @@
     "ref_no": "SPECIAL REPAIR TO ROAD NEAR CERTAIN OTM ACCN AT CME PUNE UNDER GE(CME) . CWE/KKE/TOKEN- 85 OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_IAF_799935_1",
@@ -18161,7 +16186,7 @@
     "ref_no": "7BRD/INDG/RFP/02/26-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_784002_4",
@@ -18186,7 +16211,7 @@
     "ref_no": "PROVISION OF CREW REST ROOM AND TOILET ADJACENT TO OPS ROOM BLDG AND GUARD REST ROOM AT 250SU AND CERTAIN MAJOR REVENUE WORKS AT AFS HAKIMPET UNDER GE AF HAKIMPET 8991E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799974_1",
@@ -18211,7 +16236,7 @@
     "ref_no": "8310/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799929_1",
@@ -18236,7 +16261,7 @@
     "ref_no": "SPL REPAIR TO REPLACEMENT OF RUSTED CI PIPE LINE WITH DI PIPE FOR FEEDER NO 3 FROM FILTER HOUSE TO 16 FAD MAIN GATE AT BENGDUBI MIL STN UNDER GE BENGDUBI 8351/B/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799966_1",
@@ -18261,7 +16286,7 @@
     "ref_no": "SPECIAL REPAIR TO CERTAIN ROADS INSIDE OFFRS/JCOs/OR MD ACCN AT CME PUNE UNDER GE(CME) CWE/KKE/TOKEN- 84OF 2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799962_1",
@@ -18286,7 +16311,7 @@
     "ref_no": "GE I R AND D/CHD-101/2026-27 DEMOLITION OF BUILDING NO P-15 and P-16 AT DIHAR LEH GE I R AND D/CHD-101/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799896_1",
@@ -18311,7 +16336,7 @@
     "ref_no": "AGE(I)/FAT/E3/QT-04 OF 2026-2027",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_787474_2",
@@ -18336,7 +16361,7 @@
     "ref_no": "CWE/TKD/GUR/TOKEN-41 OF 2026-2027",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799970_1",
@@ -18361,7 +16386,7 @@
     "ref_no": "REPAIR / MAINT OF LT PANEL, LT UG CABLES, ACB, MCCB AND CONNECTED ITEMS AT AF STN DARBHANGA UNDER GE AF BIHTA GE/AF/BHT-51/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799981_1",
@@ -18386,7 +16411,7 @@
     "ref_no": "8311/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799895_1",
@@ -18411,7 +16436,7 @@
     "ref_no": "AGE(I)/FAT/QT-03 OF 2026-2027",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_794677_2",
@@ -18436,7 +16461,7 @@
     "ref_no": "SPECIAL REPAIRS TO ROAD OF MD ACCN AT KS-I AND KS-II (APPROX 1710M X 3.6M) IN BHUJ MIL STN 87343/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_784006_4",
@@ -18461,7 +16486,7 @@
     "ref_no": "ADDN/ALTN/IMP TO TECH COMPLEX AND SPL REPAIR/REPLACEMENT TO TECH FLT DESK AT AFS HAKIMPET UNDER GE (AF) HAKIMPET 8989E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799975_1",
@@ -18486,7 +16511,7 @@
     "ref_no": "CWE(NW)KOCHI/81621",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799973_1",
@@ -18511,7 +16536,7 @@
     "ref_no": "84863/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_IAF_799930_1",
@@ -18536,7 +16561,7 @@
     "ref_no": "AIRHQ/DPROC/26-27/R25071/PUR",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_IAF_799956_1",
@@ -18561,7 +16586,7 @@
     "ref_no": "AIRHQ/DPROC/25-26/W25136T2/PUR",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_IAF_799923_1",
@@ -18586,7 +16611,7 @@
     "ref_no": "AIRHQ/DPROC/26-27/R25048/PUR",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_IAF_799949_1",
@@ -18611,7 +16636,7 @@
     "ref_no": "AIRHQ/24-25/R25018T3R2125671T4",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799963_1",
@@ -18636,7 +16661,7 @@
     "ref_no": "CWE/PAL-91/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799955_1",
@@ -18661,7 +16686,7 @@
     "ref_no": "801732/AF/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799969_1",
@@ -18686,7 +16711,7 @@
     "ref_no": "GE/DW/TOKEN/116 OF 26-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799957_1",
@@ -18711,7 +16736,7 @@
     "ref_no": "GE(S)/PAT/T-97/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799954_1",
@@ -18736,7 +16761,7 @@
     "ref_no": "GE(S)/PAT/T-96/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799947_1",
@@ -18761,7 +16786,7 @@
     "ref_no": "GE(S)/PAT/T-91/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799960_1",
@@ -18786,7 +16811,7 @@
     "ref_no": "8998/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799948_1",
@@ -18811,7 +16836,7 @@
     "ref_no": "GE(S)/PAT/T-92/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799965_1",
@@ -18836,7 +16861,7 @@
     "ref_no": "Welcome Maintenance (Oct 26 to Mar 27) and connnected B/R nature Works in Offrs Accn Cariappa Vihar under GE (West) Delhi Cantt-10 GE/DW/TOKEN/117 OF 26-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799950_1",
@@ -18861,7 +16886,7 @@
     "ref_no": "GE(S)/PAT/T-93/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799945_1",
@@ -18886,7 +16911,7 @@
     "ref_no": "GE(S)/PAT/T-89/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799958_1",
@@ -18911,7 +16936,7 @@
     "ref_no": "8997/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799967_1",
@@ -18936,7 +16961,7 @@
     "ref_no": "868",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799961_1",
@@ -18961,7 +16986,7 @@
     "ref_no": "GE/DW/TOKEN/118 OF 26-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799953_1",
@@ -18986,7 +17011,7 @@
     "ref_no": "GE/DW/TOKEN/119 OF 26-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_793171_1",
@@ -19011,7 +17036,7 @@
     "ref_no": "958135/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799939_1",
@@ -19036,7 +17061,7 @@
     "ref_no": "8306/E8",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
   },
   {
     "tender_id": "2026_MES_799940_1",
@@ -19061,6 +17086,506 @@
     "ref_no": "CWE/AF CHD/ADM/T-51/2026-27",
     "status": "active",
     "first_seen": "2026-11-24T00:31:44Z",
-    "last_seen": "2026-11-24T00:31:44Z"
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_MES_800082_1",
+    "title": "ADDN ALTN TO BLDG NO P 122 KARAZ REPAIR BAY AND T 01 SCANIA REPAIR BAY WITH PROVN RPAIR OF DRAINAGE AROUND SCANIA REPAIR BAY CONNECTING WITH KARAZ BAY SHED NO 9 BODY REPAIR BAY GEAR BOX SEC AT TECHNICAL AREA OF 507 ARMY BASE WORKSHOP UNDER GE N KOL",
+    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE EC AND CE KOLKATA ZONE - MES",
+    "location": "GE North Kolkata",
+    "unit": "HQ Chief Engineer Kolkata Zone",
+    "buyer_address": "HQ CHIEF ENGINEER KOLKATA ZONE MILITARY ENGINEER SERVICES BALLYGUNGE MAIDAN CAMP GURUSADAY ROAD KOLKATA 700019",
+    "pincode": "",
+    "lat": 22.572,
+    "lng": 88.363,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "10 Dec",
+    "published": "2026-11-24T10:00:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 49200000,
+    "tender_type": "Open Tender",
+    "category": "Works",
+    "ref_no": "89130/E8",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_MES_800070_1",
+    "title": "REPAIR/MAINT OF HT DISTRIBUTION NETWORK, ISOLATORS, 11KV BUS BAR PANELS, AVR AND OTHER CONNECTED WORKS UNDER GE(AF)SRINAGAR",
+    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE NC AND CE (AF) UDHAMPUR - MES ▸ CWE (AF) SRINAGAR - MES",
+    "location": "GE AF SRINAGAR",
+    "unit": "CWE AF SRINAGAR",
+    "buyer_address": "HQ CWE AF SRINAGAR",
+    "pincode": "",
+    "lat": 34.083,
+    "lng": 74.797,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "21 Dec",
+    "published": "2026-11-24T09:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 5800000,
+    "tender_type": "Open Tender",
+    "category": "Works",
+    "ref_no": "CWE(AF)SGR/SGR-46/2026-27",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_BRO_799951_1",
+    "title": "PROVIDING, LAYING OF DBM 50 MM THK, BC 30 MM THK, APPLYING PRIME COAT AND TACK COAT AS PER MORT H SPCN BET KM 0.000 TO 14.500 FOR SURF WKS ON APPROACH RD TO BP160 FOR ERECTION OF FENCING AND CONSTR OF ROAD ALONG IMB OF 103 RCC/752 TF (P) UDK",
+    "org_chain": "Dte General Border Roads Organisation ▸ HQ CE(P) Udayak(Doom Dooma) - BRO",
+    "location": "Between Km 0.00 to 14.500 on approach rd to BP 160",
+    "unit": "Chief Engineer (P) Udayak",
+    "buyer_address": "HQ CE(P) Udayak, C/o 99 APO, Pin-931715, Doomdooma",
+    "pincode": "931715",
+    "lat": null,
+    "lng": null,
+    "criticality": "routine",
+    "confidence": 0.9,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "18 Dec",
+    "published": "2026-11-24T06:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 82947000,
+    "tender_type": "Open Tender",
+    "category": "Works",
+    "ref_no": "CE (P) Udayak/17/2026-27",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_BRO_800013_1",
+    "title": "PROVIDING, LAYING, DBM 50 MM THK, BC 30 MM THK, PRIME COAT AND TACK COAT AS PER MORTH SPECIFICATIONS BETWEEN KM 0.000 TO 5.000 FOR SURF WKS ON APPROACH ROAD TO BP156 AND BETWEEN KM 0.00 TO 4.420 ON APPROACH ROAD TO BP157 ALONG IMB 103 RCC/752 TF(UDK)",
+    "org_chain": "Dte General Border Roads Organisation ▸ HQ CE(P) Udayak(Doom Dooma) - BRO",
+    "location": "Bet Km 0.0 to 5.0 (BP 156) Km0.0 to 4.42 (BP 157)",
+    "unit": "Chief Enginner (P) Udayak",
+    "buyer_address": "HQ CE(P) Udayak, C/o 99 APO, Pin-931715, Doomdooma",
+    "pincode": "931715",
+    "lat": null,
+    "lng": null,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "18 Dec",
+    "published": "2026-11-24T06:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 54431000,
+    "tender_type": "Open Tender",
+    "category": "Works",
+    "ref_no": "CE (P) Udayak/18/2026-27",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_MES_800043_1",
+    "title": "REPAIR/ MAINT OF LT CABLE, MCCB AND OTHER MISC E/M CONNECTED WORKS IN ZONE-II AREA AT JOSHIMATH UNDER GE 871 EWS",
+    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE CC AND CE BAREILLY ZONE - MES ▸ CWE HILLS PITHORAGARH - MES ▸ GE 871EWS - MES",
+    "location": "JOSHIMATH",
+    "unit": "GARRISON ENGINEER",
+    "buyer_address": "GE 871 EWS, C/O 56 APO",
+    "pincode": "913871",
+    "lat": 30.5555752,
+    "lng": 79.5612607,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "15 Dec",
+    "published": "2026-11-24T05:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": null,
+    "tender_type": "Open Tender",
+    "category": "Works",
+    "ref_no": "8193/E8",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_MES_800059_1",
+    "title": "CONSTRUCTION OF 01 X SANITARY BLOCK FOR FEMALE AV AND STAFF AT JSTI, AEC TRG COLLEGE AND CENTRE PACHMARHI",
+    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE CC AND CE JABALPUR ZONE - MES ▸ CWE JABALPUR - MES ▸ AGE (I) PACHMARHI - MES",
+    "location": "AGE Indpt Pachmarhi Dist- Hoshangabad (MP)-461881",
+    "unit": "AGE(I) PACHMARHI",
+    "buyer_address": "AGE (Indpt) Pachmarhi Distt- Hoshangabad (MP)-461881",
+    "pincode": "",
+    "lat": null,
+    "lng": null,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "15 Dec",
+    "published": "2026-11-24T05:05:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 969979,
+    "tender_type": "Open Tender",
+    "category": "Works",
+    "ref_no": "AGE(I)/PACH/ of 2026-27(8855/E8)",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_IAF_800027_1",
+    "title": "EXPRESSION OF INTEREST FOR INDIGENOUS DEVELOPMENT OF AIRCRAFT SPARE, STRAP BONDING (DP-4387)",
+    "org_chain": "Indian Air Force ▸ HQ MC NAGPUR - IAF ▸ BRD AF STN SULUR - IAF",
+    "location": "5BRD ISC, AFS SULUR",
+    "unit": "Wg Cdr J Naveen Kumar",
+    "buyer_address": "SPE ISC, 5BRD AFS SULUR, COIMBATORE-641401",
+    "pincode": "",
+    "lat": 11.02,
+    "lng": 76.96,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "11 Dec",
+    "published": "2026-11-24T04:00:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": null,
+    "tender_type": "Open Tender",
+    "category": "Goods",
+    "ref_no": "5BRD/5703/21/ISC",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_DRDO_800002_1",
+    "title": "Fabrication of 1A/1W Detonator and TBI Test Fixture for AT/QT",
+    "org_chain": "Department of Defence Research and Development ▸ Defence Research and Development Organisation ▸ DFMM ▸ Office of DG (MSS) ▸ LRSAM (IAC)",
+    "location": "DRDL Hyderabad",
+    "unit": "Director DRDL",
+    "buyer_address": "DRDL Kanchanbagh Hyderabad - 500058",
+    "pincode": "",
+    "lat": 17.39,
+    "lng": 78.49,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "08 Dec",
+    "published": "2026-11-24T03:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": null,
+    "tender_type": "Limited",
+    "category": "Goods",
+    "ref_no": "DRDL/PGLRSAM/1701/31P/26/527",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_DRDO_800024_1",
+    "title": "Procurement of IAU and MIMRU Mating Connectors with Tools",
+    "org_chain": "Department of Defence Research and Development ▸ Defence Research and Development Organisation ▸ DFMM ▸ Office of DG (MSS) ▸ LRSAM (IAC)",
+    "location": "DRDL Hyderabad",
+    "unit": "Director DRDL",
+    "buyer_address": "DRDL Kanchanbagh Hyderabad 500058",
+    "pincode": "",
+    "lat": 17.39,
+    "lng": 78.49,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "01 Dec",
+    "published": "2026-11-24T03:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": null,
+    "tender_type": "Single",
+    "category": "Goods",
+    "ref_no": "DRDL/PGLRSAM/1701/31P/26/528",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_MES_799982_1",
+    "title": "Repair/replacement of existing asbestos sheet, false ceiling and other misc works for bldg T-201, T-202, T-121, T-123, T-124, T-127 of 65 Med Regt and provn of shed at BSO yard at Mil Stn Kapurthala under GE Kapurthala.",
+    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE WC AND CE JALANDHAR ZONE - MES ▸ CWE JALANDHAR - MES ▸ GE KAPURTHLA(P) - MES",
+    "location": "GE Kapurthala",
+    "unit": "Sh Hans Ram Meena, IDSE",
+    "buyer_address": "GE Kapurthala",
+    "pincode": "",
+    "lat": null,
+    "lng": null,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "14 Dec",
+    "published": "2026-11-24T03:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 4405000,
+    "tender_type": "Open Tender",
+    "category": "Works",
+    "ref_no": "8190/E8",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_MES_800036_1",
+    "title": "REPAIR TO GATE, APPROACH PATH, BOUNDARY WALL, BARBED WIRE FENCING AT BASE HOSPITAL, MDC, BH MD ACCN, AOR, 5N DET AT BARRACKPORE UNDER GE BARRACKPORE",
+    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE EC AND CE KOLKATA ZONE - MES ▸ CWE (SUBURB) BARRACKPORE - MES ▸ GE BARRACKPORE - MES",
+    "location": "BARRACKPORE",
+    "unit": "GE BARRACKPORE",
+    "buyer_address": "Office of the GE BARRACKPORE, KOLKATA - 700120",
+    "pincode": "",
+    "lat": 22.76,
+    "lng": 88.37,
+    "criticality": "routine",
+    "confidence": 0.9,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "14 Dec",
+    "published": "2026-11-24T03:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 4500000,
+    "tender_type": "Open Tender",
+    "category": "Works",
+    "ref_no": "8345/E8",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_MES_800017_1",
+    "title": "SPL REPAIR OF BLG NO P-7 (OC OFFICE) OF CJ-28 AT NASIRABAD",
+    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE BHOPAL ZONE - MES ▸ CWE BHOPAL - MES ▸ GE NASIRABAD - MES",
+    "location": "GE Nasirabad",
+    "unit": "GE Nasirabad",
+    "buyer_address": "GE Nasirabad, Military Engineer Services",
+    "pincode": "305601",
+    "lat": 26.3,
+    "lng": 74.73,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "12 Dec",
+    "published": "2026-11-24T03:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": null,
+    "tender_type": "Open Tender",
+    "category": "Works",
+    "ref_no": "SPL REPAIR OF BLG NO P-7 (OC OFFICE) OF CJ-28 AT NASIRABAD 8790/E8",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_MES_800045_1",
+    "title": "PROVISION OF CERTAIN SINGLE LIVING OFFRS ACCN AT KOLKATA MIL STN",
+    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CE EC AND CE KOLKATA ZONE - MES",
+    "location": "GE (Vijay Durg) Kolkata",
+    "unit": "HQ Chief Engineer Kolkata Zone",
+    "buyer_address": "HQ Chief Engineer Kolkata Zone, Military Engineer Services, Ballygunge Maidan Camp, Gurusaday Road, Kolkata -700 019",
+    "pincode": "",
+    "lat": 22.572,
+    "lng": 88.363,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "22 Dec",
+    "published": "2026-11-24T03:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 79700000,
+    "tender_type": "Open Tender",
+    "category": "Works",
+    "ref_no": "89120/E8",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_MES_800042_1",
+    "title": "Repair to Veh BA No. 24A- 079768-M , Motor Cycle Bajaj Platina of GE (I) R and D Kanchanbagh, Hyderabad",
+    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ ADG (OF and DRDO) AND CE (R and D) SECUNDERABAD - MES ▸ GE (I) RND KANCHANBAGH - MES",
+    "location": "Hyderabad",
+    "unit": "GE R AND D KANCHANBAGH",
+    "buyer_address": "Garrison Engineer (I) R and D Kanchanbagh Hyderabad - 500058",
+    "pincode": "",
+    "lat": 17.39,
+    "lng": 78.49,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "30 Nov",
+    "published": "2026-11-24T03:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 18200,
+    "tender_type": "Closed Limited",
+    "category": "Works",
+    "ref_no": "Repair to Veh BA No. 24A- 079768-M , Motor Cycle Bajaj Platina of GE (I) R and D Kanchanbagh, Hyderabad 3005/WO/Q/01/E3",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_MES_781798_2",
+    "title": "SPECIAL REPAIRS OF OPERATION THEATRE COMPLEX (P-159) AT INHS SANJIVANI",
+    "org_chain": "E-IN-C BRANCH - MILITARY ENGINEER SERVICES ▸ CESC AND CE (NAVY) KOCHI - MES",
+    "location": "GE (NW) Kochi",
+    "unit": "CE(NW)KOCHI",
+    "buyer_address": "CHIEF ENGINEER NAVAL WORKS KOCHI, MILITARY ENGINEER SERVICES, NAVAL BASE POST, KATARIBAGH, KOCHI-682004",
+    "pincode": "",
+    "lat": 9.931,
+    "lng": 76.267,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "17 Dec",
+    "published": "2026-11-24T03:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 37000000,
+    "tender_type": "Open Tender",
+    "category": "Works",
+    "ref_no": "891110",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_ARMY_800012_1",
+    "title": "Short Term Agreement for supply of Potato Fresh, Onion Fresh and Garlic at Supply Company ASC Ferozepur for the period 06 Jan 2027 to 31 Mar 2027",
+    "org_chain": "IHQ of MoD (Army)-(OSCC) ▸ Western Comd-IHQ of MoD (Army)-(OSCC) ▸ CORPS 1-Western Comd-IHQ of MoD (Army)-(OSCC) ▸ ST BR-IHQ of MoD (Army)",
+    "location": "SUPPLY COMPANY ASC FEROZEPUR",
+    "unit": "BRIG ASC",
+    "buyer_address": "HQ 11 CORPS (ST), C/O 56 APO",
+    "pincode": "",
+    "lat": 30.93,
+    "lng": 74.61,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "04 Dec",
+    "published": "2026-11-24T03:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 3432238,
+    "tender_type": "Limited",
+    "category": "Goods",
+    "ref_no": "701003/Apr/2026-27/STA-02/ST-5",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_ARMY_799993_1",
+    "title": "Short Term Agreement for supply of Potato Fresh, Onion Fresh and Garlic at Supply Company ASC Amritsar and delivery points as per period mentioned in the tender documents",
+    "org_chain": "IHQ of MoD (Army)-(OSCC) ▸ Western Comd-IHQ of MoD (Army)-(OSCC) ▸ CORPS 1-Western Comd-IHQ of MoD (Army)-(OSCC) ▸ ST BR-IHQ of MoD (Army)",
+    "location": "SUPPLY COMPANY ASC AMRITSAR",
+    "unit": "BRIG ASC",
+    "buyer_address": "HQ 11 CORPS (ST), C/O 56 APO",
+    "pincode": "",
+    "lat": 31.63,
+    "lng": 74.87,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "04 Dec",
+    "published": "2026-11-24T03:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 4270844,
+    "tender_type": "Limited",
+    "category": "Goods",
+    "ref_no": "701003/Apr/2026-27/STA/ST-5",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_ARMY_800020_1",
+    "title": "Short Term Agreement for supply of Potato Fresh, Onion Fresh and Garlic at Supply Company ASC Tibri for the period 01 Feb 2027 to 31 Mar 2027",
+    "org_chain": "IHQ of MoD (Army)-(OSCC) ▸ Western Comd-IHQ of MoD (Army)-(OSCC) ▸ CORPS 1-Western Comd-IHQ of MoD (Army)-(OSCC) ▸ ST BR-IHQ of MoD (Army)",
+    "location": "SUPPLY COMPANY ASC TIBRI",
+    "unit": "BRIG ASC",
+    "buyer_address": "HQ 11 CORPS (ST), C/O 56 APO",
+    "pincode": "",
+    "lat": null,
+    "lng": null,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "04 Dec",
+    "published": "2026-11-24T03:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 1121703,
+    "tender_type": "Limited",
+    "category": "Goods",
+    "ref_no": "701003/Apr/2026-27/STA-03/ST-5",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_ARMY_800049_1",
+    "title": "Short Term Agreement for supply of Egg Fresh, Potato Fresh, Onion Fresh, Bread (White), Bread (Wheatmeal), Veg Fresh and Fruit Fresh for the period 01 Mar 2027 to 31 Mar 2027 at Supply Point Dera Baba Nanak",
+    "org_chain": "IHQ of MoD (Army)-(OSCC) ▸ Western Comd-IHQ of MoD (Army)-(OSCC) ▸ CORPS 1-Western Comd-IHQ of MoD (Army)-(OSCC) ▸ ST BR-IHQ of MoD (Army)",
+    "location": "SUPPLY POINT DERA BABA NANAK",
+    "unit": "BRIG ASC",
+    "buyer_address": "HQ 11 CORPS (ST), C/O 56 APO",
+    "pincode": "",
+    "lat": null,
+    "lng": null,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "04 Dec",
+    "published": "2026-11-24T03:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": 421695,
+    "tender_type": "Limited",
+    "category": "Goods",
+    "ref_no": "701003/Apr/2026-27/STA-04/ST-5",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
+  },
+  {
+    "tender_id": "2026_IAF_799534_1",
+    "title": "LIFE EXTENSION STUDY OF IL 76",
+    "org_chain": "Indian Air Force ▸ HQ MC NAGPUR - IAF",
+    "location": "1 BRD",
+    "unit": "C ENG T",
+    "buyer_address": "AS PER PARA 2 OF RFP",
+    "pincode": "",
+    "lat": 21.15,
+    "lng": 79.09,
+    "criticality": "routine",
+    "confidence": 0.7,
+    "domains": [],
+    "named_system": null,
+    "closing_date": "05 Dec",
+    "published": "2026-11-24T03:30:00Z",
+    "detail_url": "https://defproc.gov.in/nicgep/app?page=WebTenderStatusLists&service=page",
+    "value_inr": null,
+    "tender_type": "Single",
+    "category": "Services",
+    "ref_no": "MC/6300/166/ENGT1 BM-I (PC13)",
+    "status": "active",
+    "first_seen": "2026-11-24T10:37:51Z",
+    "last_seen": "2026-11-24T10:37:51Z"
   }
 ]
